@@ -1,0 +1,147 @@
+@import "tailwindcss";
+
+@theme inline {
+  --font-sans: var(--font-geist-sans);
+
+  /* VeySecure brand — violet/indigo accent over deep ink */
+  --color-brand: #7c3aed;          /* violet-600 — primary accent */
+  --color-brand-soft: #a78bfa;     /* violet-400 — links, accents */
+  --color-brand-pale: #ede9fe;     /* violet-100 — soft bg */
+  --color-brand-deep: #5b21b6;     /* violet-800 — hover/dark */
+  --color-brand-glow: #c4b5fd;     /* violet-300 — particle lines */
+
+  /* Surfaces */
+  --color-ink: #0e0b1f;            /* deep indigo-black (hero) */
+  --color-ink-soft: #1b1633;       /* lighter slate-indigo */
+  --color-paper: #fafaf9;          /* warm off-white for light sections */
+  --color-paper-soft: #f4f4f3;     /* slightly cooler off-white */
+}
+
+:root {
+  --accent: #7c3aed;
+}
+
+html, body {
+  background-color: var(--color-paper);
+}
+
+body {
+  font-family: var(--font-sans), Arial, sans-serif;
+  color: #18181b;
+}
+
+::selection {
+  background-color: var(--accent);
+  color: #fff;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}
+@media (prefers-reduced-motion: no-preference) {
+  html { scroll-behavior: smooth; }
+}
+
+/* Subtle tech grid for dark sections */
+.tech-grid {
+  background-image:
+    linear-gradient(rgba(167, 139, 250, 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(167, 139, 250, 0.06) 1px, transparent 1px);
+  background-size: 48px 48px;
+  mask-image: radial-gradient(circle at center, black 30%, transparent 75%);
+}
+
+/* Subtle dot pattern for light sections */
+.dot-grid {
+  background-image: radial-gradient(circle, rgba(124, 58, 237, 0.10) 1px, transparent 1px);
+  background-size: 28px 28px;
+}
+
+.glow {
+  background-image: radial-gradient(
+    circle at 50% 30%,
+    rgba(124, 58, 237, 0.25),
+    transparent 55%
+  );
+}
+
+/* ───────── Hero FX (Hex Grid + Particles + Fade) ───────── */
+.vc-hero-fx {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 0;
+}
+.vc-fx-canvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  background: #0e0b1f;
+}
+.vc-fx-hex {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: auto;
+  z-index: 1;
+}
+.vc-fx-fade {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    ellipse at center,
+    transparent 0%,
+    transparent 30%,
+    rgba(14, 11, 31, 0.6) 60%,
+    rgba(14, 11, 31, 0.92) 80%,
+    rgba(14, 11, 31, 1) 100%
+  );
+  pointer-events: none;
+  z-index: 2;
+}
+.vc-hex-row {
+  display: inline-flex;
+  margin-top: -32px;
+  margin-left: -50px;
+}
+.vc-hex-row:nth-child(even) {
+  margin-left: 2px;
+}
+.vc-hex {
+  position: relative;
+  width: 100px;
+  height: 110px;
+  margin: 4px 2px;
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+.vc-hex::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: #0e0b1f;
+  opacity: 0.95;
+  transition: background 1s, opacity 1s;
+}
+.vc-hex::after {
+  content: "";
+  position: absolute;
+  inset: 4px;
+  background: #1b1633;
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+.vc-hex:hover::before {
+  background: #7c3aed;
+  opacity: 1;
+  transition: background 0s, opacity 0s;
+}
+.vc-hex:hover::after {
+  background: #0e0b1f;
+}
+@media (prefers-reduced-motion: reduce) {
+  .vc-hex::before,
+  .vc-hex::after {
+    transition: none;
+  }
+}
