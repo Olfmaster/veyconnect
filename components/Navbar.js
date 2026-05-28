@@ -40,13 +40,20 @@ export default function Navbar() {
 
   useEffect(() => {
     if (!panelRef.current) return;
+    const panel = panelRef.current;
     const items = itemsRef.current.filter(Boolean);
     if (open) {
       document.body.style.overflow = "hidden";
-      gsap.fromTo(panelRef.current, { y: "-100%" }, { y: "0%", duration: 0.55, ease: "power3.out" });
+      gsap.fromTo(panel, { y: "-100%" }, { y: "0%", duration: 0.55, ease: "power3.out" });
       gsap.fromTo(items, { y: 30, opacity: 0 }, { y: 0, opacity: 1, duration: 0.5, stagger: 0.05, ease: "power3.out", delay: 0.15 });
     } else {
       document.body.style.overflow = "";
+      gsap.to(panel, {
+        y: "-100%",
+        duration: 0.35,
+        ease: "power3.in",
+        onComplete: () => gsap.set(panel, { clearProps: "transform" }),
+      });
     }
     return () => { document.body.style.overflow = ""; };
   }, [open]);

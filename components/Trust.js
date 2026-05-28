@@ -10,8 +10,8 @@ const stats = [
 
 const usps = [
   {
-    title: "Elektromeisterbetrieb mit Sicherheitsfokus",
-    text: "Andere verkaufen Alarmanlagen. Wir verstehen, was hinter der Wand passiert — vom FI-Schalter bis zur Cloud-Verschlüsselung.",
+    title: "Sicherheitstechnik-Fachbetrieb mit Elektro-Partner",
+    text: "Andere verkaufen Alarmanlagen. Wir denken Sicherheit ganzheitlich — vom Sensorkonzept bis zur Cloud-Verschlüsselung. Elektroarbeiten übernimmt unser zertifizierter Partnerbetrieb.",
   },
   {
     title: "Zertifizierter AJAX-Partner",
@@ -28,11 +28,11 @@ const usps = [
 ];
 
 const badges = [
-  "AJAX Systems Partner",
+  "AJAX Systems Premium-Partner",
   "Zertifizierter Fachbetrieb",
   "VDS-Konforme Systeme",
   "DSGVO-konforme Videoüberwachung",
-  "DIN VDE 0701/0702",
+  "Elektromeister-Partnerbetrieb",
 ];
 
 export default function Trust() {

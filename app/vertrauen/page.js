@@ -5,9 +5,9 @@ import Manifesto from "@/components/Manifesto";
 import Contact from "@/components/Contact";
 
 export const metadata = {
-  title: "Vertrauen — Kompetenz aus Elektromeisterhand",
+  title: "Vertrauen — Sicherheitstechnik-Fachbetrieb im Rhein-Main",
   description:
-    "Elektromeisterbetrieb mit Sicherheitsfokus, zertifizierter AJAX-Partner, alles aus einer Hand und spezialisiert auf Altbau & Bestand im Rhein-Main-Gebiet.",
+    "Sicherheitstechnik-Fachbetrieb mit Elektro-Partner, zertifizierter AJAX-Premium-Partner, alles aus einer Hand und spezialisiert auf Altbau & Bestand im Rhein-Main-Gebiet.",
   alternates: { canonical: "/vertrauen" },
 };
 

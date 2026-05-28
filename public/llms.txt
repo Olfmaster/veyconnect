@@ -15,9 +15,10 @@
 
 ## Leistungen (Kerngewerke)
 - Einbruchschutz & Videoüberwachung: AJAX-Funkalarm, Kameras von Dahua, HIK Vision, Mobotix (4K + Thermalsicht + Telezoom), Bewegungs-, Glasbruch- und Gasmelder, Hausnotrufsysteme
-- Brandschutz & Elektroschutz: Funk-Rauchmeldernetz, FI-Schutzschalter, Überspannungsschutz, E-Check nach DIN VDE 0701/0702
+- Brandschutz & Gefahrenprävention: Funk-Rauchmeldernetz, CO- und Gasmelder, Hausnotrufsysteme, Brandschutz­konzept für Bestand
 - Zutrittskontrolle & Türsysteme: Video-Türsprechanlagen (Siedle, Doorbird), Fingerprint / Transponder / App, elektronische Schließanlagen, Torantriebe
-- Sicherheitsmodernisierung & Altbau: Normprüfung, Nachrüstung Bestandsbauten, Absicherung alter Stromkreise, versicherungstaugliche Dokumentation
+- Sicherheitsmodernisierung & Altbau: Befundung & Sicherheitskonzept, Sensorik & Funkalarm im Bestand, Schließ- & Türsicherung, versicherungstaugliche Dokumentation
+- Elektroarbeiten: Für klassische Elektroinstallation arbeitet veyconnect mit einem zertifizierten Elektromeister-Partnerbetrieb zusammen — alles aus einer Hand, ohne Schnittstellenverlust
 - Smarte Sicherheitsintegration: UniFi-Netzwerk, KNX, smarte Türschlösser, Richtfunk / Starlink / 5G-LTE, Präsenz­simulation
 
 ## Hersteller-Partner
@@ -25,11 +26,11 @@
 - Weitere zertifizierte Marken: Gira, Hager, Siedle, Doorbird, Dahua, UniFi, Mobotix, HIK Vision, Busch-Jaeger, Schneider Electric, KNX
 
 ## Konformität & Standards
-- DIN VDE 0701/0702
 - VDS-konforme Einbruchmeldeanlagen
 - DSGVO-konforme Videoüberwachung
 - AJAX Systems Premium-Partner (Hersteller­zertifizierung)
 - Original-Komponenten, direkter Herstellerzugang, neueste Firmware
+- Elektroarbeiten über zertifizierten Elektromeister-Partnerbetrieb
 
 ## Häufige Fragen (Auswahl)
 - Was kostet eine AJAX Alarmanlage? — Kleine Wohnungs-Lösung mit Hub + 2–3 Sensoren startet im niedrigen vierstelligen Bereich. Einfamilienhaus mit Außensicherung höher. Kostenlose Vor-Ort-Beratung mit Sicherheits­analyse vor verbindlichem Angebot.

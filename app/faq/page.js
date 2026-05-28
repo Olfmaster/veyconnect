@@ -11,7 +11,7 @@ const categories = [
     items: [
       {
         q: "Was macht veyconnect / VeySecure genau?",
-        a: "VeySecure ist die Sicherheitswelt von veyconnect. Wir planen, installieren und warten Einbruchmeldeanlagen, Videoüberwachung, Brandschutz, Zutrittskontrolle, Smart-Home-Integration und Sicherheitsmodernisierung im Bestandsbau. Alles aus einer Hand, von einem Elektromeisterbetrieb mit Sicherheitsfokus.",
+        a: "VeySecure ist die Sicherheitswelt von veyconnect. Wir planen, installieren und warten Einbruchmeldeanlagen, Videoüberwachung, Brandschutz, Zutrittskontrolle, Smart-Home-Integration und Sicherheitsmodernisierung im Bestandsbau. Alles aus einer Hand, als Sicherheitstechnik-Fachbetrieb mit zertifiziertem Elektromeister-Partner.",
       },
       {
         q: "Für wen ist VeySecure?",
@@ -23,7 +23,7 @@ const categories = [
       },
       {
         q: "Macht ihr auch klassische Elektroinstallation?",
-        a: "Reine Elektroprojekte vermitteln wir an unseren langjährigen Partnerbetrieb. So bleibt VeySecure auf das fokussiert, was wir am besten können — Sicherheits- und Gebäudesystemtechnik — und Sie bekommen trotzdem alles aus einer Hand.",
+        a: "Für Elektroarbeiten arbeiten wir mit einem zertifizierten Elektromeister-Betrieb zusammen. So bleibt VeySecure auf das fokussiert, was wir am besten können — Sicherheits- und Gebäudesystemtechnik — und Sie bekommen trotzdem alles aus einer Hand.",
       },
     ],
   },
@@ -76,12 +76,8 @@ const categories = [
         a: "Ja. Wir planen Videoüberwachung grundsätzlich DSGVO-konform — mit korrekter Kamerakegel-Ausrichtung, Beschilderung und Datenflussdokumentation. Beim Betreiber liegt die Verantwortung für die laufende Datenverarbeitung, wir beraten zur Konfiguration und Kennzeichnung.",
       },
       {
-        q: "Was ist der E-Check, den ihr anbietet?",
-        a: "Der E-Check ist die normgerechte Prüfung der Elektroinstallation nach DIN VDE 0701/0702. Versicherungen verlangen ihn häufig im Schadensfall. Wir prüfen, dokumentieren mit Mess­protokoll und Foto, und liefern ein versicherungs­taugliches Prüfprotokoll.",
-      },
-      {
         q: "Was ist im Brandschutz alles enthalten?",
-        a: "Funk-Rauchmeldernetz (alle Räume in einem Verbund), FI-Schutzschalter zur Personensicherheit, Überspannungsschutz gegen Blitz- und Netzschwankungen sowie der E-Check. Auf Wunsch auch vernetzte CO- und Gasmelder.",
+        a: "Funk-Rauchmeldernetz (alle Räume in einem Verbund), CO- und Gasmelder, optional Hausnotrufsysteme und vernetzte Warnmelder. Brandschutz­konzept und Dokumentation für Versicherer auf Wunsch inklusive.",
       },
       {
         q: "Kann ich die Anlage später erweitern?",

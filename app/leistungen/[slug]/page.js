@@ -34,35 +34,35 @@ const details = {
         text: "Diskrete Notruflösungen für Privatpersonen und betreutes Wohnen.",
       },
     ],
-    next: { slug: "brandschutz", label: "Brandschutz & Elektroschutz" },
+    next: { slug: "brandschutz", label: "Brandschutz & Gefahrenprävention" },
   },
   brandschutz: {
     eyebrow: "/ 02 — Brandschutz",
     title: "Brandschutz &",
-    accent: "Elektroschutz.",
+    accent: "Gefahrenprävention.",
     intro:
-      "Vernetzte Rauchmelder, FI-Schutzschalter, Überspannungsschutz und Elektroinstallations-Prüfung — normgerecht, versicherungs­konform und dokumentiert.",
+      "Vernetzte Rauchmelder, CO- und Gasmelder, Hausnotruf­systeme — normgerecht, versicherungs­konform und dokumentiert.",
     image: "/smoke-detector-and-remotes-on-blueprint.webp",
     image2: "/brandschutz.webp",
     metaTitle: "Brandschutz & Gefahrenprävention",
     metaDesc:
-      "Funk-Rauchmeldernetz, FI-Schutzschalter, Überspannungsschutz und E-Check nach DIN VDE für Privat- und Gewerbeobjekte im Rhein-Main-Gebiet.",
+      "Funk-Rauchmeldernetz, CO- und Gasmelder, Hausnotrufsysteme und Brandschutz­konzepte für Privat- und Gewerbeobjekte im Rhein-Main-Gebiet.",
     bullets: [
       {
         title: "Funk-Rauchmeldernetz",
         text: "Alle Räume in einem Verbund — wenn einer auslöst, hören Sie es überall.",
       },
       {
-        title: "FI-Schutzschalter & ÜSS",
-        text: "Personenschutz und Schutz Ihrer Elektronik vor Überspannungs- und Blitzschäden.",
+        title: "CO- & Gasmelder",
+        text: "Frühwarnung vor Kohlenmonoxid und Gaslecks — vernetzt mit Alarm- und Hausautomation.",
       },
       {
-        title: "E-Check nach DIN VDE",
-        text: "Normgerechte Prüfung Ihrer Elektroinstallation — die Versicherung verlangt sie. Wir liefern sie.",
+        title: "Hausnotruf­systeme",
+        text: "Diskrete Notruflösungen für Privatpersonen, betreutes Wohnen und allein­arbeitende Personen.",
       },
       {
-        title: "Altbau-Modernisierung",
-        text: "Marode Leitungen, fehlende Erdung — wir machen Bestandsbauten wieder safe.",
+        title: "Brandschutz­konzept Bestand",
+        text: "Planung für Altbau und Bestand — abgestimmt auf vorhandene Substanz und Versicherer­anforderungen.",
       },
     ],
     next: { slug: "zutrittskontrolle", label: "Zutrittskontrolle & Türsysteme" },
@@ -103,28 +103,28 @@ const details = {
     title: "Sicherheits­modernisierung",
     accent: "& Altbau.",
     intro:
-      "Marode Elektroinstallationen, fehlende Normprüfung, ungesicherte Stromkreise — wir machen Bestandsgebäude wieder safe. Unser Spezialgebiet im Rhein-Main.",
+      "Veraltete Schließtechnik, fehlende Sensorik, ungesicherte Außenanlagen — wir bringen Bestandsgebäude sicherheits­technisch in die Gegenwart. Unser Spezialgebiet im Rhein-Main.",
     image: "/altbau.webp",
     image2: "/brandschutz.webp",
     metaTitle: "Altbau-Modernisierung & Sicherheitsnachrüstung",
     metaDesc:
-      "Sicherheitsnachrüstung für Bestandsbauten — Normprüfung, FI-Nachrüstung, neue Stromkreise, dokumentiert und versicherungs­konform.",
+      "Sicherheitsnachrüstung für Bestandsbauten — Befundung, Sensorik-Nachrüstung, Schließtechnik und Brandmelder, dokumentiert und versicherungs­konform.",
     bullets: [
       {
-        title: "Normprüfung & Befundung",
+        title: "Befundung & Sicherheitskonzept",
         text: "Was ist da überhaupt verbaut? Wir prüfen den Bestand und liefern einen klaren Maßnahmenkatalog.",
       },
       {
-        title: "Nachrüstung Bestandsbauten",
-        text: "FI-Schalter, neue Verteiler, getrennte Stromkreise — schrittweise oder als Gesamtsanierung.",
+        title: "Sensorik & Funkalarm im Bestand",
+        text: "AJAX-Funkanlagen, Bewegungs-, Glasbruch- und Öffnungsmelder — schrittweise oder als Komplett­paket, ohne große Bauarbeiten.",
       },
       {
-        title: "Absicherung alter Stromkreise",
-        text: "Bestand erhalten, Sicherheit erhöhen — auch im laufenden Betrieb.",
+        title: "Schließ- & Türsicherung",
+        text: "Elektronische Zylinder, Mehrfach­verriegelung, Video-Türsprechanlagen — Bestand erhalten, Sicherheit erhöhen.",
       },
       {
         title: "Versicherungs­taugliche Dokumentation",
-        text: "Prüfprotokoll, Messwerte, Fotodokumentation — falls der Versicherer fragt, haben Sie die Antworten.",
+        text: "Anlagen­dokumentation, Konfiguration und Fotodokumentation — falls der Versicherer fragt, haben Sie die Antworten.",
       },
     ],
     next: { slug: "smart-home", label: "Smarte Sicherheitsintegration" },

@@ -8,12 +8,12 @@ const points = [
     text: "Jeder dritte Einbruch passiert tagsüber — wenn keiner zu Hause ist. Veraltete Schließtechnik ist in 60 Sekunden überwunden.",
   },
   {
-    title: "Veraltete Elektroinstallationen",
-    text: "Marode Leitungen sind Brandrisiko Nr. 1 in deutschen Altbauten. Ein Schaden zieht schnell Folgekosten in sechsstelliger Höhe nach sich.",
+    title: "Veraltete Schließtechnik",
+    text: "Alte Zylinder und Standardbeschläge sind in 60 Sekunden überwunden. Bestandsbauten brauchen ein modernes Sicherheitskonzept — keinen Baumarkt-Beschlag.",
   },
   {
     title: "Fehlender Brandschutz",
-    text: "Ohne normgerechte Rauchmelder und Überspannungsschutz drohen Personenschäden und Versicherungsausschluss im Schadensfall.",
+    text: "Ohne normgerechte, vernetzte Rauchmelder drohen Personenschäden und Versicherungsausschluss im Schadensfall — gerade in Bestandsbauten.",
   },
   {
     title: "Fragmentierte Systeme",
@@ -101,8 +101,9 @@ export default function PainPoints() {
 
         <p data-anim className="mt-12 max-w-2xl text-base md:text-lg text-zinc-300 leading-relaxed">
           Wer bei VeySecure kauft, kauft <span className="text-white font-medium">Risikominimierung</span> —
-          fachlich geplant von einem Elektromeisterbetrieb, der Sicherheit ganzheitlich
-          versteht: von der Leitung in der Wand bis zur Cloud.
+          fachlich geplant von einem Sicherheitstechnik-Fachbetrieb, der ganzheitlich
+          denkt: vom Sensor an der Tür bis zur Cloud, mit Elektro-Partner für alles
+          dazwischen.
         </p>
       </div>
     </section>

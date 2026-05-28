@@ -22,8 +22,8 @@ const coreServices = [
   },
   {
     id: "03",
-    title: "Brandschutz & Elektroschutz",
-    desc: "Funk-Rauchmeldernetz, FI-Schalter, Überspannungsschutz — normgerecht & versichert.",
+    title: "Brandschutz & Gefahrenprävention",
+    desc: "Vernetzte Rauchmelder, CO- und Gasmelder, Hausnotrufsysteme — normgerecht & versichert.",
     image: "/smoke-detector-and-remotes-on-blueprint.webp",
     href: "/leistungen/brandschutz",
   },

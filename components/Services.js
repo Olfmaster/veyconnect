@@ -24,12 +24,12 @@ const services = [
     slug: "brandschutz",
     title: "Brandschutz & Gefahrenprävention",
     description:
-      "Vernetzte Rauchmelder, FI-Schutzschalter, Überspannungsschutz und Elektroinstallations-Prüfung — normgerecht und versicherungskonform.",
+      "Vernetzte Rauchmelder, CO- und Gasmelder, Hausnotrufsysteme — geplant, installiert und dokumentiert nach Norm.",
     bullets: [
       "Funk-Rauchmeldernetz",
-      "FI-Schutzschalter & ÜSS",
-      "E-Check nach DIN VDE",
-      "Altbau-Modernisierung",
+      "CO- & Gasmelder",
+      "Hausnotrufsysteme",
+      "Konzept für Bestandsbauten",
     ],
     image: "/smoke-detector-and-remotes-on-blueprint.webp",
   },
@@ -52,11 +52,11 @@ const services = [
     slug: "altbau",
     title: "Sicherheitsmodernisierung & Altbau",
     description:
-      "Marode Elektroinstallationen, fehlende Normprüfung, ungesicherte Stromkreise — wir machen Bestandsgebäude wieder safe. Marktlücke und unser Spezialgebiet.",
+      "Veraltete Schließtechnik, fehlende Sensorik, unsichere Außenanlagen — wir machen Bestandsgebäude sicherheitstechnisch wieder zeitgemäß. Marktlücke und unser Spezialgebiet.",
     bullets: [
-      "Normprüfung & Befundung",
+      "Befundung & Sicherheitskonzept",
       "Nachrüstung Bestandsbauten",
-      "Absicherung alter Stromkreise",
+      "Sensorik & Türsicherung",
       "Versicherungstaugliche Dokumentation",
     ],
     image: "/altbau.webp",
@@ -185,12 +185,12 @@ export default function Services({ showHeader = true }) {
         <article className="relative rounded-2xl border border-dashed border-[#9162a4]/30 bg-[#0c0c0c] flex flex-col gap-4 p-7 md:p-8 lg:col-span-1 sm:col-span-2 lg:col-auto">
           <span className="label-mono text-[#9162a4]">/ Elektro</span>
           <h3 className="text-lg md:text-xl font-semibold tracking-tight text-white">
-            Klassische Elektroinstallation?
+            Elektroarbeiten nötig?
           </h3>
           <p className="text-sm text-zinc-400 leading-relaxed">
-            Für reine Elektroprojekte vermitteln wir an unseren langjährigen
-            Partnerbetrieb. So bleibt VeySecure fokussiert auf das, was wir am
-            besten können — und Sie bekommen trotzdem alles aus einer Hand.
+            Für Elektroarbeiten arbeiten wir mit einem zertifizierten
+            Elektromeister-Betrieb zusammen — Sie bekommen alles aus einer
+            Hand, ohne Schnittstellenverlust.
           </p>
           <Link
             href="/kontakt"
