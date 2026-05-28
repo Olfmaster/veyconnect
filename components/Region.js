@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 import { useEffect, useRef } from "react";
 import { gsap } from "@/lib/gsap";
 
@@ -31,7 +31,7 @@ export default function Region() {
           duration: 0.7,
           stagger: 0.05,
           ease: "power3.out",
-          scrollTrigger: { trigger: sectionRef.current, start: "top 75%" },
+          scrollTrigger: { trigger: sectionRef.current, start: "top 80%" },
         }
       );
     }, sectionRef);
@@ -42,19 +42,19 @@ export default function Region() {
     <section
       ref={sectionRef}
       id="region"
-      className="relative py-32 md:py-40 px-6 md:px-10 bg-white text-zinc-900 overflow-hidden border-b border-zinc-200"
+      className="relative py-28 md:py-36 px-6 md:px-10 bg-[#050505] text-white overflow-hidden border-b border-white/5"
     >
-      <div aria-hidden="true" className="absolute inset-0 dot-grid opacity-40" />
+      <div aria-hidden="true" className="absolute inset-0 tech-grid opacity-50" />
 
       <div className="relative max-w-6xl mx-auto grid md:grid-cols-12 gap-12">
         <div className="md:col-span-4">
-          <p data-anim className="text-xs uppercase tracking-[0.3em] text-violet-600 mb-6">
-            Servicegebiet
+          <p data-anim className="label-mono text-[#9162a4] mb-6">
+            / Servicegebiet
           </p>
-          <h2 data-anim className="text-3xl md:text-4xl font-semibold tracking-tight leading-tight max-w-sm">
-            Vor Ort im Rhein-Main-Gebiet.
+          <h2 data-anim className="text-3xl md:text-4xl font-semibold tracking-[-0.03em] leading-[1.05] max-w-sm">
+            Vor Ort im <span className="text-[#9162a4]">Rhein-Main-Gebiet.</span>
           </h2>
-          <p data-anim className="mt-6 text-zinc-600 max-w-sm leading-relaxed">
+          <p data-anim className="mt-6 text-zinc-400 max-w-sm leading-relaxed">
             Hauptsitz in Niederdorfelden — wir sind in der Regel innerhalb
             weniger Tage vor Ort. Auch außerhalb dieser Liste sind wir auf
             Anfrage erreichbar.
@@ -66,11 +66,11 @@ export default function Region() {
             <li
               key={city}
               data-anim
-              className="border-b border-zinc-200 py-4 text-sm md:text-base font-medium tracking-tight flex items-center justify-between text-zinc-800"
+              className="border-b border-white/10 py-4 text-sm md:text-base font-medium tracking-tight flex items-center justify-between text-zinc-200"
             >
               <span>{city}</span>
-              <span aria-hidden="true" className="text-violet-500/70 text-xs">
-                ●
+              <span aria-hidden="true" className="text-[#9162a4] text-xs">
+                ●
               </span>
             </li>
           ))}

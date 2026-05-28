@@ -1,11 +1,18 @@
-import { Geist } from "next/font/google";
+﻿import { Inter_Tight, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
-const geist = Geist({
-  variable: "--font-geist-sans",
+const interTight = Inter_Tight({
+  variable: "--font-sans",
   subsets: ["latin"],
+  display: "swap",
+});
+
+const jetbrains = JetBrains_Mono({
+  variable: "--font-mono",
+  subsets: ["latin"],
+  display: "swap",
 });
 
 const SITE_URL = "https://www.veyconnect.de";
@@ -61,8 +68,8 @@ export const metadata = {
 };
 
 export const viewport = {
-  themeColor: "#0e0b1f",
-  colorScheme: "light dark",
+  themeColor: "#050505",
+  colorScheme: "dark",
   width: "device-width",
   initialScale: 1,
 };
@@ -79,7 +86,7 @@ const jsonLd = {
       telephone: "+4917624596941",
       image: `${SITE_URL}/opengraph-image`,
       description: DESCRIPTION,
-      priceRange: "€€",
+      priceRange: "â‚¬â‚¬",
       foundingDate: "2023",
       areaServed: [
         { "@type": "City", name: "Frankfurt am Main" },
@@ -118,11 +125,11 @@ const jsonLd = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="de" className={`${geist.variable} h-full`}>
-      <body className="min-h-full antialiased selection:bg-violet-600 selection:text-white">
+    <html lang="de" className={`${interTight.variable} ${jetbrains.variable} h-full`}>
+      <body className="min-h-full antialiased bg-[#050505] text-white selection:bg-[#9162a4] selection:text-white">
         <a
           href="#main"
-          className="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:left-3 focus:z-[100] focus:px-4 focus:py-2 focus:rounded-full focus:bg-violet-600 focus:text-white focus:text-sm focus:shadow-lg"
+          className="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:left-3 focus:z-[100] focus:px-4 focus:py-2 focus:rounded-full focus:bg-[#9162a4] focus:text-white focus:text-sm focus:shadow-lg"
         >
           Zum Inhalt springen
         </a>

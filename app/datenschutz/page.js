@@ -1,4 +1,4 @@
-import LegalLayout, { Section, TodoBlock } from "@/components/LegalLayout";
+﻿import LegalLayout, { Section, TodoBlock } from "@/components/LegalLayout";
 
 export const metadata = {
   title: "Datenschutzerklärung",
@@ -21,7 +21,7 @@ export default function DatenschutzPage() {
           <TodoBlock label="ANSCHRIFT" hint="bitte vor Launch ergänzen" />
           <br />
           E-Mail:{" "}
-          <a href="mailto:info@veyconnect.de" className="text-white underline underline-offset-4 hover:text-sky-400 transition-colors">
+          <a href="mailto:info@veyconnect.de" className="text-white underline underline-offset-4 hover:text-[#9162a4] transition-colors">
             info@veyconnect.de
           </a>
           <br />
@@ -108,3 +108,4 @@ export default function DatenschutzPage() {
     </LegalLayout>
   );
 }
+

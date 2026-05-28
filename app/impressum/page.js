@@ -1,4 +1,4 @@
-import LegalLayout, { Section, TodoBlock } from "@/components/LegalLayout";
+﻿import LegalLayout, { Section, TodoBlock } from "@/components/LegalLayout";
 
 export const metadata = {
   title: "Impressum",
@@ -27,17 +27,17 @@ export default function ImpressumPage() {
       <Section heading="Kontakt">
         <p>
           Telefon:{" "}
-          <a href="tel:+4917624596941" className="text-white underline underline-offset-4 hover:text-sky-400 transition-colors">
+          <a href="tel:+4917624596941" className="text-white underline underline-offset-4 hover:text-[#9162a4] transition-colors">
             +49 176 24596941
           </a>
           <br />
           E-Mail:{" "}
-          <a href="mailto:info@veyconnect.de" className="text-white underline underline-offset-4 hover:text-sky-400 transition-colors">
+          <a href="mailto:info@veyconnect.de" className="text-white underline underline-offset-4 hover:text-[#9162a4] transition-colors">
             info@veyconnect.de
           </a>
           <br />
           Web:{" "}
-          <a href="https://www.veyconnect.de" className="text-white underline underline-offset-4 hover:text-sky-400 transition-colors">
+          <a href="https://www.veyconnect.de" className="text-white underline underline-offset-4 hover:text-[#9162a4] transition-colors">
             www.veyconnect.de
           </a>
         </p>
@@ -70,7 +70,7 @@ export default function ImpressumPage() {
             href="https://ec.europa.eu/consumers/odr/"
             rel="noopener noreferrer"
             target="_blank"
-            className="text-white underline underline-offset-4 hover:text-sky-400 transition-colors"
+            className="text-white underline underline-offset-4 hover:text-[#9162a4] transition-colors"
           >
             ec.europa.eu/consumers/odr
           </a>
@@ -109,3 +109,4 @@ export default function ImpressumPage() {
     </LegalLayout>
   );
 }
+
