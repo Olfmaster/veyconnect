@@ -176,12 +176,53 @@ export function generateMetadata({ params }) {
   };
 }
 
+const SITE_URL = "https://www.veyconnect.de";
+
 export default function ServiceDetailPage({ params }) {
   const d = details[params.slug];
   if (!d) notFound();
 
+  const serviceSchema = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "@id": `${SITE_URL}/leistungen/${params.slug}#service`,
+    name: d.metaTitle,
+    description: d.metaDesc,
+    url: `${SITE_URL}/leistungen/${params.slug}`,
+    image: `${SITE_URL}${d.image}`,
+    serviceType: d.metaTitle,
+    areaServed: { "@type": "AdministrativeArea", name: "Rhein-Main-Gebiet" },
+    provider: { "@id": `${SITE_URL}/#business` },
+    hasOfferCatalog: {
+      "@type": "OfferCatalog",
+      name: d.metaTitle,
+      itemListElement: d.bullets.map((b) => ({
+        "@type": "Offer",
+        itemOffered: { "@type": "Service", name: b.title, description: b.text },
+      })),
+    },
+  };
+
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Startseite", item: SITE_URL },
+      { "@type": "ListItem", position: 2, name: "Leistungen", item: `${SITE_URL}/leistungen` },
+      { "@type": "ListItem", position: 3, name: d.metaTitle, item: `${SITE_URL}/leistungen/${params.slug}` },
+    ],
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       <PageHero eyebrow={d.eyebrow} title={d.title} accent={d.accent} intro={d.intro}>
         <div className="flex flex-wrap gap-4">
           <Link href="/kontakt" className="btn-tech btn-tech-solid">

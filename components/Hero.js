@@ -83,15 +83,17 @@ export default function Hero() {
         {/* eyebrow with Ajax certified badge */}
         <p
           ref={eyebrowRef}
-          className="vc-pre-reveal label-mono inline-flex items-center gap-3 text-[#9162a4] mb-8 px-3 py-1.5 border border-[#9162a4]/30 rounded-full bg-[#9162a4]/5"
+          className="vc-pre-reveal label-mono inline-flex items-center gap-2 sm:gap-3 text-[#9162a4] mb-8 px-3 py-1.5 border border-[#9162a4]/30 rounded-full bg-[#9162a4]/5 max-w-full text-center"
         >
-          <span aria-hidden="true" className="inline-block w-1.5 h-1.5 rounded-full bg-[#9162a4] animate-pulse" />
-          Zertifizierter Premium-Partner von AJAX Systems
+          <span aria-hidden="true" className="inline-block w-1.5 h-1.5 rounded-full bg-[#9162a4] animate-pulse shrink-0" />
+          <span>
+            <span className="hidden sm:inline">Zertifizierter </span>Premium-Partner <span className="hidden sm:inline">von </span>AJAX Systems
+          </span>
         </p>
 
         <h1
           ref={headlineRef}
-          className="vc-pre-reveal text-4xl sm:text-5xl md:text-7xl lg:text-[5.5rem] font-semibold tracking-[-0.03em] leading-[0.95] max-w-5xl"
+          className="vc-pre-reveal text-[2.25rem] sm:text-5xl md:text-7xl lg:text-[5.5rem] font-semibold tracking-[-0.03em] leading-[0.98] sm:leading-[0.95] max-w-5xl"
         >
           <span className="block overflow-hidden pb-[0.12em]">
             <span data-reveal className="block">
@@ -117,7 +119,7 @@ export default function Hero() {
 
         <div
           ref={ctaRef}
-          className="vc-pre-reveal mt-10 flex flex-col sm:flex-row items-center gap-4"
+          className="vc-pre-reveal mt-10 flex flex-col sm:flex-row items-stretch sm:items-center gap-3 sm:gap-4 w-full sm:w-auto"
         >
           <Link href="/kontakt" className="btn-tech btn-tech-solid">
             <span>Kostenlose Sicherheitsberatung</span>

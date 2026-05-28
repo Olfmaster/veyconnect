@@ -22,6 +22,7 @@ export default function sitemap() {
     { url: `${BASE}/partner`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
     { url: `${BASE}/vertrauen`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
     { url: `${BASE}/region`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
+    { url: `${BASE}/faq`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
     { url: `${BASE}/kontakt`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
     { url: `${BASE}/impressum`, lastModified: now, changeFrequency: "yearly", priority: 0.3 },
     { url: `${BASE}/datenschutz`, lastModified: now, changeFrequency: "yearly", priority: 0.3 },

@@ -70,7 +70,7 @@ export default function Manifesto() {
             >
               {act.eyebrow}
             </p>
-            <div className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-semibold tracking-[-0.03em] leading-[1.02] max-w-4xl mx-auto">
+            <div className="text-[2rem] sm:text-5xl md:text-7xl lg:text-8xl font-semibold tracking-[-0.03em] leading-[1.05] sm:leading-[1.02] max-w-4xl mx-auto">
               <span className="block overflow-hidden pb-[0.12em]">
                 <span data-reveal className="block">
                   {act.line1}
