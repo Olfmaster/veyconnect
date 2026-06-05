@@ -7,7 +7,7 @@ import Image from "next/image";
 const links = [
   { href: "/leistungen", label: "Leistungen" },
   { href: "/partner", label: "Partner" },
-  { href: "/vertrauen", label: "Vertrauen" },
+  { href: "/ueber-uns", label: "Über uns" },
   { href: "/region", label: "Region" },
   { href: "/faq", label: "FAQ" },
   { href: "/kontakt", label: "Kontakt" },

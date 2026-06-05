@@ -41,7 +41,7 @@ const details = {
     title: "Brandschutz &",
     accent: "Gefahrenprävention.",
     intro:
-      "Vernetzte Rauchmelder, CO- und Gasmelder, Hausnotruf­systeme — normgerecht, versicherungs­konform und dokumentiert.",
+      "Vernetzte Rauchmelder, CO- und Gasmelder, Hausnotruf­systeme — normgerecht installiert und vollständig dokumentiert.",
     image: "/smoke-detector-and-remotes-on-blueprint.webp",
     image2: "/brandschutz.webp",
     metaTitle: "Brandschutz & Gefahrenprävention",
@@ -62,7 +62,7 @@ const details = {
       },
       {
         title: "Brandschutz­konzept Bestand",
-        text: "Planung für Altbau und Bestand — abgestimmt auf vorhandene Substanz und Versicherer­anforderungen.",
+        text: "Planung für Altbau und Bestand — abgestimmt auf vorhandene Substanz und örtliche Gegebenheiten.",
       },
     ],
     next: { slug: "zutrittskontrolle", label: "Zutrittskontrolle & Türsysteme" },
@@ -108,7 +108,7 @@ const details = {
     image2: "/brandschutz.webp",
     metaTitle: "Altbau-Modernisierung & Sicherheitsnachrüstung",
     metaDesc:
-      "Sicherheitsnachrüstung für Bestandsbauten — Befundung, Sensorik-Nachrüstung, Schließtechnik und Brandmelder, dokumentiert und versicherungs­konform.",
+      "Sicherheitsnachrüstung für Bestandsbauten — Befundung, Sensorik-Nachrüstung, Schließtechnik und Brandmelder, vollständig dokumentiert.",
     bullets: [
       {
         title: "Befundung & Sicherheitskonzept",
@@ -123,8 +123,8 @@ const details = {
         text: "Elektronische Zylinder, Mehrfach­verriegelung, Video-Türsprechanlagen — Bestand erhalten, Sicherheit erhöhen.",
       },
       {
-        title: "Versicherungs­taugliche Dokumentation",
-        text: "Anlagen­dokumentation, Konfiguration und Fotodokumentation — falls der Versicherer fragt, haben Sie die Antworten.",
+        title: "Vollständige Dokumentation",
+        text: "Anlagen­dokumentation, Konfiguration und Fotodokumentation — lückenlos nachvollziehbar, wenn Sie später Nachweise brauchen.",
       },
     ],
     next: { slug: "smart-home", label: "Smarte Sicherheitsintegration" },
@@ -166,29 +166,31 @@ export function generateStaticParams() {
   return Object.keys(details).map((slug) => ({ slug }));
 }
 
-export function generateMetadata({ params }) {
-  const d = details[params.slug];
+export async function generateMetadata({ params }) {
+  const { slug } = await params;
+  const d = details[slug];
   if (!d) return {};
   return {
     title: d.metaTitle,
     description: d.metaDesc,
-    alternates: { canonical: `/leistungen/${params.slug}` },
+    alternates: { canonical: `/leistungen/${slug}` },
   };
 }
 
 const SITE_URL = "https://www.veyconnect.de";
 
-export default function ServiceDetailPage({ params }) {
-  const d = details[params.slug];
+export default async function ServiceDetailPage({ params }) {
+  const { slug } = await params;
+  const d = details[slug];
   if (!d) notFound();
 
   const serviceSchema = {
     "@context": "https://schema.org",
     "@type": "Service",
-    "@id": `${SITE_URL}/leistungen/${params.slug}#service`,
+    "@id": `${SITE_URL}/leistungen/${slug}#service`,
     name: d.metaTitle,
     description: d.metaDesc,
-    url: `${SITE_URL}/leistungen/${params.slug}`,
+    url: `${SITE_URL}/leistungen/${slug}`,
     image: `${SITE_URL}${d.image}`,
     serviceType: d.metaTitle,
     areaServed: { "@type": "AdministrativeArea", name: "Rhein-Main-Gebiet" },
@@ -209,7 +211,7 @@ export default function ServiceDetailPage({ params }) {
     itemListElement: [
       { "@type": "ListItem", position: 1, name: "Startseite", item: SITE_URL },
       { "@type": "ListItem", position: 2, name: "Leistungen", item: `${SITE_URL}/leistungen` },
-      { "@type": "ListItem", position: 3, name: d.metaTitle, item: `${SITE_URL}/leistungen/${params.slug}` },
+      { "@type": "ListItem", position: 3, name: d.metaTitle, item: `${SITE_URL}/leistungen/${slug}` },
     ],
   };
 

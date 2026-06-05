@@ -16,9 +16,9 @@ const jetbrains = JetBrains_Mono({
 });
 
 const SITE_URL = "https://www.veyconnect.de";
-const TITLE = "veyconnect — VeySecure · Intelligente Sicherheitssysteme im Rhein-Main-Gebiet";
+const TITLE = "veyconnect · Intelligente Sicherheitssysteme im Rhein-Main-Gebiet";
 const DESCRIPTION =
-  "VeySecure ist die Sicherheitswelt von veyconnect — Einbruchschutz, Brandschutz, Zutrittskontrolle und smarte Sicherheit. Zertifizierter Partner von AJAX Systems. Hauptsitz Niederdorfelden, Servicegebiet Rhein-Main.";
+  "veyconnect — Einbruchschutz, Brandschutz, Zutrittskontrolle und smarte Sicherheit. Zertifizierter Partner von AJAX Systems. Hauptsitz Niederdorfelden, Servicegebiet Rhein-Main.";
 
 export const metadata = {
   metadataBase: new URL(SITE_URL),
@@ -38,7 +38,6 @@ export const metadata = {
     "AJAX Systems",
     "Gira KNX",
     "Brandschutz",
-    "VeySecure",
     "Rhein-Main",
     "Niederdorfelden",
     "Frankfurt",

@@ -17,7 +17,7 @@ export default function LeistungenPage() {
         eyebrow="/ Leistungen"
         title="Sicherheits­lösungen"
         accent="aus einer Hand."
-        intro="Vom Funkalarm über die Türsprechanlage bis hin zum vernetzten UniFi-Backbone: VeySecure plant, installiert und wartet alle Gewerke selbst. Keine Schnittstellen, kein Verantwortungs-Ping-Pong."
+        intro="Vom Funkalarm über die Türsprechanlage bis hin zum vernetzten UniFi-Backbone: veyconnect plant, installiert und wartet alle Gewerke selbst. Keine Schnittstellen, kein Verantwortungs-Ping-Pong."
       >
         <div className="flex flex-wrap gap-4">
           <Link href="/kontakt" className="btn-tech btn-tech-solid">

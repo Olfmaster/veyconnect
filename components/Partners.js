@@ -116,7 +116,7 @@ export default function Partners() {
                   <span>Mehr zu unseren Partnern</span>
                   <span aria-hidden="true">→</span>
                 </Link>
-                <Link href="/leistungen/einbruchschutz" className="btn-tech">
+                <Link href="/leistungen" className="btn-tech">
                   <span>AJAX im Einsatz</span>
                 </Link>
               </div>

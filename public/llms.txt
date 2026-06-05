@@ -1,9 +1,9 @@
-# veyconnect / VeySecure
+# veyconnect
 
 > Sicherheitstechnik-Fachbetrieb aus Niederdorfelden im Rhein-Main-Gebiet. Zertifizierter Premium-Partner von AJAX Systems. Spezialisiert auf Einbruchschutz, Videoüberwachung, Brandschutz, Zutrittskontrolle, Smart-Home-Integration und Sicherheits­modernisierung im Bestandsbau.
 
 ## Über das Unternehmen
-- Firma: veyconnect (Marke der Sicherheitswelt: VeySecure)
+- Firma: veyconnect
 - Gegründet: 2023
 - Hauptsitz: Niederdorfelden, Hessen, Deutschland
 - Servicegebiet: Rhein-Main (Frankfurt am Main, Offenbach, Hanau, Bad Vilbel, Bad Homburg, Maintal, Bruchköbel, Mühlheim, Karben, Friedberg, Schöneck und Umgebung)
@@ -17,7 +17,7 @@
 - Einbruchschutz & Videoüberwachung: AJAX-Funkalarm, Kameras von Dahua, HIK Vision, Mobotix (4K + Thermalsicht + Telezoom), Bewegungs-, Glasbruch- und Gasmelder, Hausnotrufsysteme
 - Brandschutz & Gefahrenprävention: Funk-Rauchmeldernetz, CO- und Gasmelder, Hausnotrufsysteme, Brandschutz­konzept für Bestand
 - Zutrittskontrolle & Türsysteme: Video-Türsprechanlagen (Siedle, Doorbird), Fingerprint / Transponder / App, elektronische Schließanlagen, Torantriebe
-- Sicherheitsmodernisierung & Altbau: Befundung & Sicherheitskonzept, Sensorik & Funkalarm im Bestand, Schließ- & Türsicherung, versicherungstaugliche Dokumentation
+- Sicherheitsmodernisierung & Altbau: Befundung & Sicherheitskonzept, Sensorik & Funkalarm im Bestand, Schließ- & Türsicherung, vollständige Anlagendokumentation
 - Elektroarbeiten: Für klassische Elektroinstallation arbeitet veyconnect mit einem zertifizierten Elektromeister-Partnerbetrieb zusammen — alles aus einer Hand, ohne Schnittstellenverlust
 - Smarte Sicherheitsintegration: UniFi-Netzwerk, KNX, smarte Türschlösser, Richtfunk / Starlink / 5G-LTE, Präsenz­simulation
 
@@ -35,8 +35,7 @@
 ## Häufige Fragen (Auswahl)
 - Was kostet eine AJAX Alarmanlage? — Kleine Wohnungs-Lösung mit Hub + 2–3 Sensoren startet im niedrigen vierstelligen Bereich. Einfamilienhaus mit Außensicherung höher. Kostenlose Vor-Ort-Beratung mit Sicherheits­analyse vor verbindlichem Angebot.
 - Wie schnell ist veyconnect vor Ort? — In der Servicregion Rhein-Main innerhalb weniger Tage. 24/7 Notfall­erreichbarkeit für bestehende Anlagen.
-- KfW-Förderung Einbruchschutz? — Förderung im Programm 455-E möglich, veyconnect liefert Verwendungsnachweise.
-- Versicherungs­rabatt? — VDS-konforme Anlage + Konformitäts­bescheinigung führen häufig zu Rabatten bei Wohngebäude- und Hausratversicherung.
+- Wartung & Service? — Regelmäßige Wartung, Batterietausch, Firmware-Updates und Anlagenerweiterungen; Bestandskunden mit Vorrang bei Notfall-Einsätzen.
 
 ## Hauptseiten
 - Startseite: https://www.veyconnect.de/
@@ -47,7 +46,7 @@
 - Sicherheitsmodernisierung & Altbau: https://www.veyconnect.de/leistungen/altbau
 - Smarte Sicherheitsintegration: https://www.veyconnect.de/leistungen/smart-home
 - Partner: https://www.veyconnect.de/partner
-- Vertrauen / Über uns: https://www.veyconnect.de/vertrauen
+- Über uns: https://www.veyconnect.de/ueber-uns
 - Servicegebiet: https://www.veyconnect.de/region
 - FAQ: https://www.veyconnect.de/faq
 - Kontakt: https://www.veyconnect.de/kontakt

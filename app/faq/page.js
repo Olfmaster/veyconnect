@@ -10,11 +10,11 @@ const categories = [
     label: "Leistungen & Angebot",
     items: [
       {
-        q: "Was macht veyconnect / VeySecure genau?",
-        a: "VeySecure ist die Sicherheitswelt von veyconnect. Wir planen, installieren und warten Einbruchmeldeanlagen, Videoüberwachung, Brandschutz, Zutrittskontrolle, Smart-Home-Integration und Sicherheitsmodernisierung im Bestandsbau. Alles aus einer Hand, als Sicherheitstechnik-Fachbetrieb mit zertifiziertem Elektromeister-Partner.",
+        q: "Was macht veyconnect genau?",
+        a: "veyconnect plant, installiert und wartet Einbruchmeldeanlagen, Videoüberwachung, Brandschutz, Zutrittskontrolle, Smart-Home-Integration und Sicherheitsmodernisierung im Bestandsbau. Alles aus einer Hand, als Sicherheitstechnik-Fachbetrieb mit zertifiziertem Elektromeister-Partner.",
       },
       {
-        q: "Für wen ist VeySecure?",
+        q: "Für wen ist veyconnect?",
         a: "Wir arbeiten für Privatkund:innen (Einfamilienhaus, Eigentumswohnung, Altbau, Ferienobjekt), KMU (Praxen, Werkstätten, Büros, Lager) und gewerbliche Liegenschaften. Größenordnung typischerweise von der einzelnen Funkalarm-Lösung bis zur vernetzten Mehrobjekt-Anlage.",
       },
       {
@@ -23,7 +23,7 @@ const categories = [
       },
       {
         q: "Macht ihr auch klassische Elektroinstallation?",
-        a: "Für Elektroarbeiten arbeiten wir mit einem zertifizierten Elektromeister-Betrieb zusammen. So bleibt VeySecure auf das fokussiert, was wir am besten können — Sicherheits- und Gebäudesystemtechnik — und Sie bekommen trotzdem alles aus einer Hand.",
+        a: "Für Elektroarbeiten arbeiten wir mit einem zertifizierten Elektromeister-Betrieb zusammen. So bleibt veyconnect auf das fokussiert, was wir am besten können — Sicherheits- und Gebäudesystemtechnik — und Sie bekommen trotzdem alles aus einer Hand.",
       },
     ],
   },
@@ -77,25 +77,11 @@ const categories = [
       },
       {
         q: "Was ist im Brandschutz alles enthalten?",
-        a: "Funk-Rauchmeldernetz (alle Räume in einem Verbund), CO- und Gasmelder, optional Hausnotrufsysteme und vernetzte Warnmelder. Brandschutz­konzept und Dokumentation für Versicherer auf Wunsch inklusive.",
+        a: "Funk-Rauchmeldernetz (alle Räume in einem Verbund), CO- und Gasmelder, optional Hausnotrufsysteme und vernetzte Warnmelder. Brandschutz­konzept und vollständige Anlagendokumentation auf Wunsch inklusive.",
       },
       {
         q: "Kann ich die Anlage später erweitern?",
         a: "Ja. AJAX-Systeme sind modular skalierbar. Neue Sensoren werden per App in wenigen Minuten ins bestehende System aufgenommen. Gleiches gilt für Türsprechanlagen, Zutrittskontrolle und UniFi-Netzwerk-Komponenten.",
-      },
-    ],
-  },
-  {
-    id: "preise",
-    label: "Förderung & Versicherung",
-    items: [
-      {
-        q: "Gibt es Förderung für Sicherheitstechnik?",
-        a: "Ja. Die KfW fördert Einbruchschutz im Programm 455-E (Investitions­zuschuss) bis zu einer Maximalförderung. Wir beraten zur Antragstellung und liefern alle nötigen Unterlagen für den Verwendungsnachweis. Förderbedingungen ändern sich — der aktuelle Stand wird im Beratungsgespräch geklärt.",
-      },
-      {
-        q: "Gibt es Rabatte bei der Hausratversicherung?",
-        a: "Viele Wohngebäude- und Hausratversicherer gewähren Rabatte für VDS-konforme Einbruchmeldeanlagen. Wir liefern auf Wunsch eine Konformitäts­bescheinigung und Anlage­dokumentation, die Sie bei der Versicherung einreichen können.",
       },
     ],
   },
@@ -126,7 +112,7 @@ const breadcrumbJsonLd = {
 export const metadata = {
   title: "FAQ — Häufige Fragen zu Alarmanlagen, AJAX & Sicherheits­technik",
   description:
-    "Antworten auf häufige Fragen zu Einbruchschutz, AJAX-Alarmanlagen, Videoüberwachung, Brandschutz, Zutrittskontrolle, Ablauf, Förderung und Versicherungsrabatten im Rhein-Main-Gebiet.",
+    "Antworten auf häufige Fragen zu Einbruchschutz, AJAX-Alarmanlagen, Videoüberwachung, Brandschutz, Zutrittskontrolle und Ablauf im Rhein-Main-Gebiet.",
   alternates: { canonical: "/faq" },
 };
 
@@ -137,7 +123,7 @@ export default function FAQPage() {
         eyebrow="/ FAQ"
         title="Häufige Fragen,"
         accent="ehrliche Antworten."
-        intro="Was kostet eine Alarmanlage? Wie schnell sind wir vor Ort? Gibt es Förderung? Hier die Antworten auf die Fragen, die uns am häufigsten gestellt werden — strukturiert nach Themen."
+        intro="Was kostet eine Alarmanlage? Wie schnell sind wir vor Ort? Wie läuft eine Installation ab? Hier die Antworten auf die Fragen, die uns am häufigsten gestellt werden — strukturiert nach Themen."
       >
         <nav aria-label="FAQ Kategorien" className="flex flex-wrap gap-2 sm:gap-3">
           {categories.map((c) => (

@@ -13,7 +13,7 @@ const points = [
   },
   {
     title: "Fehlender Brandschutz",
-    text: "Ohne normgerechte, vernetzte Rauchmelder drohen Personenschäden und Versicherungsausschluss im Schadensfall — gerade in Bestandsbauten.",
+    text: "Ohne normgerechte, vernetzte Rauchmelder bleibt im Brandfall wertvolle Zeit zur Warnung ungenutzt — Personenschäden drohen, gerade in Bestandsbauten.",
   },
   {
     title: "Fragmentierte Systeme",
@@ -21,7 +21,7 @@ const points = [
   },
   {
     title: "Haftungsrisiken im Gewerbe",
-    text: "DIN-, VDE- und IEC-Verstöße führen zu Versicherungslücken, Maschinenstillstand und persönlicher Haftung des Geschäftsführers.",
+    text: "DIN-, VDE- und IEC-Verstöße führen zu Maschinenstillstand, Betriebsunterbrechung und persönlicher Haftung des Geschäftsführers.",
   },
   {
     title: "Unsicherheit bei Altbau-Sanierung",
@@ -100,7 +100,7 @@ export default function PainPoints() {
         </div>
 
         <p data-anim className="mt-12 max-w-2xl text-base md:text-lg text-zinc-300 leading-relaxed">
-          Wer bei VeySecure kauft, kauft <span className="text-white font-medium">Risikominimierung</span> —
+          Wer bei veyconnect kauft, kauft <span className="text-white font-medium">Risikominimierung</span> —
           fachlich geplant von einem Sicherheitstechnik-Fachbetrieb, der ganzheitlich
           denkt: vom Sensor an der Tür bis zur Cloud, mit Elektro-Partner für alles
           dazwischen.

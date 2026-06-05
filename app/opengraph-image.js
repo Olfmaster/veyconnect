@@ -1,6 +1,6 @@
 ﻿import { ImageResponse } from "next/og";
 
-export const alt = "veyconnect · VeySecure — Intelligente Sicherheitssysteme";
+export const alt = "veyconnect — Intelligente Sicherheitssysteme";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -41,7 +41,7 @@ export default async function Image() {
               display: "flex",
             }}
           />
-          <span style={{ display: "flex" }}>VeySecure · Premium-Partner AJAX Systems</span>
+          <span style={{ display: "flex" }}>veyconnect · Premium-Partner AJAX Systems</span>
         </div>
 
         <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>

@@ -11,28 +11,24 @@ const coreServices = [
     title: "Smarte Sicherheits­integration",
     desc: "UniFi, KNX, AJAX und Cloud — alles aus einer Hand vernetzt und zentral steuerbar.",
     image: "/smart-sicherheitsintegration.webp",
-    href: "/leistungen/smart-home",
   },
   {
     id: "02",
     title: "Einbruchschutz & Videoüberwachung",
     desc: "AJAX-Funkalarm, 4K-Kameras von Dahua, HIK Vision, Mobotix — bis Thermal- und Telezoom.",
     image: "/einbruch-ueberwachungssystem.webp",
-    href: "/leistungen/einbruchschutz",
   },
   {
     id: "03",
     title: "Brandschutz & Gefahrenprävention",
-    desc: "Vernetzte Rauchmelder, CO- und Gasmelder, Hausnotrufsysteme — normgerecht & versichert.",
+    desc: "Vernetzte Rauchmelder, CO- und Gasmelder, Hausnotrufsysteme — normgerecht & vernetzt.",
     image: "/smoke-detector-and-remotes-on-blueprint.webp",
-    href: "/leistungen/brandschutz",
   },
   {
     id: "04",
     title: "Zutrittskontrolle & Türsysteme",
     desc: "Siedle & Doorbird Sprechanlagen, Fingerprint, Transponder, Torantriebe.",
     image: "/tuersysteme.webp",
-    href: "/leistungen/zutrittskontrolle",
   },
 ];
 
@@ -145,7 +141,7 @@ export default function Hero() {
             {coreServices.map((s, i) => (
               <Link
                 key={s.id}
-                href={s.href}
+                href="/leistungen"
                 ref={(el) => (cardsRef.current[i] = el)}
                 className="vc-pre-reveal group relative block text-left rounded-2xl overflow-hidden border border-white/10 bg-[#0c0c0c] hover:border-[#9162a4]/60 transition-all duration-300 hover:-translate-y-0.5"
               >

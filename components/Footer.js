@@ -25,12 +25,12 @@ export default function Footer() {
         </div>
 
         <div className="md:col-span-3">
-          <p className="label-mono text-zinc-400 mb-4">VeySecure</p>
+          <p className="label-mono text-zinc-400 mb-4">Leistungen</p>
           <ul className="space-y-2.5">
-            <li><Link href="/leistungen/einbruchschutz" className="hover:text-white transition-colors">Einbruchschutz</Link></li>
-            <li><Link href="/leistungen/brandschutz" className="hover:text-white transition-colors">Brandschutz</Link></li>
-            <li><Link href="/leistungen/zutrittskontrolle" className="hover:text-white transition-colors">Zutrittskontrolle</Link></li>
-            <li><Link href="/leistungen/smart-home" className="hover:text-white transition-colors">Smarte Sicherheit</Link></li>
+            <li><Link href="/leistungen" className="hover:text-white transition-colors">Einbruchschutz</Link></li>
+            <li><Link href="/leistungen" className="hover:text-white transition-colors">Brandschutz</Link></li>
+            <li><Link href="/leistungen" className="hover:text-white transition-colors">Zutrittskontrolle</Link></li>
+            <li><Link href="/leistungen" className="hover:text-white transition-colors">Smarte Sicherheit</Link></li>
             <li><Link href="/leistungen" className="hover:text-white transition-colors">Alle Leistungen</Link></li>
           </ul>
         </div>
@@ -39,7 +39,7 @@ export default function Footer() {
           <p className="label-mono text-zinc-400 mb-4">Unternehmen</p>
           <ul className="space-y-2.5">
             <li><Link href="/partner" className="hover:text-white transition-colors">Partner</Link></li>
-            <li><Link href="/vertrauen" className="hover:text-white transition-colors">Vertrauen</Link></li>
+            <li><Link href="/ueber-uns" className="hover:text-white transition-colors">Über uns</Link></li>
             <li><Link href="/region" className="hover:text-white transition-colors">Region</Link></li>
             <li><Link href="/faq" className="hover:text-white transition-colors">FAQ</Link></li>
             <li><Link href="/kontakt" className="hover:text-white transition-colors">Kontakt</Link></li>

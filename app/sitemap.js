@@ -20,7 +20,7 @@ export default function sitemap() {
       priority: 0.8,
     })),
     { url: `${BASE}/partner`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
-    { url: `${BASE}/vertrauen`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
+    { url: `${BASE}/ueber-uns`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
     { url: `${BASE}/region`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
     { url: `${BASE}/faq`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
     { url: `${BASE}/kontakt`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },

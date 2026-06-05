@@ -92,7 +92,7 @@ export default function PartnerPage() {
                   ))}
                 </ul>
                 <div className="mt-9 flex flex-wrap gap-4">
-                  <Link href="/leistungen/einbruchschutz" className="btn-tech btn-tech-solid">
+                  <Link href="/leistungen" className="btn-tech btn-tech-solid">
                     <span>AJAX im Einsatz</span>
                     <span aria-hidden="true">→</span>
                   </Link>

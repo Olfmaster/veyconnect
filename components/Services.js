@@ -1,8 +1,9 @@
 ﻿"use client";
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { gsap } from "@/lib/gsap";
+import ServiceDetailPanel from "@/components/ServiceDetailPanel";
 
 const services = [
   {
@@ -18,6 +19,23 @@ const services = [
       "Hausnotrufsysteme",
     ],
     image: "/einbruch-ueberwachungssystem.webp",
+    detail: {
+      cat: "Einbruch & Video",
+      lead: "AJAX-Funkalarm, 4K-Videoüberwachung von Dahua, HIK Vision und Mobotix — bis hin zu Thermalsicht und optischem Telezoom für Außenanlagen, Logistik und weitläufige Objekte.",
+      tags: ["AJAX Premium-Partner", "4K + Thermal", "VDS-konform", "DSGVO-konform"],
+      note: "Als zertifizierter AJAX-Premium-Partner haben wir direkten Herstellerzugang, neueste Firmware und ausschließlich Original-Komponenten.",
+      sections: [
+        {
+          title: "Leistungsumfang",
+          items: [
+            { t: "AJAX Alarmanlagen", d: "Funkbasiert, schnell installiert, batteriearm — als zertifizierter Premium-Partner direkt vom Hersteller." },
+            { t: "Videoüberwachung 4K + Thermal", d: "Dahua, HIK Vision, Mobotix — auch Außenanlagen mit Telezoom und Wärmebild für absolute Dunkelheit." },
+            { t: "Bewegungs-, Glasbruch- & Gasmelder", d: "Sensorik für jeden Anwendungsfall, eingebunden in eine zentrale App." },
+            { t: "Hausnotrufsysteme", d: "Diskrete Notruflösungen für Privatpersonen und betreutes Wohnen." },
+          ],
+        },
+      ],
+    },
   },
   {
     number: "02",
@@ -32,6 +50,23 @@ const services = [
       "Konzept für Bestandsbauten",
     ],
     image: "/smoke-detector-and-remotes-on-blueprint.webp",
+    detail: {
+      cat: "Brandschutz",
+      lead: "Vernetzte Rauchmelder, CO- und Gasmelder, Hausnotrufsysteme — normgerecht installiert und vollständig dokumentiert.",
+      tags: ["Funkvernetzt", "Normgerecht", "Dokumentiert", "Bestand & Altbau"],
+      note: "Ohne normgerechte, vernetzte Rauchmelder bleibt im Brandfall wertvolle Zeit zur Warnung ungenutzt — Personenschäden drohen, gerade in Bestandsbauten.",
+      sections: [
+        {
+          title: "Leistungsumfang",
+          items: [
+            { t: "Funk-Rauchmeldernetz", d: "Alle Räume in einem Verbund — wenn einer auslöst, hören Sie es überall." },
+            { t: "CO- & Gasmelder", d: "Frühwarnung vor Kohlenmonoxid und Gaslecks — vernetzt mit Alarm- und Hausautomation." },
+            { t: "Hausnotrufsysteme", d: "Diskrete Notruflösungen für Privatpersonen, betreutes Wohnen und alleinarbeitende Personen." },
+            { t: "Brandschutzkonzept Bestand", d: "Planung für Altbau und Bestand — abgestimmt auf vorhandene Substanz und örtliche Gegebenheiten." },
+          ],
+        },
+      ],
+    },
   },
   {
     number: "03",
@@ -46,6 +81,23 @@ const services = [
       "Torantriebe",
     ],
     image: "/tuersysteme.webp",
+    detail: {
+      cat: "Zutritt",
+      lead: "Sprechanlagen von Siedle und Doorbird, elektronische Zutrittskontrolle mit Fingerprint, Transponder oder App. Torantriebe und Schließanlagen integriert.",
+      tags: ["Siedle", "Doorbird", "Fingerprint / App", "Skalierbar"],
+      note: "Vergessene oder kopierte Schlüssel sind ein unterschätztes Risiko — elektronische Zutrittssysteme lassen sich jederzeit zentral anpassen.",
+      sections: [
+        {
+          title: "Leistungsumfang",
+          items: [
+            { t: "Video-Türsprechanlagen", d: "Siedle, Doorbird & Co. — mit Smartphone-Anbindung, auch unterwegs immer im Bild." },
+            { t: "Fingerprint / Transponder / App", d: "Vergessene Schlüssel adé — moderne Zutrittssysteme, individuell programmierbar." },
+            { t: "Elektronische Schließanlagen", d: "Skalierbar für Mehrfamilienhäuser, Praxen, Werkstätten oder kleine Gewerbeobjekte." },
+            { t: "Torantriebe & Außenanlagen", d: "Schiebetore, Drehflügel, Schranken — vernetzt mit der zentralen Steuerung." },
+          ],
+        },
+      ],
+    },
   },
   {
     number: "04",
@@ -57,9 +109,26 @@ const services = [
       "Befundung & Sicherheitskonzept",
       "Nachrüstung Bestandsbauten",
       "Sensorik & Türsicherung",
-      "Versicherungstaugliche Dokumentation",
+      "Vollständige Anlagendokumentation",
     ],
     image: "/altbau.webp",
+    detail: {
+      cat: "Altbau & Bestand",
+      lead: "Veraltete Schließtechnik, fehlende Sensorik, ungesicherte Außenanlagen — wir bringen Bestandsgebäude sicherheitstechnisch in die Gegenwart. Unser Spezialgebiet im Rhein-Main.",
+      tags: ["Bestandsbau", "Funknachrüstung", "Ohne Bauchaos", "Dokumentiert"],
+      note: "Funkbasierte Technik lässt sich im Bestand nachrüsten, ohne Wände aufzustemmen — schrittweise oder als Komplettpaket.",
+      sections: [
+        {
+          title: "Leistungsumfang",
+          items: [
+            { t: "Befundung & Sicherheitskonzept", d: "Was ist da überhaupt verbaut? Wir prüfen den Bestand und liefern einen klaren Maßnahmenkatalog." },
+            { t: "Sensorik & Funkalarm im Bestand", d: "AJAX-Funkanlagen, Bewegungs-, Glasbruch- und Öffnungsmelder — schrittweise oder als Komplettpaket, ohne große Bauarbeiten." },
+            { t: "Schließ- & Türsicherung", d: "Elektronische Zylinder, Mehrfachverriegelung, Video-Türsprechanlagen — Bestand erhalten, Sicherheit erhöhen." },
+            { t: "Vollständige Dokumentation", d: "Anlagendokumentation, Konfiguration und Fotodokumentation — lückenlos nachvollziehbar, wenn Sie später Nachweise brauchen." },
+          ],
+        },
+      ],
+    },
   },
   {
     number: "05",
@@ -74,6 +143,23 @@ const services = [
       "Präsenz­simulation & Szenen",
     ],
     image: "/smart-sicherheitsintegration.webp",
+    detail: {
+      cat: "Smart Integration",
+      lead: "Mehrere Systeme zu einer Lösung verknüpft — UniFi-Netzwerk, KNX, smarte Türschlösser, Präsenzsimulation. Inkl. Internet, Starlink und 5G-Verstärkung für Tiefgaragen oder abgelegene Objekte.",
+      tags: ["UniFi", "KNX", "Starlink / 5G", "Eine App"],
+      note: "Insellösungen sind teuer in der Wartung und schwach in der Wirkung — wir führen alles in einer zentralen Steuerung zusammen.",
+      sections: [
+        {
+          title: "Leistungsumfang",
+          items: [
+            { t: "UniFi-Netzwerk & Video", d: "Stabile Netzinfrastruktur als Fundament für Kameras, Türen, Heizung und mehr." },
+            { t: "Smarte Türschlösser", d: "Schlüsselloser Zugang, Zeitfenster, Gäste-Codes — vom Privathaus bis zur Ferienwohnung." },
+            { t: "Richtfunk · Starlink · 5G/LTE", d: "Für abgelegene Objekte, Tiefgaragen oder Baustellen — wir sorgen für stabile Verbindung." },
+            { t: "Präsenzsimulation & Szenen", d: "Licht, Rollos und Geräte folgen einem realistischen Muster — auch wenn niemand zuhause ist." },
+          ],
+        },
+      ],
+    },
   },
 ];
 
@@ -81,6 +167,7 @@ export default function Services({ showHeader = true }) {
   const sectionRef = useRef(null);
   const headerRef = useRef(null);
   const cardsRef = useRef([]);
+  const [openService, setOpenService] = useState(null);
 
   useEffect(() => {
     const ctx = gsap.context(() => {
@@ -137,9 +224,8 @@ export default function Services({ showHeader = true }) {
 
       <div className="relative max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-4">
         {services.map((service, i) => (
-          <Link
+          <article
             key={service.number}
-            href={`/leistungen/${service.slug}`}
             ref={(el) => (cardsRef.current[i] = el)}
             className="group relative bg-[#0a0a0a] border border-white/10 rounded-2xl overflow-hidden flex flex-col hover:border-[#9162a4]/60 transition-all duration-300 hover:-translate-y-1"
           >
@@ -175,11 +261,18 @@ export default function Services({ showHeader = true }) {
                 aria-hidden="true"
                 className="mt-auto pt-4 label-mono text-[#9162a4] inline-flex items-center gap-2 transition-transform duration-300 origin-left group-hover:scale-110"
               >
-                Details
+                Details ansehen
                 <span className="transition-transform duration-300 group-hover:translate-x-1">→</span>
               </span>
             </div>
-          </Link>
+            <button
+              type="button"
+              onClick={() => setOpenService(service)}
+              aria-label={`${service.title} — Details ansehen`}
+              aria-haspopup="dialog"
+              className="absolute inset-0 z-10 rounded-2xl cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-[#9162a4]"
+            />
+          </article>
         ))}
 
         <article className="relative rounded-2xl border border-dashed border-[#9162a4]/30 bg-[#0c0c0c] flex flex-col gap-4 p-7 md:p-8 lg:col-span-1 sm:col-span-2 lg:col-auto">
@@ -200,6 +293,8 @@ export default function Services({ showHeader = true }) {
           </Link>
         </article>
       </div>
+
+      <ServiceDetailPanel service={openService} onClose={() => setOpenService(null)} />
     </section>
   );
 }
