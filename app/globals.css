@@ -1,5 +1,12 @@
 ﻿@import "tailwindcss";
 
+/* Bessere Lesbarkeit: Fließtext etwas größer (Überschriften ab text-lg bleiben). */
+@theme {
+  --text-xs: 0.8125rem;   /* 13px (war 12px) */
+  --text-sm: 0.9375rem;   /* 15px (war 14px) */
+  --text-base: 1.0625rem; /* 17px (war 16px) */
+}
+
 @theme inline {
   --font-sans: var(--font-sans), ui-sans-serif, system-ui, sans-serif;
   --font-mono: var(--font-mono), ui-monospace, "JetBrains Mono", monospace;
@@ -18,15 +25,66 @@
 
   --color-muted: #8a8a8a;
   --color-muted-soft: #4f4f4f;
+
+  /* ── Umschaltbare semantische Tokens (Dark/Light) ──
+     Werte kommen aus den :root / [data-theme] Blöcken unten,
+     daher MUSS dieser Block `inline` sein, damit Tailwind die
+     var()-Referenz emittiert und nicht den statischen Wert kopiert. */
+  --color-base: var(--base);          /* Seitenhintergrund */
+  --color-surface: var(--surface);    /* Karten / Panels */
+  --color-surface-2: var(--surface-2);/* Hover / erhöhte Flächen */
+  --color-fg: var(--fg);              /* starker Text */
+  --color-fg-muted: var(--fg-muted);  /* sekundärer Text */
+  --color-fg-faint: var(--fg-faint);  /* tertiärer Text */
+  --color-line: var(--line);          /* Ränder & dezente Tints (mit /opacity) */
 }
 
+/* ── Dark Mode (Default — die bisherige Version) ── */
 :root {
   --accent: #9162a4;
+
+  --base: #050505;
+  --surface: #0a0a0a;
+  --surface-2: #101010;
+  --fg: #ffffff;
+  --fg-muted: #d4d4d8;   /* ~zinc-300 */
+  --fg-faint: #a1a1aa;   /* ~zinc-400 */
+  --line: #ffffff;       /* weiße Ränder/Tints via /opacity */
+
+  color-scheme: dark;
+}
+
+/* ── Light Mode ── */
+[data-theme="light"] {
+  --base: #f4f4f1;       /* warmes Papier */
+  --surface: #ffffff;
+  --surface-2: #eceae5;
+  --fg: #0b0b0c;
+  --fg-muted: #3f3f46;   /* ~zinc-700 */
+  --fg-faint: #5f5f68;
+  --line: #0a0a0a;       /* schwarze Ränder/Tints via /opacity */
+
+  color-scheme: light;
 }
 
 html, body {
-  background-color: var(--color-ink);
-  color: #fff;
+  background-color: var(--base);
+  color: var(--fg);
+}
+
+/* Theme-abhängiges Logo: weiß im Dark, schwarz im Light */
+.theme-logo {
+  filter: brightness(0) invert(1);
+}
+[data-theme="light"] .theme-logo {
+  filter: brightness(0) invert(0);
+}
+
+/* sanfter Übergang beim Umschalten */
+html.theme-anim,
+html.theme-anim body,
+html.theme-anim *:not(.vc-fx-canvas) {
+  transition: background-color 0.35s ease, border-color 0.35s ease, color 0.35s ease;
 }
 
 body {
@@ -107,9 +165,9 @@ body {
       ellipse at 50% 40%,
       transparent 0%,
       transparent 25%,
-      rgba(5, 5, 5, 0.55) 55%,
-      rgba(5, 5, 5, 0.9) 80%,
-      #050505 100%
+      color-mix(in srgb, var(--base) 55%, transparent) 55%,
+      color-mix(in srgb, var(--base) 90%, transparent) 80%,
+      var(--base) 100%
     );
   pointer-events: none;
   z-index: 2;

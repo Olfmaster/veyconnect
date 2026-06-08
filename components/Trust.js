@@ -82,7 +82,7 @@ export default function Trust() {
     <section
       ref={sectionRef}
       id="vertrauen"
-      className="relative py-28 md:py-36 px-6 md:px-10 bg-[#050505] text-white overflow-hidden border-b border-white/5"
+      className="relative py-28 md:py-36 px-6 md:px-10 bg-base text-fg overflow-hidden border-b border-line/5"
     >
       <div aria-hidden="true" className="absolute inset-0 tech-grid opacity-50" />
 
@@ -96,19 +96,19 @@ export default function Trust() {
           </h2>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-px bg-white/5 border border-white/5 rounded-2xl overflow-hidden mb-14">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-px bg-line/5 border border-line/5 rounded-2xl overflow-hidden mb-14">
           {stats.map((stat, i) => (
             <div
               key={stat.label}
               data-anim
-              className="bg-[#0a0a0a] p-8 md:p-10 flex flex-col gap-2"
+              className="bg-surface p-8 md:p-10 flex flex-col gap-2"
             >
-              <p className="text-5xl md:text-6xl font-semibold tracking-[-0.03em] tabular-nums text-white">
+              <p className="text-5xl md:text-6xl font-semibold tracking-[-0.03em] tabular-nums text-fg">
                 <span ref={(el) => (numRefs.current[i] = el)} />
                 {stat.suffix && <span className="text-[#9162a4]">{stat.suffix}</span>}
               </p>
-              <p className="text-sm font-medium text-white mt-2">{stat.label}</p>
-              <p className="text-xs text-zinc-500">{stat.sub}</p>
+              <p className="text-sm font-medium text-fg mt-2">{stat.label}</p>
+              <p className="text-xs text-fg-faint">{stat.sub}</p>
             </div>
           ))}
         </div>
@@ -118,7 +118,7 @@ export default function Trust() {
             <article
               key={usp.title}
               data-anim
-              className="border border-white/10 bg-[#0a0a0a] rounded-2xl p-7 md:p-8 hover:border-[#9162a4]/40 transition-colors"
+              className="border border-line/10 bg-surface rounded-2xl p-7 md:p-8 hover:border-[#9162a4]/40 transition-colors"
             >
               <div className="flex items-start gap-4 mb-3">
                 <span className="w-8 h-8 shrink-0 rounded-full bg-[#9162a4]/10 border border-[#9162a4]/30 flex items-center justify-center text-[#9162a4]">
@@ -126,9 +126,9 @@ export default function Trust() {
                     <path d="m5 12 5 5L20 7" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                   </svg>
                 </span>
-                <h3 className="text-lg font-semibold tracking-tight text-white">{usp.title}</h3>
+                <h3 className="text-lg font-semibold tracking-tight text-fg">{usp.title}</h3>
               </div>
-              <p className="text-sm text-zinc-400 leading-relaxed pl-12">{usp.text}</p>
+              <p className="text-sm text-fg-muted leading-relaxed pl-12">{usp.text}</p>
             </article>
           ))}
         </div>
@@ -137,7 +137,7 @@ export default function Trust() {
           {badges.map((badge) => (
             <li
               key={badge}
-              className="label-mono px-3.5 py-2 border border-white/10 rounded-full text-zinc-300 bg-[#0a0a0a]"
+              className="label-mono px-3.5 py-2 border border-line/10 rounded-full text-fg-muted bg-surface"
             >
               <span aria-hidden="true" className="inline-block w-1.5 h-1.5 rounded-full bg-[#9162a4] mr-2 align-middle" />
               {badge}

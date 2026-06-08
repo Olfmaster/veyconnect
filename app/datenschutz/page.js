@@ -21,7 +21,7 @@ export default function DatenschutzPage() {
           <TodoBlock label="ANSCHRIFT" hint="bitte vor Launch ergänzen" />
           <br />
           E-Mail:{" "}
-          <a href="mailto:info@veyconnect.de" className="text-white underline underline-offset-4 hover:text-[#9162a4] transition-colors">
+          <a href="mailto:info@veyconnect.de" className="text-fg underline underline-offset-4 hover:text-[#9162a4] transition-colors">
             info@veyconnect.de
           </a>
           <br />

@@ -29,12 +29,12 @@ export default function PartnerPage() {
       />
 
       {/* AJAX Premium Hero */}
-      <section className="relative bg-[#050505] py-20 md:py-28 px-6 md:px-10 border-b border-white/5 overflow-hidden">
+      <section className="relative bg-base py-20 md:py-28 px-6 md:px-10 border-b border-line/5 overflow-hidden">
         <div aria-hidden="true" className="absolute inset-0 tech-grid opacity-50" />
         <div aria-hidden="true" className="absolute inset-0 lime-glow opacity-60 pointer-events-none" />
 
         <div className="relative max-w-6xl mx-auto">
-          <div className="tech-corners rounded-3xl border border-[#9162a4]/30 bg-gradient-to-br from-[#0c0c0c] via-[#0a0a0a] to-black p-8 md:p-12 lg:p-16 relative overflow-hidden">
+          <div className="tech-corners rounded-3xl border border-[#9162a4]/30 bg-gradient-to-br from-surface via-surface to-base p-8 md:p-12 lg:p-16 relative overflow-hidden">
             <span className="tc-tl" />
             <span className="tc-br" />
 
@@ -45,7 +45,7 @@ export default function PartnerPage() {
                   Premium-Partner / Tier 01
                 </p>
 
-                <div className="inline-flex items-center justify-center w-full max-w-[340px] mb-8 rounded-2xl overflow-hidden border border-white/10">
+                <div className="inline-flex items-center justify-center w-full max-w-[340px] mb-8 rounded-2xl overflow-hidden border border-line/10">
                   <Image
                     src="/partner/ajax_logo.jpg"
                     alt="AJAX Systems"
@@ -55,11 +55,11 @@ export default function PartnerPage() {
                   />
                 </div>
 
-                <dl className="grid grid-cols-2 gap-px bg-white/5 border border-white/5 rounded-xl overflow-hidden text-sm">
+                <dl className="grid grid-cols-2 gap-px bg-line/5 border border-line/5 rounded-xl overflow-hidden text-sm">
                   {ajaxFacts.map((f) => (
-                    <div key={f.k} className="bg-[#0a0a0a] p-4">
-                      <dt className="label-mono text-zinc-500 mb-1">{f.k}</dt>
-                      <dd className="text-white font-medium">{f.v}</dd>
+                    <div key={f.k} className="bg-surface p-4">
+                      <dt className="label-mono text-fg-faint mb-1">{f.k}</dt>
+                      <dd className="text-fg font-medium">{f.v}</dd>
                     </div>
                   ))}
                 </dl>
@@ -69,14 +69,14 @@ export default function PartnerPage() {
                 <h2 className="text-3xl md:text-5xl font-semibold tracking-[-0.03em] leading-[1.05]">
                   AJAX Systems — <span className="text-[#9162a4]">wireless security, perfected.</span>
                 </h2>
-                <p className="mt-5 text-zinc-300 leading-relaxed">
+                <p className="mt-5 text-fg-muted leading-relaxed">
                   AJAX baut die wahrscheinlich saubersten Funk­alarmanlagen
                   der Welt — verschlüsselt, batterie­arm, schön gestaltet.
-                  Als <span className="text-white font-medium">zertifizierter Premium-Partner</span>{" "}
+                  Als <span className="text-fg font-medium">zertifizierter Premium-Partner</span>{" "}
                   installieren und konfigurieren wir das komplette
                   AJAX-Ökosystem aus einer Hand.
                 </p>
-                <ul className="mt-7 grid sm:grid-cols-2 gap-x-6 gap-y-3 text-sm text-zinc-300">
+                <ul className="mt-7 grid sm:grid-cols-2 gap-x-6 gap-y-3 text-sm text-fg-muted">
                   {[
                     "Funkalarm-Zentralen & Außensirenen",
                     "Bewegungs-, Glasbruch- & Brandmelder",
@@ -131,7 +131,7 @@ function PartnersOnlyGrid() {
     "KNX",
   ];
   return (
-    <section className="relative bg-[#050505] py-24 md:py-32 px-6 md:px-10 border-b border-white/5 overflow-hidden">
+    <section className="relative bg-base py-24 md:py-32 px-6 md:px-10 border-b border-line/5 overflow-hidden">
       <div aria-hidden="true" className="absolute inset-0 tech-grid opacity-40" />
       <div className="relative max-w-6xl mx-auto">
         <div className="grid md:grid-cols-12 gap-8 mb-12">
@@ -145,7 +145,7 @@ function PartnersOnlyGrid() {
           {logos.map((logo) => (
             <div
               key={logo.name}
-              className="relative aspect-square rounded-xl overflow-hidden border border-white/5 hover:scale-[1.02] transition-transform"
+              className="relative aspect-square rounded-xl overflow-hidden border border-line/5 hover:scale-[1.02] transition-transform"
             >
               <Image
                 src={logo.src}
@@ -162,7 +162,7 @@ function PartnersOnlyGrid() {
           {others.map((b) => (
             <li
               key={b}
-              className="label-mono px-3.5 py-2 border border-white/10 rounded-full text-zinc-300 bg-[#0a0a0a]"
+              className="label-mono px-3.5 py-2 border border-line/10 rounded-full text-fg-muted bg-surface"
             >
               <span aria-hidden="true" className="inline-block w-1.5 h-1.5 rounded-full bg-[#9162a4] mr-2 align-middle" />
               {b}

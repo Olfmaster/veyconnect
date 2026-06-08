@@ -61,7 +61,7 @@ export default function GoogleReviews() {
   return (
     <section
       id="bewertungen"
-      className="relative py-24 md:py-32 px-6 md:px-10 bg-[#050505] text-white overflow-hidden border-b border-white/5"
+      className="relative py-24 md:py-32 px-6 md:px-10 bg-base text-fg overflow-hidden border-b border-line/5"
       aria-label="Google-Bewertungen"
     >
       <div aria-hidden="true" className="absolute inset-0 tech-grid opacity-40" />
@@ -76,13 +76,13 @@ export default function GoogleReviews() {
           </div>
 
           <div className="md:col-span-5 flex flex-col gap-3 md:items-end">
-            <div className="inline-flex items-center gap-3 rounded-2xl border border-white/10 bg-[#0a0a0a] px-5 py-4">
+            <div className="inline-flex items-center gap-3 rounded-2xl border border-line/10 bg-surface px-5 py-4">
               <span className="text-4xl font-semibold tabular-nums tracking-[-0.03em]">
                 {RATING.toFixed(1).replace(".", ",")}
               </span>
               <span className="flex flex-col gap-1">
                 <Stars count={5} />
-                <span className="label-mono text-zinc-500">
+                <span className="label-mono text-fg-faint">
                   {REVIEW_COUNT}+ Google-Rezensionen
                 </span>
               </span>
@@ -94,7 +94,7 @@ export default function GoogleReviews() {
           {reviews.map((r, i) => (
             <figure
               key={i}
-              className="flex flex-col rounded-2xl border border-white/10 bg-[#0a0a0a] p-7 hover:border-[#9162a4]/40 transition-colors"
+              className="flex flex-col rounded-2xl border border-line/10 bg-surface p-7 hover:border-[#9162a4]/40 transition-colors"
             >
               <div className="flex items-center justify-between mb-4">
                 <Stars count={5} />
@@ -105,11 +105,11 @@ export default function GoogleReviews() {
                   <path fill="#6f4885" d="M12 6.4c1.3 0 2.5.5 3.4 1.3l2.6-2.6C16.5 3.7 14.4 2.9 12 2.9 8.6 2.9 5.6 4.8 4.2 7.6l2.3 1.8C7.2 7.2 9.2 6.4 12 6.4z" />
                 </svg>
               </div>
-              <blockquote className="text-sm text-zinc-300 leading-relaxed flex-1">
+              <blockquote className="text-sm text-fg-muted leading-relaxed flex-1">
                 „{r.quote}"
               </blockquote>
-              <figcaption className="mt-5 pt-4 border-t border-white/10 text-xs text-zinc-500">
-                <span className="text-white font-medium">{r.author}</span>
+              <figcaption className="mt-5 pt-4 border-t border-line/10 text-xs text-fg-faint">
+                <span className="text-fg font-medium">{r.author}</span>
                 {r.when ? ` · ${r.when}` : ""}
               </figcaption>
             </figure>

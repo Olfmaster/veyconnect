@@ -38,7 +38,7 @@ export default function Partners() {
     <section
       ref={sectionRef}
       id="partner"
-      className="relative bg-[#050505] text-white py-28 md:py-36 px-6 md:px-10 overflow-hidden border-t border-white/5"
+      className="relative bg-base text-fg py-28 md:py-36 px-6 md:px-10 overflow-hidden border-t border-line/5"
       aria-label="Partner und Herstellermarken"
     >
       <div aria-hidden="true" className="absolute inset-0 tech-grid opacity-50" />
@@ -53,7 +53,7 @@ export default function Partners() {
             <h2 data-anim className="text-3xl md:text-5xl font-semibold tracking-[-0.03em] max-w-3xl leading-[1.05]">
               Hersteller, denen wir vertrauen — und die uns vertrauen.
             </h2>
-            <p data-anim className="mt-5 max-w-2xl text-zinc-400 leading-relaxed">
+            <p data-anim className="mt-5 max-w-2xl text-fg-muted leading-relaxed">
               Direkter Herstellerzugang, neueste Firmware, Original-Komponenten und
               Premium-Support für unsere Kund:innen.
             </p>
@@ -63,7 +63,7 @@ export default function Partners() {
         {/* AJAX premium spotlight */}
         <div
           data-anim
-          className="relative tech-corners rounded-3xl border border-[#9162a4]/25 bg-gradient-to-br from-[#0c0c0c] via-[#0a0a0a] to-black p-6 md:p-10 mb-14 overflow-hidden"
+          className="relative tech-corners rounded-3xl border border-[#9162a4]/25 bg-gradient-to-br from-surface via-surface to-base p-6 md:p-10 mb-14 overflow-hidden"
         >
           <span className="tc-tl" />
           <span className="tc-br" />
@@ -91,14 +91,14 @@ export default function Partners() {
               <h3 className="text-2xl md:text-4xl font-semibold tracking-[-0.02em] leading-tight">
                 AJAX Systems — wireless security, perfected.
               </h3>
-              <p className="mt-4 text-zinc-300 leading-relaxed">
-                Als <span className="text-white font-medium">zertifizierter Premium-Partner</span>{" "}
+              <p className="mt-4 text-fg-muted leading-relaxed">
+                Als <span className="text-fg font-medium">zertifizierter Premium-Partner</span>{" "}
                 installieren und konfigurieren wir das komplette AJAX-Ökosystem:
                 Funkalarmanlagen, Außensirenen, Bewegungs-, Glasbruch- und
                 Brandmelder, Smart-Home-Steuerung — alles in einer App, alles
                 verschlüsselt, alles wartungsarm.
               </p>
-              <ul className="mt-6 grid sm:grid-cols-2 gap-x-6 gap-y-2.5 text-sm text-zinc-300">
+              <ul className="mt-6 grid sm:grid-cols-2 gap-x-6 gap-y-2.5 text-sm text-fg-muted">
                 {[
                   "Direkter Herstellerzugang",
                   "Originalkomponenten & Garantie",
@@ -129,7 +129,7 @@ export default function Partners() {
           {logos.map((logo) => (
             <div
               key={logo.name}
-              className="relative aspect-square rounded-xl overflow-hidden border border-white/5 hover:scale-[1.02] transition-transform"
+              className="relative aspect-square rounded-xl overflow-hidden border border-line/5 hover:scale-[1.02] transition-transform"
             >
               <Image
                 src={logo.src}
@@ -142,7 +142,7 @@ export default function Partners() {
           ))}
         </div>
 
-        <p data-anim className="mt-8 label-mono text-zinc-500 text-center">
+        <p data-anim className="mt-8 label-mono text-fg-faint text-center">
           ajax · gira · hager · siedle · doorbird · dahua · unifi · mobotix · hik vision · busch-jaeger · knx
         </p>
       </div>

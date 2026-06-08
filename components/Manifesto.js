@@ -52,7 +52,7 @@ export default function Manifesto() {
   return (
     <section
       ref={containerRef}
-      className="relative bg-[#050505] text-white py-24 md:py-32 px-6 md:px-10 overflow-hidden border-y border-white/5"
+      className="relative bg-base text-fg py-24 md:py-32 px-6 md:px-10 overflow-hidden border-y border-line/5"
       aria-label="Unser Vorgehen"
     >
       <div aria-hidden="true" className="absolute inset-0 tech-grid opacity-60" />

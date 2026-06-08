@@ -57,20 +57,20 @@ export default function UeberUnsPage() {
       />
 
       {/* Story / Person */}
-      <section className="relative bg-[#050505] text-white py-24 md:py-32 px-6 md:px-10 border-b border-white/5 overflow-hidden">
+      <section className="relative bg-base text-fg py-24 md:py-32 px-6 md:px-10 border-b border-line/5 overflow-hidden">
         <div aria-hidden="true" className="absolute inset-0 tech-grid opacity-40" />
         <div className="relative max-w-6xl mx-auto grid md:grid-cols-12 gap-10 md:gap-12 items-start">
           <div className="md:col-span-5">
-            <div className="relative aspect-[4/5] rounded-2xl overflow-hidden border border-white/10 bg-[#0a0a0a]">
+            <div className="relative aspect-[4/5] rounded-2xl overflow-hidden border border-line/10 bg-surface">
               {/* [Platzhalter] Foto: public/jan-vey.webp ablegen, oben `import Image from "next/image"` ergänzen und folgende Zeile aktivieren: */}
               {/* <Image src="/jan-vey.webp" alt="Jan Vey, Gründer von veyconnect" fill sizes="(min-width:768px) 40vw, 92vw" className="object-cover" /> */}
               <div className="absolute inset-0 flex items-center justify-center text-center p-8">
-                <span className="label-mono text-zinc-600">
+                <span className="label-mono text-fg-faint">
                   [ Platzhalter: Foto von Jan Vey ]
                 </span>
               </div>
             </div>
-            <p className="mt-4 label-mono text-zinc-500">
+            <p className="mt-4 label-mono text-fg-faint">
               Jan Vey · Gründer{/* [Platzhalter: Funktion/Titel] */}
             </p>
           </div>
@@ -82,7 +82,7 @@ export default function UeberUnsPage() {
               Sicherheitstechnik-Fachbetrieb.
             </h2>
 
-            <div className="mt-7 space-y-5 text-zinc-300 leading-relaxed text-base md:text-[1.05rem] max-w-2xl">
+            <div className="mt-7 space-y-5 text-fg-muted leading-relaxed text-base md:text-[1.05rem] max-w-2xl">
               <p>
                 {/* [Platzhalter] Wer ist Jan Vey? Werdegang, Ausbildung,
                     Stationen, Qualifikationen. 2–3 Sätze. */}
@@ -111,7 +111,7 @@ export default function UeberUnsPage() {
               ].map((badge) => (
                 <li
                   key={badge}
-                  className="label-mono px-3.5 py-2 border border-white/10 rounded-full text-zinc-300 bg-[#0a0a0a]"
+                  className="label-mono px-3.5 py-2 border border-line/10 rounded-full text-fg-muted bg-surface"
                 >
                   <span aria-hidden="true" className="inline-block w-1.5 h-1.5 rounded-full bg-[#9162a4] mr-2 align-middle" />
                   {badge}
@@ -123,7 +123,7 @@ export default function UeberUnsPage() {
       </section>
 
       {/* Werte / Haltung */}
-      <section className="relative bg-[#050505] text-white py-24 md:py-32 px-6 md:px-10 border-b border-white/5 overflow-hidden">
+      <section className="relative bg-base text-fg py-24 md:py-32 px-6 md:px-10 border-b border-line/5 overflow-hidden">
         <div aria-hidden="true" className="absolute inset-0 tech-grid opacity-40" />
         <div className="relative max-w-6xl mx-auto">
           <div className="grid md:grid-cols-12 gap-8 mb-14">
@@ -137,7 +137,7 @@ export default function UeberUnsPage() {
             {werte.map((w) => (
               <article
                 key={w.title}
-                className="border border-white/10 bg-[#0a0a0a] rounded-2xl p-7 md:p-8 hover:border-[#9162a4]/40 transition-colors"
+                className="border border-line/10 bg-surface rounded-2xl p-7 md:p-8 hover:border-[#9162a4]/40 transition-colors"
               >
                 <div className="flex items-start gap-4 mb-3">
                   <span className="w-8 h-8 shrink-0 rounded-full bg-[#9162a4]/10 border border-[#9162a4]/30 flex items-center justify-center text-[#9162a4]">
@@ -145,9 +145,9 @@ export default function UeberUnsPage() {
                       <path d="m5 12 5 5L20 7" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                     </svg>
                   </span>
-                  <h3 className="text-lg font-semibold tracking-tight text-white">{w.title}</h3>
+                  <h3 className="text-lg font-semibold tracking-tight text-fg">{w.title}</h3>
                 </div>
-                <p className="text-sm text-zinc-400 leading-relaxed pl-12">{w.text}</p>
+                <p className="text-sm text-fg-muted leading-relaxed pl-12">{w.text}</p>
               </article>
             ))}
           </div>

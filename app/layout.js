@@ -1,4 +1,5 @@
 ﻿import { Inter_Tight, JetBrains_Mono } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -67,8 +68,10 @@ export const metadata = {
 };
 
 export const viewport = {
-  themeColor: "#050505",
-  colorScheme: "dark",
+  themeColor: [
+    { media: "(prefers-color-scheme: dark)", color: "#050505" },
+    { media: "(prefers-color-scheme: light)", color: "#f4f4f1" },
+  ],
   width: "device-width",
   initialScale: 1,
 };
@@ -124,8 +127,18 @@ const jsonLd = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="de" className={`${interTight.variable} ${jetbrains.variable} h-full`}>
-      <body className="min-h-full antialiased bg-[#050505] text-white selection:bg-[#9162a4] selection:text-white">
+    <html
+      lang="de"
+      data-scroll-behavior="smooth"
+      suppressHydrationWarning
+      className={`${interTight.variable} ${jetbrains.variable} h-full`}
+    >
+      <head>
+        <Script id="theme-init" strategy="beforeInteractive">
+          {`(function(){try{var t=localStorage.getItem('theme');document.documentElement.dataset.theme=(t==='light'||t==='dark')?t:'dark';}catch(e){document.documentElement.dataset.theme='dark';}})();`}
+        </Script>
+      </head>
+      <body className="min-h-full antialiased bg-base text-fg selection:bg-[#9162a4] selection:text-white">
         <a
           href="#main"
           className="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:left-3 focus:z-[100] focus:px-4 focus:py-2 focus:rounded-full focus:bg-[#9162a4] focus:text-white focus:text-sm focus:shadow-lg"

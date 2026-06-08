@@ -36,7 +36,7 @@ export default function PageHero({ eyebrow, title, accent, intro, children }) {
   return (
     <section
       ref={ref}
-      className="relative bg-[#050505] text-white pt-32 md:pt-40 pb-16 md:pb-20 px-6 md:px-10 overflow-hidden border-b border-white/5"
+      className="relative bg-base text-fg pt-32 md:pt-40 pb-16 md:pb-20 px-6 md:px-10 overflow-hidden border-b border-line/5"
     >
       <div aria-hidden="true" className="absolute inset-0 tech-grid opacity-50" />
       <div aria-hidden="true" className="absolute inset-0 lime-glow opacity-50" />
@@ -74,7 +74,7 @@ export default function PageHero({ eyebrow, title, accent, intro, children }) {
           <p
             data-fade="intro"
             data-ready
-            className="vc-pre-reveal mt-6 max-w-2xl text-base md:text-lg text-zinc-300 leading-relaxed"
+            className="vc-pre-reveal mt-6 max-w-2xl text-base md:text-lg text-fg-muted leading-relaxed"
           >
             {intro}
           </p>

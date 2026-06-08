@@ -43,7 +43,7 @@ export default function Contact() {
     <section
       ref={sectionRef}
       id="kontakt"
-      className="relative py-28 md:py-36 px-6 md:px-10 bg-[#050505] text-white overflow-hidden"
+      className="relative py-28 md:py-36 px-6 md:px-10 bg-base text-fg overflow-hidden"
     >
       <div aria-hidden="true" className="absolute inset-0 tech-grid opacity-40" />
       <div aria-hidden="true" className="absolute inset-0 lime-glow" />
@@ -56,7 +56,7 @@ export default function Contact() {
           <h2 data-anim className="text-4xl md:text-6xl font-semibold tracking-[-0.03em] leading-[0.95] mb-8">
             Schützen, was Ihnen <span className="text-[#9162a4]">wichtig ist.</span>
           </h2>
-          <p data-anim className="text-zinc-300 leading-relaxed max-w-md mb-10">
+          <p data-anim className="text-fg-muted leading-relaxed max-w-md mb-10">
             Kostenlose Vor-Ort-Beratung mit Sicherheitsanalyse — eine kurze
             Beschreibung Ihres Vorhabens reicht. Wir melden uns innerhalb
             eines Werktages zurück.
@@ -64,20 +64,20 @@ export default function Contact() {
 
           <ul data-anim className="space-y-4 text-sm">
             <li className="flex items-start gap-3">
-              <span className="text-zinc-500 inline-block w-20 label-mono pt-1">E-Mail</span>
-              <a href="mailto:info@veyconnect.de" className="font-medium text-white hover:text-[#9162a4] transition-colors">
+              <span className="text-fg-faint inline-block w-20 label-mono pt-1">E-Mail</span>
+              <a href="mailto:info@veyconnect.de" className="font-medium text-fg hover:text-[#9162a4] transition-colors">
                 info@veyconnect.de
               </a>
             </li>
             <li className="flex items-start gap-3">
-              <span className="text-zinc-500 inline-block w-20 label-mono pt-1">Telefon</span>
-              <a href="tel:+4917624596941" className="font-medium text-white hover:text-[#9162a4] transition-colors">
+              <span className="text-fg-faint inline-block w-20 label-mono pt-1">Telefon</span>
+              <a href="tel:+4917624596941" className="font-medium text-fg hover:text-[#9162a4] transition-colors">
                 +49 176 24596941
               </a>
             </li>
             <li className="flex items-start gap-3">
-              <span className="text-zinc-500 inline-block w-20 label-mono pt-1">Region</span>
-              <span className="font-medium text-white">Rhein-Main · Niederdorfelden</span>
+              <span className="text-fg-faint inline-block w-20 label-mono pt-1">Region</span>
+              <span className="font-medium text-fg">Rhein-Main · Niederdorfelden</span>
             </li>
           </ul>
         </div>
@@ -85,7 +85,7 @@ export default function Contact() {
         <form
           data-anim
           action={formAction}
-          className="md:col-span-7 grid gap-7 bg-[#0a0a0a] border border-white/10 rounded-2xl p-8 md:p-10"
+          className="md:col-span-7 grid gap-7 bg-surface border border-line/10 rounded-2xl p-8 md:p-10"
         >
           <div className="grid sm:grid-cols-2 gap-7">
             <Field name="name" label="Name" required autoComplete="name" />
@@ -105,8 +105,8 @@ export default function Contact() {
             </p>
           )}
 
-          <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-5 pt-3 border-t border-white/5">
-            <p className="text-xs text-zinc-500 max-w-xs leading-relaxed">
+          <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-5 pt-3 border-t border-line/5">
+            <p className="text-xs text-fg-faint max-w-xs leading-relaxed">
               Mit dem Absenden stimmen Sie zu, dass wir Ihre Angaben zur
               Beantwortung Ihrer Anfrage verarbeiten.
             </p>
@@ -121,10 +121,10 @@ export default function Contact() {
 function Field({ name, label, type = "text", required, autoComplete, textarea }) {
   const id = `contact-${name}`;
   const inputBase =
-    "w-full bg-[#050505] border border-white/10 rounded-lg px-4 py-3 text-base text-white placeholder:text-zinc-600 focus:outline-none focus:border-[#9162a4] focus:ring-1 focus:ring-[#9162a4]/40 transition-colors";
+    "w-full bg-base border border-line/10 rounded-lg px-4 py-3 text-base text-fg placeholder:text-fg-faint focus:outline-none focus:border-[#9162a4] focus:ring-1 focus:ring-[#9162a4]/40 transition-colors";
   return (
     <div className="flex flex-col gap-2">
-      <label htmlFor={id} className="label-mono text-zinc-400">
+      <label htmlFor={id} className="label-mono text-fg-muted">
         {label}
       </label>
       {textarea ? (

@@ -4,7 +4,8 @@ import { useEffect, useRef } from "react";
 // Lightweight particle field with connection lines + subtle mouse repulsion.
 // Pure black background, white particles, lime-tinted connections to match brand.
 
-const PARTICLE_COLOR = "rgba(255, 255, 255, 0.55)";
+const PARTICLE_DARK = "rgba(255, 255, 255, 0.55)";
+const PARTICLE_LIGHT = "rgba(40, 40, 48, 0.45)";
 const LINE_RGB = "145, 98, 164"; // lime accent
 
 export default function HeroFX() {
@@ -22,6 +23,19 @@ export default function HeroFX() {
     let particles = [];
     const mouse = { x: null, y: null, radius: 130 };
     const dpr = Math.min(window.devicePixelRatio || 1, 2);
+
+    // Partikelfarbe folgt dem Theme (weiß im Dark, dunkel im Light).
+    let particleColor =
+      document.documentElement.dataset.theme === "light" ? PARTICLE_LIGHT : PARTICLE_DARK;
+    const themeObserver = new MutationObserver(() => {
+      particleColor =
+        document.documentElement.dataset.theme === "light" ? PARTICLE_LIGHT : PARTICLE_DARK;
+      if (prefersReduced) step(); // statischen Frame neu zeichnen
+    });
+    themeObserver.observe(document.documentElement, {
+      attributes: true,
+      attributeFilter: ["data-theme"],
+    });
 
     function resize() {
       const w = wrap.offsetWidth;
@@ -74,7 +88,7 @@ export default function HeroFX() {
         p.y += p.dy;
 
         ctx.beginPath();
-        ctx.fillStyle = PARTICLE_COLOR;
+        ctx.fillStyle = particleColor;
         ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
         ctx.fill();
       }
@@ -132,6 +146,7 @@ export default function HeroFX() {
 
     return () => {
       cancelAnimationFrame(raf);
+      themeObserver.disconnect();
       window.removeEventListener("pointermove", onMove);
       window.removeEventListener("pointerleave", onLeave);
       window.removeEventListener("resize", onResize);

@@ -239,19 +239,19 @@ export default async function ServiceDetailPage({ params }) {
       </PageHero>
 
       {/* Image showcase */}
-      <section className="relative bg-[#050505] py-20 md:py-28 px-6 md:px-10 border-b border-white/5">
+      <section className="relative bg-base py-20 md:py-28 px-6 md:px-10 border-b border-line/5">
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-4">
-          <div className="relative aspect-[4/3] rounded-2xl overflow-hidden border border-white/10">
+          <div className="relative aspect-[4/3] rounded-2xl overflow-hidden border border-line/10">
             <Image src={d.image} alt="" fill sizes="(min-width:768px) 50vw, 92vw" className="object-cover" />
           </div>
-          <div className="relative aspect-[4/3] rounded-2xl overflow-hidden border border-white/10">
+          <div className="relative aspect-[4/3] rounded-2xl overflow-hidden border border-line/10">
             <Image src={d.image2} alt="" fill sizes="(min-width:768px) 50vw, 92vw" className="object-cover" />
           </div>
         </div>
       </section>
 
       {/* Detail bullets */}
-      <section className="relative bg-[#050505] py-24 md:py-32 px-6 md:px-10 border-b border-white/5 overflow-hidden">
+      <section className="relative bg-base py-24 md:py-32 px-6 md:px-10 border-b border-line/5 overflow-hidden">
         <div aria-hidden="true" className="absolute inset-0 tech-grid opacity-40" />
         <div className="relative max-w-6xl mx-auto grid md:grid-cols-12 gap-8 md:gap-10">
           <div className="md:col-span-4">
@@ -259,7 +259,7 @@ export default async function ServiceDetailPage({ params }) {
             <h2 className="text-3xl md:text-4xl font-semibold tracking-[-0.03em] leading-[1.05]">
               Die volle <span className="text-[#9162a4]">Tiefe.</span>
             </h2>
-            <p className="mt-5 text-zinc-400 leading-relaxed text-sm">
+            <p className="mt-5 text-fg-muted leading-relaxed text-sm">
               Eine Auswahl der Komponenten und Verfahren, die wir in diesem
               Bereich planen und umsetzen.
             </p>
@@ -268,12 +268,12 @@ export default async function ServiceDetailPage({ params }) {
             {d.bullets.map((b) => (
               <li
                 key={b.title}
-                className="rounded-2xl border border-white/10 bg-[#0a0a0a] p-6 md:p-7 hover:border-[#9162a4]/40 transition-colors"
+                className="rounded-2xl border border-line/10 bg-surface p-6 md:p-7 hover:border-[#9162a4]/40 transition-colors"
               >
-                <h3 className="text-base md:text-lg font-semibold text-white tracking-tight mb-2">
+                <h3 className="text-base md:text-lg font-semibold text-fg tracking-tight mb-2">
                   {b.title}
                 </h3>
-                <p className="text-sm text-zinc-400 leading-relaxed">{b.text}</p>
+                <p className="text-sm text-fg-muted leading-relaxed">{b.text}</p>
               </li>
             ))}
           </ul>
@@ -281,12 +281,12 @@ export default async function ServiceDetailPage({ params }) {
       </section>
 
       {/* Next service */}
-      <section className="relative bg-[#050505] py-16 md:py-20 px-6 md:px-10 border-b border-white/5">
+      <section className="relative bg-base py-16 md:py-20 px-6 md:px-10 border-b border-line/5">
         <div className="max-w-6xl mx-auto flex items-center justify-between gap-4">
-          <p className="label-mono text-zinc-500">/ Weiter</p>
+          <p className="label-mono text-fg-faint">/ Weiter</p>
           <Link
             href={`/leistungen/${d.next.slug}`}
-            className="group inline-flex items-center gap-3 text-xl md:text-3xl font-semibold tracking-[-0.02em] text-white hover:text-[#9162a4] transition-colors text-right"
+            className="group inline-flex items-center gap-3 text-xl md:text-3xl font-semibold tracking-[-0.02em] text-fg hover:text-[#9162a4] transition-colors text-right"
           >
             {d.next.label}
             <span aria-hidden="true" className="text-[#9162a4] transition-transform group-hover:translate-x-1">→</span>

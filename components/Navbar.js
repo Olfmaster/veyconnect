@@ -3,6 +3,7 @@ import { useEffect, useRef, useState } from "react";
 import { gsap } from "@/lib/gsap";
 import Link from "next/link";
 import Image from "next/image";
+import ThemeToggle from "@/components/ThemeToggle";
 
 const links = [
   { href: "/leistungen", label: "Leistungen" },
@@ -71,7 +72,7 @@ export default function Navbar() {
         ref={navRef}
         className={`fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-6 md:px-10 py-4 transition-all duration-300 ${
           scrolled
-            ? "bg-black/70 backdrop-blur-md border-b border-white/10"
+            ? "bg-base/70 backdrop-blur-md border-b border-line/10"
             : "bg-transparent"
         }`}
         aria-label="Hauptnavigation"
@@ -87,7 +88,7 @@ export default function Navbar() {
             width={140}
             height={36}
             priority
-            className="h-8 md:h-9 w-auto brightness-0 invert"
+            className="h-8 md:h-9 w-auto theme-logo"
           />
         </Link>
         <div className="hidden md:flex items-center gap-1 text-sm">
@@ -95,7 +96,7 @@ export default function Navbar() {
             <Link
               key={link.href}
               href={link.href}
-              className="text-zinc-300 hover:text-white hover:bg-white/5 transition-colors rounded-full focus:outline-none focus-visible:ring-2 focus-visible:ring-[#9162a4] focus-visible:ring-offset-2 px-4 py-2"
+              className="text-fg-muted hover:text-fg hover:bg-line/5 transition-colors rounded-full focus:outline-none focus-visible:ring-2 focus-visible:ring-[#9162a4] focus-visible:ring-offset-2 px-4 py-2"
             >
               {link.label}
             </Link>
@@ -104,24 +105,28 @@ export default function Navbar() {
             <span>Beratung</span>
             <span aria-hidden="true">→</span>
           </Link>
+          <ThemeToggle className="ml-3" />
         </div>
-        <button
-          type="button"
-          aria-expanded={open}
-          aria-controls="mobile-nav-panel"
-          aria-label={open ? "Menü schließen" : "Menü öffnen"}
-          onClick={() => setOpen((v) => !v)}
-          className="md:hidden relative w-10 h-10 -mr-2 flex flex-col items-center justify-center gap-1.5 rounded-full focus:outline-none focus-visible:ring-2 focus-visible:ring-[#9162a4] focus-visible:ring-offset-2 text-white"
-        >
-          <span className={`block w-5 h-px bg-current transition-transform duration-300 ${open ? "translate-y-[3px] rotate-45" : ""}`} />
-          <span className={`block w-5 h-px bg-current transition-transform duration-300 ${open ? "-translate-y-[3px] -rotate-45" : ""}`} />
-        </button>
+        <div className="flex items-center gap-3 md:hidden">
+          <ThemeToggle />
+          <button
+            type="button"
+            aria-expanded={open}
+            aria-controls="mobile-nav-panel"
+            aria-label={open ? "Menü schließen" : "Menü öffnen"}
+            onClick={() => setOpen((v) => !v)}
+            className="relative w-10 h-10 -mr-2 flex flex-col items-center justify-center gap-1.5 rounded-full focus:outline-none focus-visible:ring-2 focus-visible:ring-[#9162a4] focus-visible:ring-offset-2 text-fg"
+          >
+            <span className={`block w-5 h-px bg-current transition-transform duration-300 ${open ? "translate-y-[3px] rotate-45" : ""}`} />
+            <span className={`block w-5 h-px bg-current transition-transform duration-300 ${open ? "-translate-y-[3px] -rotate-45" : ""}`} />
+          </button>
+        </div>
       </nav>
 
       <div
         id="mobile-nav-panel"
         ref={panelRef}
-        className={`fixed inset-0 z-40 md:hidden bg-[#050505] flex flex-col items-center justify-center gap-2 px-6 ${open ? "" : "pointer-events-none -translate-y-full"}`}
+        className={`fixed inset-0 z-40 md:hidden bg-base flex flex-col items-center justify-center gap-2 px-6 ${open ? "" : "pointer-events-none -translate-y-full"}`}
         aria-hidden={!open}
       >
         {links.map((link, i) => (
@@ -130,7 +135,7 @@ export default function Navbar() {
             ref={(el) => (itemsRef.current[i] = el)}
             href={link.href}
             onClick={() => setOpen(false)}
-            className="text-3xl font-semibold tracking-tight text-white py-3 hover:text-[#9162a4] transition-colors focus:outline-none focus-visible:text-[#9162a4]"
+            className="text-3xl font-semibold tracking-tight text-fg py-3 hover:text-[#9162a4] transition-colors focus:outline-none focus-visible:text-[#9162a4]"
           >
             {link.label}
           </Link>

@@ -71,7 +71,7 @@ export default function Hero() {
     <section
       id="top"
       ref={containerRef}
-      className="relative min-h-screen flex flex-col items-center justify-start text-center px-6 md:px-10 pt-32 md:pt-36 pb-16 md:pb-24 overflow-hidden text-white bg-[#050505]"
+      className="relative min-h-screen flex flex-col items-center justify-start text-center px-6 md:px-10 pt-32 md:pt-36 pb-16 md:pb-24 overflow-hidden text-fg bg-base"
     >
       <HeroFX />
 
@@ -105,7 +105,7 @@ export default function Hero() {
 
         <p
           ref={subRef}
-          className="vc-pre-reveal mt-8 text-base md:text-lg text-zinc-400 max-w-2xl leading-relaxed"
+          className="vc-pre-reveal mt-8 text-base md:text-lg text-fg-muted max-w-2xl leading-relaxed"
         >
           VeyConnect entwickelt moderne Lösungen für Einbruchschutz,
           Videoüberwachung, Zutrittskontrolle und Smart Home — von der
@@ -129,10 +129,10 @@ export default function Hero() {
         {/* Kernleistungen — 4 cards under headline */}
         <div className="relative mt-16 md:mt-20 w-full">
           <div className="flex items-end justify-between mb-5 px-1">
-            <p className="label-mono text-zinc-500">Kernleistungen / 04</p>
+            <p className="label-mono text-fg-faint">Kernleistungen / 04</p>
             <Link
               href="/leistungen"
-              className="label-mono text-zinc-400 hover:text-[#9162a4] transition-colors inline-flex items-center gap-2"
+              className="label-mono text-fg-muted hover:text-[#9162a4] transition-colors inline-flex items-center gap-2"
             >
               alle ansehen <span aria-hidden="true">→</span>
             </Link>
@@ -143,9 +143,9 @@ export default function Hero() {
                 key={s.id}
                 href="/leistungen"
                 ref={(el) => (cardsRef.current[i] = el)}
-                className="vc-pre-reveal group relative block text-left rounded-2xl overflow-hidden border border-white/10 bg-[#0c0c0c] hover:border-[#9162a4]/60 transition-all duration-300 hover:-translate-y-0.5"
+                className="vc-pre-reveal group relative block text-left rounded-2xl overflow-hidden border border-line/10 bg-surface hover:border-[#9162a4]/60 transition-all duration-300 hover:-translate-y-0.5"
               >
-                <div className="relative aspect-[4/3] overflow-hidden bg-black">
+                <div className="relative aspect-[4/3] overflow-hidden bg-base">
                   <Image
                     src={s.image}
                     alt=""
@@ -153,16 +153,16 @@ export default function Hero() {
                     sizes="(min-width:1024px) 24vw, (min-width:640px) 48vw, 92vw"
                     className="object-cover opacity-80 group-hover:opacity-100 group-hover:scale-[1.04] transition-all duration-700"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-base via-base/40 to-transparent" />
                   <span className="absolute top-3 left-3 label-mono text-[#9162a4]/90">
                     {s.id}
                   </span>
                 </div>
                 <div className="p-5 md:p-6 flex flex-col gap-3">
-                  <h3 className="text-base md:text-lg font-semibold tracking-tight leading-snug text-white">
+                  <h3 className="text-base md:text-lg font-semibold tracking-tight leading-snug text-fg">
                     {s.title}
                   </h3>
-                  <p className="text-xs md:text-sm text-zinc-400 leading-relaxed">
+                  <p className="text-xs md:text-sm text-fg-muted leading-relaxed">
                     {s.desc}
                   </p>
                   <span
@@ -180,11 +180,11 @@ export default function Hero() {
       </div>
 
       <div
-        className="absolute bottom-6 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 label-mono text-zinc-600 z-10"
+        className="absolute bottom-6 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 label-mono text-fg-faint z-10"
         aria-hidden="true"
       >
         <span>scrollen</span>
-        <span className="block w-px h-8 bg-gradient-to-b from-zinc-700 to-[#9162a4]" />
+        <span className="block w-px h-8 bg-gradient-to-b from-fg-faint to-[#9162a4]" />
       </div>
     </section>
   );

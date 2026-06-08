@@ -66,7 +66,7 @@ export default function PainPoints() {
   return (
     <section
       ref={sectionRef}
-      className="relative bg-[#050505] text-white py-28 md:py-36 px-6 md:px-10 overflow-hidden border-b border-white/5"
+      className="relative bg-base text-fg py-28 md:py-36 px-6 md:px-10 overflow-hidden border-b border-line/5"
       aria-label="Risiken und Pain-Points"
     >
       <div aria-hidden="true" className="absolute inset-0 tech-grid opacity-60" />
@@ -81,26 +81,26 @@ export default function PainPoints() {
           </h2>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-px bg-white/5 border border-white/5 rounded-2xl overflow-hidden">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-px bg-line/5 border border-line/5 rounded-2xl overflow-hidden">
           {points.map((point, i) => (
             <article
               key={point.title}
               ref={(el) => (cardsRef.current[i] = el)}
-              className="bg-[#0a0a0a] p-7 md:p-9 flex flex-col gap-4 hover:bg-[#101010] transition-colors"
+              className="bg-surface p-7 md:p-9 flex flex-col gap-4 hover:bg-surface-2 transition-colors"
             >
               <div className="w-10 h-10 rounded-full border border-[#9162a4]/30 bg-[#9162a4]/5 flex items-center justify-center">
                 <svg viewBox="0 0 24 24" fill="none" className="w-5 h-5 text-[#9162a4]">
                   <path d="M12 2 2 21h20L12 2Zm0 7v6m0 2.5v.5" stroke="currentColor" strokeWidth="1.6" strokeLinejoin="round" strokeLinecap="round" />
                 </svg>
               </div>
-              <h3 className="text-lg font-semibold tracking-tight text-white">{point.title}</h3>
-              <p className="text-sm text-zinc-400 leading-relaxed">{point.text}</p>
+              <h3 className="text-lg font-semibold tracking-tight text-fg">{point.title}</h3>
+              <p className="text-sm text-fg-muted leading-relaxed">{point.text}</p>
             </article>
           ))}
         </div>
 
-        <p data-anim className="mt-12 max-w-2xl text-base md:text-lg text-zinc-300 leading-relaxed">
-          Wer bei veyconnect kauft, kauft <span className="text-white font-medium">Risikominimierung</span> —
+        <p data-anim className="mt-12 max-w-2xl text-base md:text-lg text-fg-muted leading-relaxed">
+          Wer bei veyconnect kauft, kauft <span className="text-fg font-medium">Risikominimierung</span> —
           fachlich geplant von einem Sicherheitstechnik-Fachbetrieb, der ganzheitlich
           denkt: vom Sensor an der Tür bis zur Cloud, mit Elektro-Partner für alles
           dazwischen.

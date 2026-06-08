@@ -130,7 +130,7 @@ export default function FAQPage() {
             <a
               key={c.id}
               href={`#${c.id}`}
-              className="label-mono px-3 py-1.5 border border-white/10 rounded-full text-zinc-300 hover:text-white hover:border-[#9162a4] transition-colors"
+              className="label-mono px-3 py-1.5 border border-line/10 rounded-full text-fg-muted hover:text-fg hover:border-[#9162a4] transition-colors"
             >
               {c.label}
             </a>
@@ -138,7 +138,7 @@ export default function FAQPage() {
         </nav>
       </PageHero>
 
-      <section className="relative bg-[#050505] py-20 md:py-28 px-6 md:px-10 border-b border-white/5 overflow-hidden">
+      <section className="relative bg-base py-20 md:py-28 px-6 md:px-10 border-b border-line/5 overflow-hidden">
         <div aria-hidden="true" className="absolute inset-0 tech-grid opacity-40" />
 
         <div className="relative max-w-4xl mx-auto flex flex-col gap-16 md:gap-20">
@@ -146,7 +146,7 @@ export default function FAQPage() {
             <section key={cat.id} id={cat.id} className="scroll-mt-28">
               <header className="mb-8 md:mb-10">
                 <p className="label-mono text-[#9162a4] mb-3">/ {cat.id}</p>
-                <h2 className="text-2xl md:text-4xl font-semibold tracking-[-0.03em] leading-tight text-white">
+                <h2 className="text-2xl md:text-4xl font-semibold tracking-[-0.03em] leading-tight text-fg">
                   {cat.label}
                 </h2>
               </header>
@@ -154,7 +154,7 @@ export default function FAQPage() {
               <ul className="grid gap-3 md:gap-4">
                 {cat.items.map((it) => (
                   <li key={it.q}>
-                    <details className="group bg-[#0a0a0a] border border-white/10 rounded-2xl overflow-hidden hover:border-[#9162a4]/40 transition-colors">
+                    <details className="group bg-surface border border-line/10 rounded-2xl overflow-hidden hover:border-[#9162a4]/40 transition-colors">
                       <summary className="flex items-start gap-4 cursor-pointer list-none p-5 md:p-7">
                         <span
                           aria-hidden="true"
@@ -162,12 +162,12 @@ export default function FAQPage() {
                         >
                           +
                         </span>
-                        <h3 className="text-base md:text-lg font-semibold text-white leading-snug tracking-tight">
+                        <h3 className="text-base md:text-lg font-semibold text-fg leading-snug tracking-tight">
                           {it.q}
                         </h3>
                       </summary>
                       <div className="px-5 md:px-7 pb-6 md:pb-7 pl-[60px] md:pl-[68px] -mt-1">
-                        <p className="text-sm md:text-base text-zinc-300 leading-relaxed">
+                        <p className="text-sm md:text-base text-fg-muted leading-relaxed">
                           {it.a}
                         </p>
                       </div>
@@ -178,12 +178,12 @@ export default function FAQPage() {
             </section>
           ))}
 
-          <aside className="mt-4 rounded-2xl border border-[#9162a4]/30 bg-[#0c0c0c] p-7 md:p-10 text-center">
+          <aside className="mt-4 rounded-2xl border border-[#9162a4]/30 bg-surface p-7 md:p-10 text-center">
             <p className="label-mono text-[#9162a4] mb-3">/ Frage offen?</p>
-            <h2 className="text-2xl md:text-3xl font-semibold tracking-[-0.02em] mb-4 text-white">
+            <h2 className="text-2xl md:text-3xl font-semibold tracking-[-0.02em] mb-4 text-fg">
               Wir antworten persönlich — meist innerhalb eines Werktages.
             </h2>
-            <p className="text-zinc-400 max-w-xl mx-auto mb-7 leading-relaxed">
+            <p className="text-fg-muted max-w-xl mx-auto mb-7 leading-relaxed">
               Was hier nicht beantwortet ist, klären wir direkt im Gespräch. Kostenlose Vor-Ort-Beratung im gesamten Rhein-Main-Gebiet.
             </p>
             <div className="flex flex-wrap justify-center gap-4">

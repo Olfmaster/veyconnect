@@ -207,7 +207,7 @@ export default function Services({ showHeader = true }) {
     <section
       ref={sectionRef}
       id="leistungen"
-      className="relative py-28 md:py-36 px-6 md:px-10 bg-[#050505] text-white overflow-hidden border-b border-white/5"
+      className="relative py-28 md:py-36 px-6 md:px-10 bg-base text-fg overflow-hidden border-b border-line/5"
     >
       <div aria-hidden="true" className="absolute inset-0 tech-grid opacity-50" />
 
@@ -227,9 +227,9 @@ export default function Services({ showHeader = true }) {
           <article
             key={service.number}
             ref={(el) => (cardsRef.current[i] = el)}
-            className="group relative bg-[#0a0a0a] border border-white/10 rounded-2xl overflow-hidden flex flex-col hover:border-[#9162a4]/60 transition-all duration-300 hover:-translate-y-1"
+            className="group relative bg-surface border border-line/10 rounded-2xl overflow-hidden flex flex-col hover:border-[#9162a4]/60 transition-all duration-300 hover:-translate-y-1"
           >
-            <div className="relative aspect-[4/3] overflow-hidden bg-black">
+            <div className="relative aspect-[4/3] overflow-hidden bg-base">
               <Image
                 src={service.image}
                 alt=""
@@ -237,19 +237,19 @@ export default function Services({ showHeader = true }) {
                 sizes="(min-width:1024px) 33vw, (min-width:768px) 50vw, 100vw"
                 className="object-cover opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-base via-base/40 to-transparent" />
               <span className="absolute top-4 left-5 label-mono text-[#9162a4]">
                 {service.number}
               </span>
             </div>
             <div className="p-6 md:p-7 flex flex-col gap-4 flex-1">
-              <h3 className="text-lg md:text-xl font-semibold tracking-tight text-white leading-snug">
+              <h3 className="text-lg md:text-xl font-semibold tracking-tight text-fg leading-snug">
                 {service.title}
               </h3>
-              <p className="text-zinc-400 leading-relaxed text-sm">
+              <p className="text-fg-muted leading-relaxed text-sm">
                 {service.description}
               </p>
-              <ul className="space-y-1.5 text-xs text-zinc-500 pt-3 border-t border-white/5">
+              <ul className="space-y-1.5 text-xs text-fg-faint pt-3 border-t border-line/5">
                 {service.bullets.map((b) => (
                   <li key={b} className="flex items-center gap-2">
                     <span aria-hidden="true" className="w-1 h-1 rounded-full bg-[#9162a4]" />
@@ -275,19 +275,19 @@ export default function Services({ showHeader = true }) {
           </article>
         ))}
 
-        <article className="relative rounded-2xl border border-dashed border-[#9162a4]/30 bg-[#0c0c0c] flex flex-col gap-4 p-7 md:p-8 lg:col-span-1 sm:col-span-2 lg:col-auto">
+        <article className="relative rounded-2xl border border-dashed border-[#9162a4]/30 bg-surface flex flex-col gap-4 p-7 md:p-8 lg:col-span-1 sm:col-span-2 lg:col-auto">
           <span className="label-mono text-[#9162a4]">/ Elektro</span>
-          <h3 className="text-lg md:text-xl font-semibold tracking-tight text-white">
+          <h3 className="text-lg md:text-xl font-semibold tracking-tight text-fg">
             Elektroarbeiten nötig?
           </h3>
-          <p className="text-sm text-zinc-400 leading-relaxed">
+          <p className="text-sm text-fg-muted leading-relaxed">
             Für Elektroarbeiten arbeiten wir mit einem zertifizierten
             Elektromeister-Betrieb zusammen — Sie bekommen alles aus einer
             Hand, ohne Schnittstellenverlust.
           </p>
           <Link
             href="/kontakt"
-            className="mt-auto inline-flex items-center gap-2 text-sm font-medium text-[#9162a4] hover:text-white transition-colors"
+            className="mt-auto inline-flex items-center gap-2 text-sm font-medium text-[#9162a4] hover:text-fg transition-colors"
           >
             Partner anfragen <span aria-hidden="true">→</span>
           </Link>
