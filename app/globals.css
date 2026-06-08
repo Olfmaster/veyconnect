@@ -72,13 +72,13 @@ html, body {
   color: var(--fg);
 }
 
-/* Theme-abhängiges Logo: schwarz im Light (Default), weiß im Dark */
-.theme-logo {
-  filter: brightness(0) invert(0);
-}
-[data-theme="dark"] .theme-logo {
-  filter: brightness(0) invert(1);
-}
+/* Theme-abhängiges Logo: Light-Variante (dunkler Schriftzug) als Default,
+   Original (weißer Schriftzug) im Dark-Mode. Beide Bilder liegen im DOM,
+   nur das passende wird angezeigt. */
+.logo-light { display: block; }
+.logo-dark { display: none; }
+[data-theme="dark"] .logo-light { display: none; }
+[data-theme="dark"] .logo-dark { display: block; }
 
 /* sanfter Übergang beim Umschalten */
 html.theme-anim,

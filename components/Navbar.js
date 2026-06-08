@@ -83,12 +83,20 @@ export default function Navbar() {
           aria-label="veyconnect — Startseite"
         >
           <Image
+            src="/vey_logo_light.webp"
+            alt="veyconnect"
+            width={140}
+            height={36}
+            priority
+            className="h-8 md:h-9 w-auto logo-light"
+          />
+          <Image
             src="/vey_logo.webp"
             alt="veyconnect"
             width={140}
             height={36}
             priority
-            className="h-8 md:h-9 w-auto theme-logo"
+            className="h-8 md:h-9 w-auto logo-dark"
           />
         </Link>
         <div className="hidden md:flex items-center gap-1 text-sm">

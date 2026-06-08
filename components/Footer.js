@@ -8,11 +8,18 @@ export default function Footer() {
       <div className="max-w-6xl mx-auto grid md:grid-cols-12 gap-10">
         <div className="md:col-span-4">
           <Image
+            src="/vey_logo_light.webp"
+            alt="veyconnect"
+            width={160}
+            height={40}
+            className="h-9 w-auto logo-light"
+          />
+          <Image
             src="/vey_logo.webp"
             alt="veyconnect"
             width={160}
             height={40}
-            className="h-9 w-auto theme-logo"
+            className="h-9 w-auto logo-dark"
           />
           <p className="mt-5 max-w-xs leading-relaxed text-fg-faint">
             Ganzheitliche Gebäudesicherheit auf elektrotechnischem Fundament —
