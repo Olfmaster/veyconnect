@@ -39,23 +39,10 @@
   --color-line: var(--line);          /* Ränder & dezente Tints (mit /opacity) */
 }
 
-/* ── Dark Mode (Default — die bisherige Version) ── */
+/* ── Light Mode (Default — auch für Erstbesucher / vor dem JS) ── */
 :root {
   --accent: #9162a4;
 
-  --base: #050505;
-  --surface: #0a0a0a;
-  --surface-2: #101010;
-  --fg: #ffffff;
-  --fg-muted: #d4d4d8;   /* ~zinc-300 */
-  --fg-faint: #a1a1aa;   /* ~zinc-400 */
-  --line: #ffffff;       /* weiße Ränder/Tints via /opacity */
-
-  color-scheme: dark;
-}
-
-/* ── Light Mode ── */
-[data-theme="light"] {
   --base: #f4f4f1;       /* warmes Papier */
   --surface: #ffffff;
   --surface-2: #eceae5;
@@ -67,17 +54,30 @@
   color-scheme: light;
 }
 
+/* ── Dark Mode (die bisherige Version) ── */
+[data-theme="dark"] {
+  --base: #050505;
+  --surface: #0a0a0a;
+  --surface-2: #101010;
+  --fg: #ffffff;
+  --fg-muted: #d4d4d8;   /* ~zinc-300 */
+  --fg-faint: #a1a1aa;   /* ~zinc-400 */
+  --line: #ffffff;       /* weiße Ränder/Tints via /opacity */
+
+  color-scheme: dark;
+}
+
 html, body {
   background-color: var(--base);
   color: var(--fg);
 }
 
-/* Theme-abhängiges Logo: weiß im Dark, schwarz im Light */
+/* Theme-abhängiges Logo: schwarz im Light (Default), weiß im Dark */
 .theme-logo {
-  filter: brightness(0) invert(1);
-}
-[data-theme="light"] .theme-logo {
   filter: brightness(0) invert(0);
+}
+[data-theme="dark"] .theme-logo {
+  filter: brightness(0) invert(1);
 }
 
 /* sanfter Übergang beim Umschalten */

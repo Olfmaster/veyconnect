@@ -2,7 +2,7 @@
 import { useEffect, useState } from "react";
 
 export default function ThemeToggle({ className = "" }) {
-  const [theme, setTheme] = useState("dark");
+  const [theme, setTheme] = useState("light");
 
   // Mit dem vom Inline-Script gesetzten Attribut synchronisieren (nach Hydration).
   useEffect(() => {

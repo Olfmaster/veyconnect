@@ -135,7 +135,7 @@ export default function RootLayout({ children }) {
     >
       <head>
         <Script id="theme-init" strategy="beforeInteractive">
-          {`(function(){try{var t=localStorage.getItem('theme');document.documentElement.dataset.theme=(t==='light'||t==='dark')?t:'dark';}catch(e){document.documentElement.dataset.theme='dark';}})();`}
+          {`(function(){try{var t=localStorage.getItem('theme');document.documentElement.dataset.theme=(t==='light'||t==='dark')?t:'light';}catch(e){document.documentElement.dataset.theme='light';}})();`}
         </Script>
       </head>
       <body className="min-h-full antialiased bg-base text-fg selection:bg-[#9162a4] selection:text-white">
