@@ -1,12 +1,13 @@
-// Statische Google-Bewertungen für die Startseite.
-// [Platzhalter] Echte Rezensionstexte + Namen eintragen und die Profil-URL setzen.
+import { getGoogleReviews } from "@/lib/google-reviews";
 
-const GOOGLE_PROFILE_URL = "https://share.google/5CA0vEFH01kr9Ft1d";
+// Fallback-Bewertungen, falls die Places API nicht erreichbar ist (z. B. weil der
+// API-Key auf HTTP-Referrer beschränkt ist und serverseitige Calls blockt).
+// Stand: echte Google-Rezensionen, manuell gepflegt.
+const FALLBACK_PROFILE_URL = "https://share.google/5CA0vEFH01kr9Ft1d";
+const FALLBACK_RATING = 5.0;
+const FALLBACK_COUNT = 36;
 
-const RATING = 5.0;
-const REVIEW_COUNT = 30;
-
-const reviews = [
+const FALLBACK_REVIEWS = [
   {
     quote:
       "Ich schreibe eigentlich selten Bewertungen. Hier lohnt es sich aber auch für andere! Super zuverlässiger und lösungsorientierter Betrieb mit ordentlichem Preis-Leistungsverhältnis. Herr Vey ist zudem sehr sympathisch, hört zu und unterbreitet dann innovative Vorschläge ohne die „Ich-will-was-verkaufen\"-Masche. Wir haben dieses Jahr mehrere Modernisierungen von ihm durchführen lassen. Alles top! 100% Weiterempfehlung!",
@@ -57,7 +58,14 @@ function Stars({ count = 5 }) {
   );
 }
 
-export default function GoogleReviews() {
+export default async function GoogleReviews() {
+  const live = await getGoogleReviews();
+
+  const reviews = live?.reviews ?? FALLBACK_REVIEWS;
+  const rating = live?.rating ?? FALLBACK_RATING;
+  const reviewCount = live?.count ?? FALLBACK_COUNT;
+  const profileUrl = live?.profileUrl ?? FALLBACK_PROFILE_URL;
+
   return (
     <section
       id="bewertungen"
@@ -78,12 +86,12 @@ export default function GoogleReviews() {
           <div className="md:col-span-5 flex flex-col gap-3 md:items-end">
             <div className="inline-flex items-center gap-3 rounded-2xl border border-line/10 bg-surface px-5 py-4">
               <span className="text-4xl font-semibold tabular-nums tracking-[-0.03em]">
-                {RATING.toFixed(1).replace(".", ",")}
+                {rating.toFixed(1).replace(".", ",")}
               </span>
               <span className="flex flex-col gap-1">
                 <Stars count={5} />
                 <span className="label-mono text-fg-faint">
-                  {REVIEW_COUNT}+ Google-Rezensionen
+                  {reviewCount}+ Google-Rezensionen
                 </span>
               </span>
             </div>
@@ -117,7 +125,7 @@ export default function GoogleReviews() {
         </div>
 
         <a
-          href={GOOGLE_PROFILE_URL}
+          href={profileUrl}
           target="_blank"
           rel="noopener noreferrer"
           className="btn-tech"
