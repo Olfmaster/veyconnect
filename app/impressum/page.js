@@ -1,4 +1,4 @@
-﻿import LegalLayout, { Section, TodoBlock } from "@/components/LegalLayout";
+﻿import LegalLayout, { Section } from "@/components/LegalLayout";
 
 export const metadata = {
   title: "Impressum",
@@ -14,11 +14,11 @@ export default function ImpressumPage() {
         <p>
           veyconnect
           <br />
-          <TodoBlock label="INHABER / GESCHÄFTSFÜHRER" hint="bitte vor Launch ergänzen" />
+          Jan Vey
           <br />
-          <TodoBlock label="STRASSE & HAUSNUMMER" hint="bitte ergänzen" />
+          Berliner Straße 28
           <br />
-          <TodoBlock label="PLZ ORT" hint="bitte ergänzen (z. B. 61138 Niederdorfelden)" />
+          61138 Niederdorfelden
           <br />
           Deutschland
         </p>
@@ -46,19 +46,17 @@ export default function ImpressumPage() {
       <Section heading="Umsatzsteuer-ID">
         <p>
           Umsatzsteuer-Identifikationsnummer gemäß §27a UStG:{" "}
-          <TodoBlock label="USt-ID ODER KLEINUNTERNEHMER §19 UStG" hint="bitte ergänzen" />
+          DE370071051
         </p>
       </Section>
 
       <Section heading="Eintrag im Handelsregister">
-        <p>
-          <TodoBlock label="HANDELSREGISTER-EINTRAG ODER HINWEIS &quot;NICHT EINGETRAGEN&quot;" hint="bitte ergänzen" />
-        </p>
+        <p>Nicht im Handelsregister eingetragen.</p>
       </Section>
 
       <Section heading="Verantwortlich für den Inhalt nach §55 Abs. 2 RStV">
         <p>
-          <TodoBlock label="NAME" hint="i. d. R. der Inhaber" />, Anschrift wie oben.
+          Jan Vey, Anschrift wie oben.
         </p>
       </Section>
 
