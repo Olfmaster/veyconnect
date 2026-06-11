@@ -54,7 +54,7 @@ export default function Region() {
           <h2 data-anim className="text-3xl md:text-4xl font-semibold tracking-[-0.03em] leading-[1.05] max-w-sm">
             Vor Ort im <span className="text-[#9162a4]">Rhein-Main-Gebiet.</span>
           </h2>
-          <p data-anim className="mt-6 text-fg-muted max-w-sm leading-relaxed">
+          <p data-anim className="mt-6 txt-muted max-w-sm leading-relaxed">
             Hauptsitz in Niederdorfelden — wir sind in der Regel innerhalb
             weniger Tage vor Ort. Auch außerhalb dieser Liste sind wir auf
             Anfrage erreichbar.
@@ -66,7 +66,7 @@ export default function Region() {
             <li
               key={city}
               data-anim
-              className="border-b border-line/10 py-4 text-sm md:text-base font-medium tracking-tight flex items-center justify-between text-fg-muted"
+              className="border-b border-line/10 py-4 text-sm md:text-base font-medium tracking-tight flex items-center justify-between txt-muted"
             >
               <span>{city}</span>
               <span aria-hidden="true" className="text-[#9162a4] text-xs">

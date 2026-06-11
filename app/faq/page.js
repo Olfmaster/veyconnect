@@ -167,7 +167,7 @@ export default function FAQPage() {
                         </h3>
                       </summary>
                       <div className="px-5 md:px-7 pb-6 md:pb-7 pl-[60px] md:pl-[68px] -mt-1">
-                        <p className="text-sm md:text-base text-fg-muted leading-relaxed">
+                        <p className="text-sm md:text-base faq-answer leading-relaxed">
                           {it.a}
                         </p>
                       </div>

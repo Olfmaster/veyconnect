@@ -105,6 +105,16 @@ body {
   html { scroll-behavior: smooth; }
 }
 
+/* Chrome friert var()-basierte Farben in „eingefrorenen" Paint-Zuständen ein
+   (content-visibility im geschlossenen <details>, GSAP-animierte/transformierte
+   Elemente), wodurch der Text in der Hintergrundfarbe gemalt wird und unsichtbar
+   ist. Literale, theme-gescopte Farben umgehen das. */
+.faq-answer { color: #0b0b0c; }
+[data-theme="dark"] .faq-answer { color: #ffffff; }
+
+.txt-muted { color: #3f3f46; }            /* = --fg-muted (light) */
+[data-theme="dark"] .txt-muted { color: #d4d4d8; } /* = --fg-muted (dark) */
+
 /* mono labels */
 .label-mono {
   font-family: var(--font-mono);
