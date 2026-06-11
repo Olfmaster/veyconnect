@@ -70,7 +70,7 @@ export default function Region() {
             >
               <span>{city}</span>
               <span aria-hidden="true" className="text-[#9162a4] text-xs">
-                ●
+                ●
               </span>
             </li>
           ))}

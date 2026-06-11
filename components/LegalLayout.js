@@ -14,7 +14,7 @@ export default function LegalLayout({ eyebrow, title, intro, children }) {
         <div className="space-y-10 leading-relaxed">{children}</div>
         <div className="mt-16 pt-8 border-t border-line/10 text-sm">
           <Link href="/" className="inline-flex items-center gap-2 text-fg-muted hover:text-[#9162a4] transition-colors">
-            <span aria-hidden="true">←</span> Zur Startseite
+            <span aria-hidden="true">←</span> Zur Startseite
           </Link>
         </div>
       </div>

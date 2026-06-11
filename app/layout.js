@@ -88,7 +88,7 @@ const jsonLd = {
       telephone: "+4917624596941",
       image: `${SITE_URL}/opengraph-image`,
       description: DESCRIPTION,
-      priceRange: "â‚¬â‚¬",
+      priceRange: "€€",
       foundingDate: "2023",
       areaServed: [
         { "@type": "City", name: "Frankfurt am Main" },
