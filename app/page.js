@@ -1,5 +1,6 @@
 import Hero from "@/components/Hero";
 import Manifesto from "@/components/Manifesto";
+import EN54Spotlight from "@/components/EN54Spotlight";
 import Partners from "@/components/Partners";
 import Trust from "@/components/Trust";
 import GoogleReviews from "@/components/GoogleReviews";
@@ -10,6 +11,7 @@ export default function Home() {
     <>
       <Hero />
       <Manifesto />
+      <EN54Spotlight />
       <Partners />
       <Trust />
       <GoogleReviews />

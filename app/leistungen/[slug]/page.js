@@ -41,13 +41,17 @@ const details = {
     title: "Brandschutz &",
     accent: "Gefahrenprävention.",
     intro:
-      "Vernetzte Rauchmelder, CO- und Gasmelder, Hausnotruf­systeme — normgerecht installiert und vollständig dokumentiert.",
+      "AJAX EN54 Line, vernetzte Rauchmelder, CO- und Gasmelder, Hausnotruf­systeme — kabellos, EN-54-zertifiziert und vollständig dokumentiert.",
     image: "/smoke-detector-and-remotes-on-blueprint.webp",
     image2: "/brandschutz.webp",
-    metaTitle: "Brandschutz & Gefahrenprävention",
+    metaTitle: "Brandschutz & Gefahrenprävention — AJAX EN 54",
     metaDesc:
-      "Funk-Rauchmeldernetz, CO- und Gasmelder, Hausnotrufsysteme und Brandschutz­konzepte für Privat- und Gewerbeobjekte im Rhein-Main-Gebiet.",
+      "EN-54-zertifizierte AJAX-Brandwarnanlagen, Funk-Rauchmeldernetz, CO- und Gasmelder und Brandschutz­konzepte für Privat- und Gewerbeobjekte im Rhein-Main-Gebiet.",
     bullets: [
+      {
+        title: "AJAX EN54 Line",
+        text: "Kabellose, EN-54-zertifizierte Brandwarn- und Alarmanlage für kommerzielle Objekte — Rauch-, Wärme- und Kombimelder, zentral über eine App gesteuert.",
+      },
       {
         title: "Funk-Rauchmeldernetz",
         text: "Alle Räume in einem Verbund — wenn einer auslöst, hören Sie es überall.",

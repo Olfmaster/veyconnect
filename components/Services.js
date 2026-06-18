@@ -42,23 +42,24 @@ const services = [
     slug: "brandschutz",
     title: "Brandschutz & Gefahrenprävention",
     description:
-      "Vernetzte Rauchmelder, CO- und Gasmelder, Hausnotrufsysteme — geplant, installiert und dokumentiert nach Norm.",
+      "EN-54-zertifizierte AJAX-Brandwarnanlagen, vernetzte Rauchmelder, CO- und Gasmelder — kabellos, geplant, installiert und dokumentiert nach Norm.",
     bullets: [
+      "AJAX EN54 Line (kabellos)",
       "Funk-Rauchmeldernetz",
       "CO- & Gasmelder",
-      "Hausnotrufsysteme",
       "Konzept für Bestandsbauten",
     ],
     image: "/smoke-detector-and-remotes-on-blueprint.webp",
     detail: {
       cat: "Brandschutz",
-      lead: "Vernetzte Rauchmelder, CO- und Gasmelder, Hausnotrufsysteme — normgerecht installiert und vollständig dokumentiert.",
-      tags: ["Funkvernetzt", "Normgerecht", "Dokumentiert", "Bestand & Altbau"],
+      lead: "EN-54-zertifizierte AJAX-Brandwarnanlagen, vernetzte Rauchmelder, CO- und Gasmelder, Hausnotrufsysteme — kabellos, normgerecht installiert und vollständig dokumentiert.",
+      tags: ["AJAX EN54 Line", "EN-54-zertifiziert", "Funkvernetzt", "Bestand & Altbau"],
       note: "Ohne normgerechte, vernetzte Rauchmelder bleibt im Brandfall wertvolle Zeit zur Warnung ungenutzt — Personenschäden drohen, gerade in Bestandsbauten.",
       sections: [
         {
           title: "Leistungsumfang",
           items: [
+            { t: "AJAX EN54 Line", d: "Kabellose, EN-54-zertifizierte Brandwarn- und Alarmanlage für kommerzielle Objekte — zentral über eine App gesteuert." },
             { t: "Funk-Rauchmeldernetz", d: "Alle Räume in einem Verbund — wenn einer auslöst, hören Sie es überall." },
             { t: "CO- & Gasmelder", d: "Frühwarnung vor Kohlenmonoxid und Gaslecks — vernetzt mit Alarm- und Hausautomation." },
             { t: "Hausnotrufsysteme", d: "Diskrete Notruflösungen für Privatpersonen, betreutes Wohnen und alleinarbeitende Personen." },
