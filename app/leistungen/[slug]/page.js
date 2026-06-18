@@ -244,12 +244,9 @@ export default async function ServiceDetailPage({ params }) {
 
       {/* Image showcase */}
       <section className="relative bg-base py-20 md:py-28 px-6 md:px-10 border-b border-line/5">
-        <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-4">
-          <div className="relative aspect-[4/3] rounded-2xl overflow-hidden border border-line/10">
-            <Image src={d.image} alt="" fill sizes="(min-width:768px) 50vw, 92vw" className="object-cover" />
-          </div>
-          <div className="relative aspect-[4/3] rounded-2xl overflow-hidden border border-line/10">
-            <Image src={d.image2} alt="" fill sizes="(min-width:768px) 50vw, 92vw" className="object-cover" />
+        <div className="max-w-6xl mx-auto">
+          <div className="relative aspect-[16/9] rounded-2xl overflow-hidden border border-line/10">
+            <Image src={d.image} alt="" fill sizes="(min-width:1024px) 64rem, 92vw" className="object-cover" />
           </div>
         </div>
       </section>
