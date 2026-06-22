@@ -1,4 +1,4 @@
-﻿import LegalLayout, { Section, TodoBlock } from "@/components/LegalLayout";
+﻿import LegalLayout, { Section } from "@/components/LegalLayout";
 
 export const metadata = {
   title: "Datenschutzerklärung",
@@ -18,7 +18,14 @@ export default function DatenschutzPage() {
         <p>
           veyconnect
           <br />
-          <TodoBlock label="ANSCHRIFT" hint="bitte vor Launch ergänzen" />
+          Jan Vey
+          <br />
+          Berliner Straße 28
+          <br />
+          61138 Niederdorfelden
+          <br />
+          Deutschland
+          <br />
           <br />
           E-Mail:{" "}
           <a href="mailto:info@veyconnect.de" className="text-fg underline underline-offset-4 hover:text-[#9162a4] transition-colors">
@@ -39,9 +46,9 @@ export default function DatenschutzPage() {
         </p>
         <p>
           Hosting:{" "}
-          <TodoBlock label="HOSTING-PROVIDER" hint="z. B. Vercel — bitte ergänzen" />
-          . Mit dem Anbieter besteht ein Auftragsverarbeitungsvertrag nach
-          Art. 28 DSGVO.
+          <strong>Hostinger International Ltd.</strong>, 61 Lordou Vironos
+          Street, 6023 Larnaca, Zypern. Mit dem Anbieter besteht ein
+          Auftragsverarbeitungsvertrag nach Art. 28 DSGVO.
         </p>
       </Section>
 
@@ -65,11 +72,21 @@ export default function DatenschutzPage() {
         </p>
       </Section>
 
-      <Section heading="4. Cookies & Tracking">
+      <Section heading="4. Cookies & Einwilligung">
         <p>
           Diese Website verwendet <strong>keine</strong> Tracking-Cookies und{" "}
           <strong>kein</strong> Webanalyse-Tool wie Google Analytics. Es
           werden ausschließlich technisch notwendige Daten verarbeitet.
+        </p>
+        <p>
+          Beim ersten Besuch zeigen wir einen Cookie-Hinweis. Ihre Entscheidung
+          speichern wir ausschließlich lokal in Ihrem Browser (localStorage,
+          Schlüssel <code>vc-cookie-consent</code>), damit der Hinweis nicht bei
+          jedem Aufruf erneut erscheint. Diese Speicherung ist technisch
+          notwendig (Art. 6 Abs. 1 lit. f DSGVO), erfolgt ohne Übertragung an
+          Dritte und enthält keine personenbezogenen Profile. Sie können die
+          Auswahl jederzeit über den Link „Cookie-Einstellungen“ im Seitenfuß
+          erneut aufrufen.
         </p>
       </Section>
 

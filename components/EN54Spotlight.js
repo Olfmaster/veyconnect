@@ -1,8 +1,12 @@
 "use client";
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { gsap } from "@/lib/gsap";
+import ServiceDetailPanel from "@/components/ServiceDetailPanel";
+import { services } from "@/lib/services-data";
+
+const brandschutzService = services.find((s) => s.slug === "brandschutz");
 
 const features = [
   {
@@ -32,6 +36,7 @@ const certs = [
 
 export default function EN54Spotlight() {
   const sectionRef = useRef(null);
+  const [openService, setOpenService] = useState(null);
 
   useEffect(() => {
     const ctx = gsap.context(() => {
@@ -140,13 +145,15 @@ export default function EN54Spotlight() {
           </ul>
 
           <div data-anim className="mt-10 flex flex-wrap gap-4">
-            <Link
-              href="/leistungen/brandschutz"
+            <button
+              type="button"
+              onClick={() => setOpenService(brandschutzService)}
+              aria-haspopup="dialog"
               className="btn-tech btn-tech-solid"
             >
               <span>Brandschutz im Detail</span>
               <span aria-hidden="true">→</span>
-            </Link>
+            </button>
             <Link href="/kontakt" className="btn-tech">
               <span>Beratung anfragen</span>
             </Link>
@@ -171,6 +178,11 @@ export default function EN54Spotlight() {
           </div>
         </div>
       </div>
+
+      <ServiceDetailPanel
+        service={openService}
+        onClose={() => setOpenService(null)}
+      />
     </section>
   );
 }

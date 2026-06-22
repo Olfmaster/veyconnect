@@ -1,5 +1,6 @@
 ﻿import Link from "next/link";
 import Image from "next/image";
+import { CookieSettingsButton } from "@/components/CookieBanner";
 
 export default function Footer() {
   const year = new Date().getFullYear();
@@ -80,6 +81,9 @@ export default function Footer() {
         <ul className="flex items-center gap-5">
           <li><Link href="/impressum" className="hover:text-fg transition-colors">Impressum</Link></li>
           <li><Link href="/datenschutz" className="hover:text-fg transition-colors">Datenschutz</Link></li>
+          <li>
+            <CookieSettingsButton className="hover:text-fg transition-colors cursor-pointer" />
+          </li>
         </ul>
       </div>
     </footer>
