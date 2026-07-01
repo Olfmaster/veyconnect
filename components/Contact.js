@@ -106,10 +106,22 @@ export default function Contact() {
           )}
 
           <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-5 pt-3 border-t border-line/5">
-            <p className="text-xs text-fg-faint max-w-xs leading-relaxed">
-              Mit dem Absenden stimmen Sie zu, dass wir Ihre Angaben zur
-              Beantwortung Ihrer Anfrage verarbeiten.
-            </p>
+            <div className="flex items-start gap-3 max-w-xs">
+              <input
+                id="contact-privacy"
+                name="privacy"
+                type="checkbox"
+                required
+                className="mt-1 h-4 w-4 shrink-0 accent-[#9162a4] cursor-pointer"
+              />
+              <label htmlFor="contact-privacy" className="text-xs text-fg-faint leading-relaxed cursor-pointer">
+                Ich habe die{" "}
+                <a href="/datenschutz" className="text-[#9162a4] underline hover:no-underline">
+                  Datenschutzbestimmungen
+                </a>{" "}
+                gelesen und akzeptiere sie.
+              </label>
+            </div>
             <SubmitButton />
           </div>
         </form>
