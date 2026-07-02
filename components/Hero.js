@@ -10,25 +10,25 @@ const coreServices = [
     id: "01",
     title: "Smarte Sicherheits­integration",
     desc: "UniFi, KNX, AJAX und Cloud — alles aus einer Hand vernetzt und zentral steuerbar.",
-    image: "/smart-sicherheitsintegration.webp",
+    image: "/smart-home-steuerung.webp",
   },
   {
     id: "02",
     title: "Einbruchschutz & Videoüberwachung",
     desc: "AJAX-Funkalarm, 4K-Kameras von Dahua, HIK Vision, Mobotix — bis Thermal- und Telezoom.",
-    image: "/einbruch-ueberwachungssystem.webp",
+    image: "/einbruchschutz-videoueberwachung.webp",
   },
   {
     id: "03",
     title: "Brandschutz & Gefahrenprävention",
     desc: "Vernetzte Rauchmelder, CO- und Gasmelder, Hausnotrufsysteme — normgerecht & vernetzt.",
-    image: "/smoke-detector-and-remotes-on-blueprint.webp",
+    image: "/brandschutz-rauchmelder.webp",
   },
   {
     id: "04",
     title: "Zutrittskontrolle & Türsysteme",
     desc: "Siedle & Doorbird Sprechanlagen, Fingerprint, Transponder, Torantriebe.",
-    image: "/tuersysteme.webp",
+    image: "/zutrittskontrolle-tuersystem.webp",
   },
 ];
 
@@ -151,9 +151,9 @@ export default function Hero() {
                     alt=""
                     fill
                     sizes="(min-width:1024px) 24vw, (min-width:640px) 48vw, 92vw"
-                    className="object-cover opacity-80 group-hover:opacity-100 group-hover:scale-[1.04] transition-all duration-700"
+                    className="object-cover group-hover:scale-[1.04] transition-transform duration-700"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-base via-base/40 to-transparent" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-base/70 via-transparent to-transparent" />
                   <span className="absolute top-3 left-3 label-mono text-[#9162a4]/90">
                     {s.id}
                   </span>

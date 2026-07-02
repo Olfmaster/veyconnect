@@ -78,9 +78,9 @@ export default function Services({ showHeader = true }) {
                 alt=""
                 fill
                 sizes="(min-width:1024px) 33vw, (min-width:768px) 50vw, 100vw"
-                className="object-cover opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700"
+                className="object-cover group-hover:scale-105 transition-transform duration-700"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-base via-base/40 to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-base/70 via-transparent to-transparent" />
               <span className="absolute top-4 left-5 label-mono text-[#9162a4]">
                 {service.number}
               </span>

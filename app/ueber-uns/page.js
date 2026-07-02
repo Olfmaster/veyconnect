@@ -1,4 +1,5 @@
 import PageHero from "@/components/PageHero";
+import Certifications from "@/components/Certifications";
 import Contact from "@/components/Contact";
 
 export const metadata = {
@@ -153,6 +154,8 @@ export default function UeberUnsPage() {
           </div>
         </div>
       </section>
+
+      <Certifications />
 
       <Contact />
     </>
