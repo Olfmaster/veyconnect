@@ -1,9 +1,13 @@
 ﻿"use client";
 import { useEffect, useRef, useState } from "react";
+import { usePathname } from "next/navigation";
 import { gsap } from "@/lib/gsap";
 import Link from "next/link";
 import Image from "next/image";
 import ThemeToggle from "@/components/ThemeToggle";
+
+// Fokussierte Landingpages (z. B. für bezahlte Kampagnen) ohne Navigation.
+const NO_NAV_PATHS = ["/sicheres-zuhause"];
 
 const links = [
   { href: "/leistungen", label: "Leistungen" },
@@ -20,8 +24,11 @@ export default function Navbar() {
   const itemsRef = useRef([]);
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const pathname = usePathname();
+  const hideNav = NO_NAV_PATHS.includes(pathname);
 
   useEffect(() => {
+    if (hideNav) return;
     const ctx = gsap.context(() => {
       gsap.fromTo(
         navRef.current,
@@ -30,7 +37,7 @@ export default function Navbar() {
       );
     });
     return () => ctx.revert();
-  }, []);
+  }, [hideNav]);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 16);
@@ -65,6 +72,8 @@ export default function Navbar() {
     window.addEventListener("keydown", onKey);
     return () => window.removeEventListener("keydown", onKey);
   }, [open]);
+
+  if (hideNav) return null;
 
   return (
     <>

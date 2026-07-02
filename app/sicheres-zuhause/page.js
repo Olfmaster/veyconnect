@@ -92,7 +92,7 @@ export default function SicheresZuhausePage() {
       />
 
       {/* Hero */}
-      <section className="relative bg-base text-fg pt-32 md:pt-40 pb-20 md:pb-28 px-6 md:px-10 overflow-hidden border-b border-line/5">
+      <section className="relative bg-base text-fg pt-20 md:pt-28 pb-20 md:pb-28 px-6 md:px-10 overflow-hidden border-b border-line/5">
         <div aria-hidden="true" className="absolute inset-0 tech-grid opacity-50" />
         <div aria-hidden="true" className="absolute inset-0 lime-glow opacity-60" />
 
