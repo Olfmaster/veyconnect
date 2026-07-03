@@ -74,9 +74,9 @@ export default function DatenschutzPage() {
 
       <Section heading="4. Cookies & Einwilligung">
         <p>
-          Diese Website verwendet <strong>keine</strong> Tracking-Cookies und{" "}
-          <strong>kein</strong> Webanalyse-Tool wie Google Analytics. Es
-          werden ausschließlich technisch notwendige Daten verarbeitet.
+          Für den Betrieb der Website verarbeiten wir ausschließlich technisch
+          notwendige Daten. Ein Webanalyse-Tool wie Google Analytics setzen wir{" "}
+          <strong>nicht</strong> ein.
         </p>
         <p>
           Beim ersten Besuch zeigen wir einen Cookie-Hinweis. Ihre Entscheidung
@@ -86,11 +86,44 @@ export default function DatenschutzPage() {
           notwendig (Art. 6 Abs. 1 lit. f DSGVO), erfolgt ohne Übertragung an
           Dritte und enthält keine personenbezogenen Profile. Sie können die
           Auswahl jederzeit über den Link „Cookie-Einstellungen“ im Seitenfuß
-          erneut aufrufen.
+          erneut aufrufen und eine erteilte Einwilligung mit Wirkung für die
+          Zukunft widerrufen.
         </p>
       </Section>
 
-      <Section heading="5. Videoüberwachung beim Kunden">
+      <Section heading="5. Google Ads Conversion-Tracking (nur mit Einwilligung)">
+        <p>
+          <strong>Nur</strong> wenn Sie im Cookie-Hinweis „Alle akzeptieren“
+          wählen, laden wir den <strong>Google Tag Manager</strong> und
+          darüber das <strong>Google Ads Conversion-Tracking</strong>. Ohne
+          Ihre Einwilligung werden diese Dienste nicht geladen und keine Daten
+          an Google übertragen.
+        </p>
+        <p>
+          Zweck ist die Erfolgsmessung unserer Google-Ads-Anzeigen: Wir erkennen
+          statistisch, ob der Klick auf eine Anzeige zu einer Kontaktanfrage
+          über das Formular geführt hat. Dabei können Cookies gesetzt und Daten
+          (u. a. gekürzte IP-Adresse, eine Klick-Kennung von Google „gclid“
+          sowie das Conversion-Ereignis) an Google übertragen werden. Wir
+          erhalten dabei keine personenbezogenen Klartextdaten, sondern
+          aggregierte Conversion-Statistiken.
+        </p>
+        <p>
+          Anbieter ist <strong>Google Ireland Limited</strong>, Gordon House,
+          Barrow Street, Dublin 4, Irland. Eine Übermittlung in die USA
+          (Google LLC) ist nicht ausgeschlossen und über das EU-US Data Privacy
+          Framework bzw. Standardvertragsklauseln nach Art. 46 DSGVO
+          abgesichert.
+        </p>
+        <p>
+          Rechtsgrundlage ist Ihre Einwilligung nach Art. 6 Abs. 1 lit. a DSGVO
+          in Verbindung mit § 25 Abs. 1 TDDDG. Sie können die Einwilligung
+          jederzeit mit Wirkung für die Zukunft über den Link
+          „Cookie-Einstellungen“ im Seitenfuß widerrufen.
+        </p>
+      </Section>
+
+      <Section heading="6. Videoüberwachung beim Kunden">
         <p>
           Bei von uns installierten Videoüberwachungsanlagen ist nicht
           veyconnect, sondern der jeweilige Betreiber der Anlage (z. B. Sie als
@@ -99,7 +132,7 @@ export default function DatenschutzPage() {
         </p>
       </Section>
 
-      <Section heading="6. Ihre Rechte">
+      <Section heading="7. Ihre Rechte">
         <p>Ihnen stehen folgende Rechte zu:</p>
         <ul className="list-disc pl-6 space-y-1">
           <li>Auskunft (Art. 15 DSGVO)</li>
@@ -112,15 +145,15 @@ export default function DatenschutzPage() {
         </ul>
       </Section>
 
-      <Section heading="7. Beschwerderecht">
+      <Section heading="8. Beschwerderecht">
         <p>
           Sie haben das Recht, sich bei einer Datenschutz-Aufsichtsbehörde zu
           beschweren (Art. 77 DSGVO).
         </p>
       </Section>
 
-      <Section heading="8. Aktualität">
-        <p>Stand: Mai 2026.</p>
+      <Section heading="9. Aktualität">
+        <p>Stand: Juli 2026.</p>
       </Section>
     </LegalLayout>
   );

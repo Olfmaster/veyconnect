@@ -4,6 +4,7 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import CookieBanner from "@/components/CookieBanner";
+import GoogleTagManager from "@/components/GoogleTagManager";
 
 const interTight = Inter_Tight({
   variable: "--font-sans",
@@ -141,6 +142,7 @@ export default function RootLayout({ children }) {
         </Script>
       </head>
       <body className="min-h-full antialiased bg-base text-fg selection:bg-[#9162a4] selection:text-white">
+        <GoogleTagManager />
         <a
           href="#main"
           className="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:left-3 focus:z-[100] focus:px-4 focus:py-2 focus:rounded-full focus:bg-[#9162a4] focus:text-white focus:text-sm focus:shadow-lg"

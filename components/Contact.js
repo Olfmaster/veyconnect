@@ -21,6 +21,15 @@ export default function Contact() {
   const sectionRef = useRef(null);
   const [state, formAction] = useActionState(sendContactMessage, initialState);
 
+  // Conversion-Event für Google Ads (via GTM). Feuert nur bei Erfolg; ist GTM
+  // mangels Einwilligung nicht geladen, bleibt der Push wirkungslos.
+  useEffect(() => {
+    if (state.status === "success") {
+      window.dataLayer = window.dataLayer || [];
+      window.dataLayer.push({ event: "lead_form_submit" });
+    }
+  }, [state.status]);
+
   useEffect(() => {
     const ctx = gsap.context(() => {
       gsap.fromTo(

@@ -1,18 +1,20 @@
 "use client";
 import { useEffect, useState } from "react";
 import Link from "next/link";
+import { CONSENT_GRANTED_EVENT } from "@/components/GoogleTagManager";
 
 const STORAGE_KEY = "vc-cookie-consent";
 export const OPEN_EVENT = "vc:open-cookie-settings";
 
 /**
- * DSGVO-konformer Cookie-Hinweis.
+ * DSGVO-konformer Cookie-Hinweis mit echter Einwilligung.
  *
- * Die Website setzt ausschließlich technisch notwendige Daten ein (kein
- * Tracking, keine Analyse). Der Banner informiert darüber und holt eine
- * bewusste Entscheidung ein. Diese wird nur lokal (localStorage) gespeichert,
- * damit der Hinweis nicht bei jedem Aufruf erscheint. Über den Footer-Link
- * „Cookie-Einstellungen“ lässt sich der Banner jederzeit erneut öffnen.
+ * Technisch notwendige Daten werden immer verarbeitet. Zusätzlich holt der
+ * Banner die Einwilligung für Google Ads Conversion-Tracking ein: Nur bei
+ * „Alle akzeptieren“ (Wert "all") wird der Google Tag Manager geladen; bei
+ * „Nur notwendige“ (Wert "essential") bleibt er aus. Die Entscheidung wird nur
+ * lokal (localStorage) gespeichert und kann über den Footer-Link
+ * „Cookie-Einstellungen“ jederzeit geändert werden.
  */
 export default function CookieBanner() {
   const [open, setOpen] = useState(false);
@@ -48,6 +50,9 @@ export default function CookieBanner() {
     } catch {
       /* Speicherung optional — Banner trotzdem schließen */
     }
+    if (value === "all") {
+      window.dispatchEvent(new Event(CONSENT_GRANTED_EVENT));
+    }
     setShown(false);
     setTimeout(() => setOpen(false), 300);
   };
@@ -72,10 +77,13 @@ export default function CookieBanner() {
           Wir respektieren Ihre Privatsphäre.
         </h2>
         <p className="text-sm text-fg-muted leading-relaxed">
-          Diese Website verwendet ausschließlich technisch notwendige Daten —{" "}
-          <strong className="text-fg">kein Tracking</strong>, keine
-          Werbe-Cookies und keine Webanalyse. Ihre Auswahl speichern wir nur
-          lokal in Ihrem Browser. Mehr dazu in unserer{" "}
+          Technisch notwendige Daten setzen wir immer ein. Zusätzlich möchten
+          wir mit Ihrer Einwilligung{" "}
+          <strong className="text-fg">Google Ads Conversion-Tracking</strong>{" "}
+          verwenden, um die Wirksamkeit unserer Anzeigen zu messen. Dabei werden
+          Daten an Google übertragen. Sie entscheiden frei — Ihre Auswahl können
+          Sie jederzeit über „Cookie-Einstellungen“ im Seitenfuß ändern. Mehr
+          dazu in unserer{" "}
           <Link
             href="/datenschutz"
             className="text-fg underline underline-offset-4 hover:text-[#9162a4] transition-colors"
