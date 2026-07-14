@@ -2,56 +2,43 @@
 
 > Sicherheitstechnik-Fachbetrieb aus Niederdorfelden im Rhein-Main-Gebiet. Zertifizierter Premium-Partner von AJAX Systems. Spezialisiert auf Einbruchschutz, Videoüberwachung, Brandschutz, Zutrittskontrolle, Smart-Home-Integration und Sicherheits­modernisierung im Bestandsbau.
 
-## Über das Unternehmen
-- Firma: veyconnect
-- Gegründet: 2023
-- Hauptsitz: Niederdorfelden, Hessen, Deutschland
-- Servicegebiet: Rhein-Main (Frankfurt am Main, Offenbach, Hanau, Bad Vilbel, Bad Homburg, Maintal, Bruchköbel, Mühlheim, Karben, Friedberg, Schöneck und Umgebung)
-- E-Mail: info@veyconnect.de
-- Telefon: +49 176 24596941
-- Notfall-Erreichbarkeit: 24/7
-- Google-Bewertung: 5,0 / 5,0 bei über 30 Rezensionen
-- Premium-Partner: AJAX Systems
+veyconnect wurde 2023 gegründet und sitzt in der Berliner Straße 28, 61138 Niederdorfelden (Hessen, Deutschland). Erreichbar unter info@veyconnect.de und +49 176 24596941, im Notfall rund um die Uhr. Google-Bewertung: 5,0 / 5,0 bei über 30 Rezensionen.
 
-## Leistungen (Kerngewerke)
-- Einbruchschutz & Videoüberwachung: AJAX-Funkalarm, Kameras von Dahua, HIK Vision, Mobotix (4K + Thermalsicht + Telezoom), Bewegungs-, Glasbruch- und Gasmelder, Hausnotrufsysteme
-- Brandschutz & Gefahrenprävention: Funk-Rauchmeldernetz, CO- und Gasmelder, Hausnotrufsysteme, Brandschutz­konzept für Bestand
-- Zutrittskontrolle & Türsysteme: Video-Türsprechanlagen (Siedle, Doorbird), Fingerprint / Transponder / App, elektronische Schließanlagen, Torantriebe
-- Sicherheitsmodernisierung & Altbau: Befundung & Sicherheitskonzept, Sensorik & Funkalarm im Bestand, Schließ- & Türsicherung, vollständige Anlagendokumentation
-- Elektroarbeiten: Für klassische Elektroinstallation arbeitet veyconnect mit einem zertifizierten Elektromeister-Partnerbetrieb zusammen — alles aus einer Hand, ohne Schnittstellenverlust
-- Smarte Sicherheitsintegration: UniFi-Netzwerk, KNX, smarte Türschlösser, Richtfunk / Starlink / 5G-LTE, Präsenz­simulation
+Servicegebiet ist das Rhein-Main-Gebiet: Frankfurt am Main, Offenbach, Hanau, Bad Vilbel, Bad Homburg, Maintal, Bruchköbel, Mühlheim, Karben, Friedberg, Schöneck und Umgebung.
 
-## Hersteller-Partner
-- Premium: AJAX Systems
-- Weitere zertifizierte Marken: Gira, Hager, Siedle, Doorbird, Dahua, UniFi, Mobotix, HIK Vision, Busch-Jaeger, Schneider Electric, KNX
+Konformität und Standards: VDS-konforme Einbruchmeldeanlagen, DSGVO-konforme Videoüberwachung, AJAX-Systems-Premium-Partner (Hersteller­zertifizierung), ausschließlich Original-Komponenten mit direktem Herstellerzugang und aktueller Firmware. Für klassische Elektroinstallation arbeitet veyconnect mit einem zertifizierten Elektromeister-Partnerbetrieb zusammen — alles aus einer Hand, ohne Schnittstellenverlust.
 
-## Konformität & Standards
-- VDS-konforme Einbruchmeldeanlagen
-- DSGVO-konforme Videoüberwachung
-- AJAX Systems Premium-Partner (Hersteller­zertifizierung)
-- Original-Komponenten, direkter Herstellerzugang, neueste Firmware
-- Elektroarbeiten über zertifizierten Elektromeister-Partnerbetrieb
+Hersteller-Partner: AJAX Systems (Premium-Partner), außerdem Gira, Hager, Siedle, Doorbird, Dahua, UniFi, Mobotix, HIK Vision, Busch-Jaeger, Schneider Electric und KNX.
 
-## Häufige Fragen (Auswahl)
-- Was kostet eine AJAX Alarmanlage? — Kleine Wohnungs-Lösung mit Hub + 2–3 Sensoren startet im niedrigen vierstelligen Bereich. Einfamilienhaus mit Außensicherung höher. Kostenlose Vor-Ort-Beratung mit Sicherheits­analyse vor verbindlichem Angebot.
-- Wie schnell ist veyconnect vor Ort? — In der Servicregion Rhein-Main innerhalb weniger Tage. 24/7 Notfall­erreichbarkeit für bestehende Anlagen.
-- Wartung & Service? — Regelmäßige Wartung, Batterietausch, Firmware-Updates und Anlagenerweiterungen; Bestandskunden mit Vorrang bei Notfall-Einsätzen.
+Häufige Fragen:
 
-## Hauptseiten
-- Startseite: https://www.veyconnect.de/
-- Leistungsübersicht: https://www.veyconnect.de/leistungen
-- Einbruchschutz: https://www.veyconnect.de/leistungen/einbruchschutz
-- Brandschutz: https://www.veyconnect.de/leistungen/brandschutz
-- Zutrittskontrolle: https://www.veyconnect.de/leistungen/zutrittskontrolle
-- Sicherheitsmodernisierung & Altbau: https://www.veyconnect.de/leistungen/altbau
-- Smarte Sicherheitsintegration: https://www.veyconnect.de/leistungen/smart-home
-- Partner: https://www.veyconnect.de/partner
-- Über uns: https://www.veyconnect.de/ueber-uns
-- Servicegebiet: https://www.veyconnect.de/region
-- FAQ: https://www.veyconnect.de/faq
-- Kontakt: https://www.veyconnect.de/kontakt
+- Was kostet eine AJAX Alarmanlage? Eine kleine Wohnungs-Lösung mit Hub und 2–3 Sensoren startet im niedrigen vierstelligen Bereich; ein Einfamilienhaus mit Außensicherung liegt höher. Vor jedem verbindlichen Angebot steht eine kostenlose Vor-Ort-Beratung mit Sicherheits­analyse.
+- Wie schnell ist veyconnect vor Ort? In der Serviceregion Rhein-Main innerhalb weniger Tage. Für bestehende Anlagen gibt es eine 24/7-Notfall­erreichbarkeit.
+- Wie läuft Wartung und Service? Regelmäßige Wartung, Batterietausch, Firmware-Updates und Anlagen­erweiterungen. Bestandskunden haben bei Notfall-Einsätzen Vorrang.
+
+## Leistungen
+
+- [Einbruchschutz & Videoüberwachung](https://www.veyconnect.de/leistungen/einbruchschutz): AJAX-Funkalarm, 4K-Kameras von Dahua, HIK Vision und Mobotix bis hin zu Thermalsicht und optischem Telezoom, dazu Bewegungs-, Glasbruch- und Gasmelder sowie Hausnotrufsysteme.
+- [Brandschutz & Gefahrenprävention](https://www.veyconnect.de/leistungen/brandschutz): EN-54-zertifizierte AJAX-Brandwarnanlagen, kabelloses Funk-Rauchmeldernetz, CO- und Gasmelder, Brandschutz­konzept für Bestandsbauten.
+- [Zutrittskontrolle & Türsysteme](https://www.veyconnect.de/leistungen/zutrittskontrolle): Video-Türsprechanlagen von Siedle und Doorbird, Zutritt per Fingerprint, Transponder oder App, elektronische Schließanlagen und Torantriebe.
+- [Sicherheitsmodernisierung & Altbau](https://www.veyconnect.de/leistungen/altbau): Befundung und Sicherheitskonzept, Funkalarm- und Sensorik-Nachrüstung im Bestand ohne große Bauarbeiten, Schließ- und Türsicherung, vollständige Anlagendokumentation.
+- [Smarte Sicherheitsintegration](https://www.veyconnect.de/leistungen/smart-home): UniFi-Netzwerk, KNX, smarte Türschlösser, Richtfunk, Starlink und 5G/LTE für abgelegene Objekte, Präsenz­simulation.
+- [Alle Leistungen im Überblick](https://www.veyconnect.de/leistungen): Sämtliche Gewerke — geplant, installiert und gewartet aus einer Hand.
+
+## Unternehmen
+
+- [Startseite](https://www.veyconnect.de/): Überblick über Leistungen, Zertifizierungen und Kundenbewertungen.
+- [Über uns](https://www.veyconnect.de/ueber-uns): Jan Vey und die Haltung hinter veyconnect — warum Sicherheit für uns Handwerk ist.
+- [Partner](https://www.veyconnect.de/partner): AJAX Systems als Premium-Partnerschaft sowie die weiteren zertifizierten Herstellermarken.
+- [Servicegebiet Rhein-Main](https://www.veyconnect.de/region): Die Orte, in denen veyconnect vor Ort arbeitet, und die üblichen Anfahrtszeiten.
+- [FAQ](https://www.veyconnect.de/faq): Antworten zu Kosten, Ablauf, AJAX-Technik, Videoüberwachung, Brandschutz und Wartung.
+- [Kontakt](https://www.veyconnect.de/kontakt): Kostenlose Vor-Ort-Beratung mit Sicherheits­analyse anfragen.
+
+## Optional
+
+- [Impressum](https://www.veyconnect.de/impressum): Anbieterkennzeichnung nach §5 TMG.
+- [Datenschutz](https://www.veyconnect.de/datenschutz): Datenschutzerklärung nach DSGVO.
 
 ## Lizenz & Nutzung
-- Sprache: Deutsch (de-DE)
-- Inhalte dürfen von AI-Crawlern indexiert und in Antworten zitiert werden, sofern die Quelle veyconnect.de korrekt referenziert wird.
-- Marketing-Material, Firmenkennzeichen und Marken Dritter (AJAX, Gira etc.) bleiben Eigentum der jeweiligen Inhaber.
+
+Sprache: Deutsch (de-DE). Inhalte dürfen von AI-Crawlern indexiert und in Antworten zitiert werden, sofern die Quelle veyconnect.de korrekt referenziert wird. Marketing-Material, Firmenkennzeichen und Marken Dritter (AJAX, Gira und andere) bleiben Eigentum der jeweiligen Inhaber.
