@@ -233,12 +233,49 @@ body {
   .vc-marquee { animation: none; }
 }
 
-/* Pre-reveal masking to avoid FOUC on split-text */
-.vc-pre-reveal {
-  opacity: 0;
+/* ───────── Intro-Animation (Hero & Seiten-Header) ─────────
+   Läuft bewusst rein über CSS: die Animation startet mit dem ersten Paint.
+   Vorher hingen diese Elemente auf opacity:0 und wurden erst von GSAP im
+   useEffect freigegeben — also frühestens nach der Hydration. Das LCP-Element
+   (der Fließtext im Hero) war dadurch ~1 s reine "element render delay",
+   unter 4G-Drosselung über 4 s. Hier darf kein JS mehr davorstehen.
+   Die Verzögerung je Element kommt aus --vc-delay. */
+@keyframes vc-fade-up {
+  from { opacity: 0; transform: translateY(18px); }
+  to   { opacity: 1; transform: none; }
 }
-.vc-pre-reveal[data-ready="1"] {
-  opacity: 1;
+/* Zeile schiebt sich aus ihrer overflow-hidden-Maske hoch */
+@keyframes vc-line-up {
+  from { transform: translateY(110%); }
+  to   { transform: none; }
+}
+
+/* Nur transform, kein opacity: das Element ist ab dem ersten Frame sichtbar.
+   Wichtig fürs LCP-Element — Chrome zählt Elemente mit opacity:0 nicht als
+   "contentful", ein eingeblendeter Text kann also nie früh als LCP gemessen
+   werden. Deshalb bekommt der Hero-Fließtext diese Variante und keinen Fade. */
+@keyframes vc-rise {
+  from { transform: translateY(18px); }
+  to   { transform: none; }
+}
+
+.vc-fade-up {
+  animation: vc-fade-up 0.55s cubic-bezier(0.16, 1, 0.3, 1) both;
+  animation-delay: var(--vc-delay, 0s);
+}
+.vc-line-up {
+  animation: vc-line-up 0.75s cubic-bezier(0.16, 1, 0.3, 1) both;
+  animation-delay: var(--vc-delay, 0s);
+}
+.vc-rise {
+  animation: vc-rise 0.6s cubic-bezier(0.16, 1, 0.3, 1) both;
+  animation-delay: var(--vc-delay, 0s);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .vc-fade-up,
+  .vc-line-up,
+  .vc-rise { animation: none; }
 }
 
 /* ───────── Tech button — outlined, corner accent, hover lift ───────── */

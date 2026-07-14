@@ -99,12 +99,14 @@ export default function Navbar() {
             priority
             className="h-8 md:h-9 w-auto logo-light"
           />
+          {/* Kein priority: die Dark-Variante ist im Default-Theme per CSS
+              ausgeblendet — sonst laden wir ein Bild vorrangig vor, das
+              die meisten Besucher nie zu sehen bekommen. */}
           <Image
             src="/vey_logo.webp"
             alt="veyconnect"
             width={140}
             height={36}
-            priority
             className="h-8 md:h-9 w-auto logo-dark"
           />
         </Link>
