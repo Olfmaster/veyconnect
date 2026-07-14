@@ -117,12 +117,9 @@ const jsonLd = {
         "Sicherheitsmodernisierung",
         "Smarte Sicherheitsintegration",
       ].map((name) => ({ "@type": "Offer", itemOffered: { "@type": "Service", name } })),
-      aggregateRating: {
-        "@type": "AggregateRating",
-        ratingValue: "5.0",
-        bestRating: "5",
-        reviewCount: "30",
-      },
+      // aggregateRating bewusst nicht hier: es gehört auf die Seite, die die
+      // Rezensionen auch anzeigt (components/GoogleReviews.js) — und dort steht
+      // die echte Zahl aus der Places API statt eines festen Werts.
     },
     {
       "@type": "WebSite",

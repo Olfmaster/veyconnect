@@ -58,6 +58,8 @@ function Stars({ count = 5 }) {
   );
 }
 
+const SITE_URL = "https://www.veyconnect.de";
+
 export default async function GoogleReviews() {
   const live = await getGoogleReviews();
 
@@ -66,12 +68,30 @@ export default async function GoogleReviews() {
   const reviewCount = live?.count ?? FALLBACK_COUNT;
   const profileUrl = live?.profileUrl ?? FALLBACK_PROFILE_URL;
 
+  // Ergänzt die im Layout definierte LocalBusiness-Entität (gleiche @id) um die
+  // Bewertung — nur auf der Seite, die die Rezensionen tatsächlich ausspielt.
+  const ratingSchema = {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "@id": `${SITE_URL}/#business`,
+    aggregateRating: {
+      "@type": "AggregateRating",
+      ratingValue: String(rating),
+      bestRating: "5",
+      reviewCount: String(reviewCount),
+    },
+  };
+
   return (
     <section
       id="bewertungen"
       className="relative py-24 md:py-32 px-6 md:px-10 bg-base text-fg overflow-hidden border-b border-line/5"
       aria-label="Google-Bewertungen"
     >
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(ratingSchema) }}
+      />
       <div aria-hidden="true" className="absolute inset-0 tech-grid opacity-40" />
 
       <div className="relative max-w-6xl mx-auto">
