@@ -11,8 +11,8 @@ const serviceSlugs = [
 export default function sitemap() {
   const now = new Date();
   return [
+    // /sicheres-zuhause fehlt bewusst: noindex-Ads-Landingpage.
     { url: `${BASE}/`, lastModified: now, changeFrequency: "monthly", priority: 1 },
-    { url: `${BASE}/sicheres-zuhause`, lastModified: now, changeFrequency: "monthly", priority: 0.9 },
     { url: `${BASE}/leistungen`, lastModified: now, changeFrequency: "monthly", priority: 0.9 },
     ...serviceSlugs.map((slug) => ({
       url: `${BASE}/leistungen/${slug}`,

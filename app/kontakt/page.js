@@ -10,7 +10,7 @@ export const metadata = {
 export default function KontaktPage() {
   return (
     <div className="pt-16">
-      <Contact />
+      <Contact as="h1" />
     </div>
   );
 }

@@ -17,7 +17,9 @@ function SubmitButton() {
   );
 }
 
-export default function Contact() {
+// Auf /kontakt trägt diese Sektion die Seitenüberschrift und muss das h1
+// stellen; auf der Startseite ist sie eine Sektion unter dem Hero-h1.
+export default function Contact({ as: Heading = "h2" }) {
   const sectionRef = useRef(null);
   const [state, formAction] = useActionState(sendContactMessage, initialState);
 
@@ -62,9 +64,9 @@ export default function Contact() {
           <p data-anim className="label-mono text-[#9162a4] mb-6">
             / Kontakt
           </p>
-          <h2 data-anim className="text-4xl md:text-6xl font-semibold tracking-[-0.03em] leading-[0.95] mb-8">
+          <Heading data-anim className="text-4xl md:text-6xl font-semibold tracking-[-0.03em] leading-[0.95] mb-8">
             Schützen, was Ihnen <span className="text-[#9162a4]">wichtig ist.</span>
-          </h2>
+          </Heading>
           <p data-anim className="text-fg-muted leading-relaxed max-w-md mb-10">
             Kostenlose Vor-Ort-Beratung mit Sicherheitsanalyse — eine kurze
             Beschreibung Ihres Vorhabens reicht. Wir melden uns innerhalb

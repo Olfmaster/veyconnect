@@ -35,10 +35,11 @@ export default function Footer() {
         <div className="md:col-span-3">
           <p className="label-mono text-fg-muted mb-4">Leistungen</p>
           <ul className="space-y-2.5">
-            <li><Link href="/leistungen" className="hover:text-fg transition-colors">Einbruchschutz</Link></li>
-            <li><Link href="/leistungen" className="hover:text-fg transition-colors">Brandschutz</Link></li>
-            <li><Link href="/leistungen" className="hover:text-fg transition-colors">Zutrittskontrolle</Link></li>
-            <li><Link href="/leistungen" className="hover:text-fg transition-colors">Smarte Sicherheit</Link></li>
+            <li><Link href="/leistungen/einbruchschutz" className="hover:text-fg transition-colors">Einbruchschutz</Link></li>
+            <li><Link href="/leistungen/brandschutz" className="hover:text-fg transition-colors">Brandschutz</Link></li>
+            <li><Link href="/leistungen/zutrittskontrolle" className="hover:text-fg transition-colors">Zutrittskontrolle</Link></li>
+            <li><Link href="/leistungen/altbau" className="hover:text-fg transition-colors">Altbau-Modernisierung</Link></li>
+            <li><Link href="/leistungen/smart-home" className="hover:text-fg transition-colors">Smarte Sicherheit</Link></li>
             <li><Link href="/leistungen" className="hover:text-fg transition-colors">Alle Leistungen</Link></li>
           </ul>
         </div>

@@ -102,7 +102,14 @@ const jsonLd = {
         { "@type": "City", name: "Bad Homburg" },
         { "@type": "AdministrativeArea", name: "Rhein-Main-Gebiet" },
       ],
-      address: { "@type": "PostalAddress", addressCountry: "DE", addressLocality: "Niederdorfelden" },
+      address: {
+        "@type": "PostalAddress",
+        streetAddress: "Berliner Straße 28",
+        postalCode: "61138",
+        addressLocality: "Niederdorfelden",
+        addressRegion: "Hessen",
+        addressCountry: "DE",
+      },
       makesOffer: [
         "Einbruch- & Überwachungssysteme",
         "Brandschutz & Gefahrenprävention",

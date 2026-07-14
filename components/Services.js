@@ -1,16 +1,14 @@
 ﻿"use client";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { gsap } from "@/lib/gsap";
-import ServiceDetailPanel from "@/components/ServiceDetailPanel";
 import { services } from "@/lib/services-data";
 
 export default function Services({ showHeader = true }) {
   const sectionRef = useRef(null);
   const headerRef = useRef(null);
   const cardsRef = useRef([]);
-  const [openService, setOpenService] = useState(null);
 
   useEffect(() => {
     const ctx = gsap.context(() => {
@@ -108,13 +106,12 @@ export default function Services({ showHeader = true }) {
                 <span className="transition-transform duration-300 group-hover:translate-x-1">→</span>
               </span>
             </div>
-            <button
-              type="button"
-              onClick={() => setOpenService(service)}
-              aria-label={`${service.title} — Details ansehen`}
-              aria-haspopup="dialog"
-              className="absolute inset-0 z-10 rounded-2xl cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-[#9162a4]"
-            />
+            <Link
+              href={`/leistungen/${service.slug}`}
+              className="absolute inset-0 z-10 rounded-2xl focus:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-[#9162a4]"
+            >
+              <span className="sr-only">{service.title} — Details ansehen</span>
+            </Link>
           </article>
         ))}
 
@@ -136,8 +133,6 @@ export default function Services({ showHeader = true }) {
           </Link>
         </article>
       </div>
-
-      <ServiceDetailPanel service={openService} onClose={() => setOpenService(null)} />
     </section>
   );
 }

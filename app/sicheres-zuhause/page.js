@@ -28,6 +28,9 @@ export const metadata = {
     "AJAX Systems",
   ],
   alternates: { canonical: "/sicheres-zuhause" },
+  // Reine Google-Ads-Landingpage: Traffic kommt bezahlt. Aus dem Index halten,
+  // damit sie nicht mit der Startseite um dieselben Keywords konkurriert.
+  robots: { index: false, follow: true },
   openGraph: {
     type: "website",
     locale: "de_DE",
