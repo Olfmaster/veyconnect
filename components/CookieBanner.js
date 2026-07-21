@@ -1,7 +1,7 @@
 "use client";
 import { useEffect, useState } from "react";
 import Link from "next/link";
-import { CONSENT_GRANTED_EVENT } from "@/components/GoogleTagManager";
+import { setConsent } from "@/components/GoogleTagManager";
 
 const STORAGE_KEY = "vc-cookie-consent";
 export const OPEN_EVENT = "vc:open-cookie-settings";
@@ -10,11 +10,13 @@ export const OPEN_EVENT = "vc:open-cookie-settings";
  * DSGVO-konformer Cookie-Hinweis mit echter Einwilligung.
  *
  * Technisch notwendige Daten werden immer verarbeitet. Zusätzlich holt der
- * Banner die Einwilligung für Google Ads Conversion-Tracking ein: Nur bei
- * „Alle akzeptieren“ (Wert "all") wird der Google Tag Manager geladen; bei
- * „Nur notwendige“ (Wert "essential") bleibt er aus. Die Entscheidung wird nur
- * lokal (localStorage) gespeichert und kann über den Footer-Link
- * „Cookie-Einstellungen“ jederzeit geändert werden.
+ * Banner die Einwilligung für Google Ads Conversion-Tracking ein. Der Google
+ * Tag Manager läuft im Consent Mode v2 (Default „denied“): Bei „Alle
+ * akzeptieren“ (Wert "all") wird der Consent auf „granted“ gehoben (Cookies
+ * erlaubt), bei „Nur notwendige“ (Wert "essential") bleibt es bei „denied“
+ * (nur cookielose Signale). Die Entscheidung wird nur lokal (localStorage)
+ * gespeichert und kann über den Footer-Link „Cookie-Einstellungen“ jederzeit
+ * geändert werden.
  */
 export default function CookieBanner() {
   const [open, setOpen] = useState(false);
@@ -50,9 +52,7 @@ export default function CookieBanner() {
     } catch {
       /* Speicherung optional — Banner trotzdem schließen */
     }
-    if (value === "all") {
-      window.dispatchEvent(new Event(CONSENT_GRANTED_EVENT));
-    }
+    setConsent(value === "all");
     setShown(false);
     setTimeout(() => setOpen(false), 300);
   };

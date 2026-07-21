@@ -89,25 +89,42 @@ export default function DatenschutzPage() {
           erneut aufrufen und eine erteilte Einwilligung mit Wirkung für die
           Zukunft widerrufen.
         </p>
+        <p>
+          Für das Google Ads Conversion-Tracking (Abschnitt 5) setzen wir den
+          Google-Einwilligungsmodus (Consent Mode v2) ein. Solange Sie keine
+          Einwilligung erteilt haben, werden <strong>keine</strong> Cookies
+          gesetzt und keine Informationen auf Ihrem Endgerät gespeichert oder
+          ausgelesen. In diesem Zustand werden lediglich cookielose, aggregierte
+          Signale ohne Geräte- oder Personenkennung an Google übermittelt, aus
+          denen Google Conversions statistisch modelliert. Erst wenn Sie „Alle
+          akzeptieren“ wählen, werden Cookies gesetzt und Daten wie in
+          Abschnitt 5 beschrieben verarbeitet.
+        </p>
       </Section>
 
-      <Section heading="5. Google Ads Conversion-Tracking (nur mit Einwilligung)">
+      <Section heading="5. Google Ads Conversion-Tracking (Google Consent Mode)">
         <p>
-          <strong>Nur</strong> wenn Sie im Cookie-Hinweis „Alle akzeptieren“
-          wählen, laden wir den <strong>Google Tag Manager</strong> und
-          darüber das <strong>Google Ads Conversion-Tracking</strong>. Ohne
-          Ihre Einwilligung werden diese Dienste nicht geladen und keine Daten
-          an Google übertragen.
+          Wir messen den Erfolg unserer Google-Ads-Anzeigen mit dem{" "}
+          <strong>Google Ads Conversion-Tracking</strong>, eingebunden über den{" "}
+          <strong>Google Tag Manager</strong>. Der Google Tag Manager wird auf
+          allen Seiten geladen, arbeitet aber im{" "}
+          <strong>Google-Einwilligungsmodus (Consent Mode v2)</strong>:
         </p>
-        <p>
-          Zweck ist die Erfolgsmessung unserer Google-Ads-Anzeigen: Wir erkennen
-          statistisch, ob der Klick auf eine Anzeige zu einer Kontaktanfrage
-          über das Formular geführt hat. Dabei können Cookies gesetzt und Daten
-          (u. a. gekürzte IP-Adresse, eine Klick-Kennung von Google „gclid“
-          sowie das Conversion-Ereignis) an Google übertragen werden. Wir
-          erhalten dabei keine personenbezogenen Klartextdaten, sondern
-          aggregierte Conversion-Statistiken.
-        </p>
+        <ul className="list-disc pl-6 space-y-1">
+          <li>
+            <strong>Ohne Ihre Einwilligung</strong> werden keine Cookies gesetzt
+            und keine Endgerät-Kennungen verarbeitet. Google erhält nur
+            cookielose, aggregierte Signale und schätzt Conversions statistisch
+            (Modellierung).
+          </li>
+          <li>
+            <strong>Mit Ihrer Einwilligung</strong> („Alle akzeptieren“) können
+            Cookies gesetzt und Daten (u. a. gekürzte IP-Adresse, die
+            Google-Klick-Kennung „gclid“ sowie das Conversion-Ereignis) an
+            Google übertragen werden. Wir erhalten dabei keine personenbezogenen
+            Klartextdaten, sondern aggregierte Conversion-Statistiken.
+          </li>
+        </ul>
         <p>
           Anbieter ist <strong>Google Ireland Limited</strong>, Gordon House,
           Barrow Street, Dublin 4, Irland. Eine Übermittlung in die USA
@@ -116,10 +133,15 @@ export default function DatenschutzPage() {
           abgesichert.
         </p>
         <p>
-          Rechtsgrundlage ist Ihre Einwilligung nach Art. 6 Abs. 1 lit. a DSGVO
-          in Verbindung mit § 25 Abs. 1 TDDDG. Sie können die Einwilligung
-          jederzeit mit Wirkung für die Zukunft über den Link
-          „Cookie-Einstellungen“ im Seitenfuß widerrufen.
+          Für das Setzen von Cookies und die damit verbundene Verarbeitung ist
+          Rechtsgrundlage Ihre Einwilligung nach Art. 6 Abs. 1 lit. a DSGVO in
+          Verbindung mit § 25 Abs. 1 TDDDG. Die cookielose Signalübermittlung im
+          Einwilligungsmodus – bei der keine Informationen auf Ihrem Endgerät
+          gespeichert oder ausgelesen werden – stützen wir auf unser
+          berechtigtes Interesse an einer datensparsamen Reichweiten- und
+          Werbeerfolgsmessung (Art. 6 Abs. 1 lit. f DSGVO). Sie können eine
+          erteilte Einwilligung jederzeit mit Wirkung für die Zukunft über den
+          Link „Cookie-Einstellungen“ im Seitenfuß widerrufen.
         </p>
       </Section>
 

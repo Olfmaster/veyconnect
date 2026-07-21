@@ -139,6 +139,9 @@ export default function RootLayout({ children }) {
         <Script id="theme-init" strategy="beforeInteractive">
           {`(function(){try{var t=localStorage.getItem('theme');document.documentElement.dataset.theme=(t==='light'||t==='dark')?t:'light';}catch(e){document.documentElement.dataset.theme='light';}})();`}
         </Script>
+        <Script id="consent-default" strategy="beforeInteractive">
+          {`(function(){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}window.gtag=window.gtag||gtag;gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:'denied',wait_for_update:500});gtag('set','url_passthrough',true);gtag('set','ads_data_redaction',true);try{if(localStorage.getItem('vc-cookie-consent')==='all'){gtag('consent','update',{ad_storage:'granted',ad_user_data:'granted',ad_personalization:'granted',analytics_storage:'granted'});}}catch(e){}})();`}
+        </Script>
       </head>
       <body className="min-h-full antialiased bg-base text-fg selection:bg-[#9162a4] selection:text-white">
         <GoogleTagManager />
