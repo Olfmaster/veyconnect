@@ -63,11 +63,6 @@ export const metadata = {
     follow: true,
     googleBot: { index: true, follow: true, "max-image-preview": "large", "max-snippet": -1 },
   },
-  icons: {
-    icon: [{ url: "/vey_favicon-white.webp", type: "image/webp" }],
-    shortcut: "/vey_favicon-white.webp",
-    apple: "/vey_favicon-white.webp",
-  },
 };
 
 export const viewport = {
