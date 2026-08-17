@@ -7,15 +7,15 @@ import { gsap } from "@/lib/gsap";
 const features = [
   {
     title: "Einbruchschutz & Sensorik",
-    text: "AJAX-Funkalarm mit Bewegungs-, Glasbruch- und Öffnungsmeldern — eine Zentrale für das ganze Objekt.",
+    text: "AJAX-Funkalarm mit Bewegungs-, Glasbruch- und Öffnungsmeldern: eine Zentrale für das ganze Objekt.",
   },
   {
     title: "Videoüberwachung",
-    text: "4K-Kameras von Dahua, HIK Vision und Mobotix — direkt in dieselbe App eingebunden, DSGVO-konform.",
+    text: "4K-Kameras von Dahua, HIK Vision und Mobotix, direkt in dieselbe App eingebunden, DSGVO-konform.",
   },
   {
     title: "EN-54-Brandwarnung",
-    text: "Kabellose Brandwarn- und Alarmanlage nach EN 54 — Rauch-, Wärme- und Kombimelder für kommerzielle Objekte.",
+    text: "Kabellose Brandwarn- und Alarmanlage nach EN 54: Rauch-, Wärme- und Kombimelder für kommerzielle Objekte.",
   },
 ];
 
@@ -84,7 +84,7 @@ export default function EN54Spotlight() {
             className="text-3xl md:text-5xl font-semibold tracking-[-0.03em] leading-[1.05] max-w-xl"
           >
             Einbruch, Video und{" "}
-            <span className="text-[#9162a4]">EN-54-Brandschutz</span> — in einem
+            <span className="text-[#9162a4]">EN-54-Brandschutz</span> in einem
             System.
           </h2>
           <p
@@ -97,7 +97,7 @@ export default function EN54Spotlight() {
             <span className="text-fg font-medium">
               EN-54-zertifizierte Brandwarnung
             </span>{" "}
-            in einer Anlage — zentral gesteuert über eine App. Funkbasiert,
+            in einer Anlage, zentral gesteuert über eine App. Funkbasiert,
             schnell installiert und auch im Bestand nachrüstbar, ohne Wände
             aufzustemmen.
           </p>
@@ -160,7 +160,7 @@ export default function EN54Spotlight() {
             <span className="tc-br" aria-hidden="true" />
             <Image
               src="/ajax-en54-line.webp"
-              alt="AJAX EN54 Line — kabellose Brandwarn- und Alarmanlage mit EN-54-Zertifizierung für kommerzielle Objekte"
+              alt="AJAX EN54 Line: kabellose Brandwarn- und Alarmanlage mit EN-54-Zertifizierung für kommerzielle Objekte"
               fill
               sizes="(min-width:1024px) 28rem, (min-width:640px) 28rem, 92vw"
               className="object-contain"

@@ -110,7 +110,7 @@ export default function Services({ showHeader = true }) {
               href={`/leistungen/${service.slug}`}
               className="absolute inset-0 z-10 rounded-2xl focus:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-[#9162a4]"
             >
-              <span className="sr-only">{service.title} — Details ansehen</span>
+              <span className="sr-only">{service.title}: Details ansehen</span>
             </Link>
           </article>
         ))}
@@ -122,7 +122,7 @@ export default function Services({ showHeader = true }) {
           </h3>
           <p className="text-sm text-fg-muted leading-relaxed">
             Für Elektroarbeiten arbeiten wir mit einem zertifizierten
-            Elektromeister-Betrieb zusammen — Sie bekommen alles aus einer
+            Elektromeister-Betrieb zusammen. Sie bekommen alles aus einer
             Hand, ohne Schnittstellenverlust.
           </p>
           <Link

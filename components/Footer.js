@@ -23,7 +23,7 @@ export default function Footer() {
             className="h-9 w-auto logo-dark"
           />
           <p className="mt-5 max-w-xs leading-relaxed text-fg-faint">
-            Ganzheitliche Gebäudesicherheit auf elektrotechnischem Fundament —
+            Ganzheitliche Gebäudesicherheit auf elektrotechnischem Fundament,
             seit 2023 im Rhein-Main-Gebiet.
           </p>
           <p className="mt-5 label-mono text-[#9162a4] inline-flex items-center gap-2">

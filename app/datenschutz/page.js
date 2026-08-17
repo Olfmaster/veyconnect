@@ -136,8 +136,8 @@ export default function DatenschutzPage() {
           Für das Setzen von Cookies und die damit verbundene Verarbeitung ist
           Rechtsgrundlage Ihre Einwilligung nach Art. 6 Abs. 1 lit. a DSGVO in
           Verbindung mit § 25 Abs. 1 TDDDG. Die cookielose Signalübermittlung im
-          Einwilligungsmodus – bei der keine Informationen auf Ihrem Endgerät
-          gespeichert oder ausgelesen werden – stützen wir auf unser
+          Einwilligungsmodus, bei der keine Informationen auf Ihrem Endgerät
+          gespeichert oder ausgelesen werden, stützen wir auf unser
           berechtigtes Interesse an einer datensparsamen Reichweiten- und
           Werbeerfolgsmessung (Art. 6 Abs. 1 lit. f DSGVO). Sie können eine
           erteilte Einwilligung jederzeit mit Wirkung für die Zukunft über den

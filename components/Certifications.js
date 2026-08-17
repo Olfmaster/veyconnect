@@ -7,23 +7,23 @@ const certificates = [
     tier: "Baseline",
     title: "Intrusion",
     system: "Einbruchmeldetechnik",
-    desc: "Grundzertifizierung für AJAX-Einbruchmeldetechnik — Planung, Installation und Konfiguration nach Herstellerstandard.",
+    desc: "Grundzertifizierung für AJAX-Einbruchmeldetechnik: Planung, Installation und Konfiguration nach Herstellerstandard.",
     number: "1782731007005",
     file: "/ajax-zertifikat-baseline-intrusion.pdf",
   },
   {
     tier: "Superior",
     title: "Wireless Intrusion",
-    system: "AJAX Jeweller — funkbasiert",
-    desc: "Fortgeschrittene Zertifizierung für die funkbasierte AJAX-Jeweller-Technologie — die Basis unserer kabellosen Anlagen.",
+    system: "AJAX Jeweller (funkbasiert)",
+    desc: "Fortgeschrittene Zertifizierung für die funkbasierte AJAX-Jeweller-Technologie, die Basis unserer kabellosen Anlagen.",
     number: "1782731066318",
     file: "/ajax-zertifikat-superior-wireless-intrusion.pdf",
   },
   {
     tier: "Superior",
     title: "Wired Intrusion",
-    system: "AJAX Fibra — kabelgebunden",
-    desc: "Fortgeschrittene Zertifizierung für die kabelgebundene AJAX-Fibra-Technologie — für Objekte mit fester Verkabelung.",
+    system: "AJAX Fibra (kabelgebunden)",
+    desc: "Fortgeschrittene Zertifizierung für die kabelgebundene AJAX-Fibra-Technologie, für Objekte mit fester Verkabelung.",
     number: "1782734663366",
     file: "/ajax-zertifikat-superior-wired-intrusion.pdf",
   },
@@ -75,7 +75,7 @@ export default function Certifications() {
               Jan Vey ist von der{" "}
               <span className="text-fg font-medium">Ajax Academy</span>{" "}
               geprüfte/r Ajax-Spezialist/in. Die offiziellen Zertifikate
-              belegen unsere Herstellerqualifikation — nachweisbar und aktuell.
+              belegen unsere Herstellerqualifikation, nachweisbar und aktuell.
             </p>
           </div>
         </div>

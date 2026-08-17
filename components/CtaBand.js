@@ -9,7 +9,7 @@ import Link from "next/link";
  */
 export default function CtaBand({
   title = "Unsicher, was Ihr Objekt braucht?",
-  text = "Wir schauen es uns kostenlos vor Ort an und sagen Ihnen ehrlich, was sinnvoll ist — und was nicht. Rückmeldung innerhalb eines Werktages.",
+  text = "Wir schauen es uns kostenlos vor Ort an und sagen Ihnen ehrlich, was sinnvoll ist und was nicht. Rückmeldung innerhalb eines Werktages.",
 }) {
   return (
     <section className="relative bg-base px-6 md:px-10 py-14 md:py-16 border-b border-line/5">

@@ -23,7 +23,7 @@ const categories = [
       },
       {
         q: "Macht ihr auch klassische Elektroinstallation?",
-        a: "Für Elektroarbeiten arbeiten wir mit einem zertifizierten Elektromeister-Betrieb zusammen. So bleibt veyconnect auf das fokussiert, was wir am besten können — Sicherheits- und Gebäudesystemtechnik — und Sie bekommen trotzdem alles aus einer Hand.",
+        a: "Für Elektroarbeiten arbeiten wir mit einem zertifizierten Elektromeister-Betrieb zusammen. So bleibt veyconnect auf das fokussiert, was wir am besten können, nämlich Sicherheits- und Gebäudesystemtechnik, und Sie bekommen trotzdem alles aus einer Hand.",
       },
     ],
   },
@@ -37,11 +37,11 @@ const categories = [
       },
       {
         q: "Warum AJAX und nicht eine andere Alarmanlage?",
-        a: "AJAX ist funkbasiert (keine aufwändige Verkabelung im Bestand), batteriearm (Lebensdauer 5–7 Jahre), verschlüsselt (Jeweller-Funk), wartungsarm und skalierbar — vom Einfamilienhaus bis zur Gewerbeliegenschaft. Bedienung läuft über eine zentrale App auf iOS und Android.",
+        a: "AJAX ist funkbasiert (keine aufwändige Verkabelung im Bestand), batteriearm (Lebensdauer 5 bis 7 Jahre), verschlüsselt (Jeweller-Funk), wartungsarm und skalierbar, vom Einfamilienhaus bis zur Gewerbeliegenschaft. Bedienung läuft über eine zentrale App auf iOS und Android.",
       },
       {
         q: "Was kostet eine AJAX Alarmanlage?",
-        a: "Eine kleine Wohnungs-Lösung mit Hub + 2–3 Sensoren startet typischerweise im niedrigen vierstelligen Bereich. Eine umfassende Einfamilienhaus-Anlage mit Außensicherung, Glasbruch-, Brand- und Bewegungsmeldern liegt höher. Eine kostenlose Vor-Ort-Beratung mit Sicherheits­analyse ist Pflicht, bevor wir ein verbindliches Angebot machen.",
+        a: "Eine kleine Wohnungs-Lösung mit Hub und 2 bis 3 Sensoren startet typischerweise im niedrigen vierstelligen Bereich. Eine umfassende Einfamilienhaus-Anlage mit Außensicherung, Glasbruch-, Brand- und Bewegungsmeldern liegt höher. Eine kostenlose Vor-Ort-Beratung mit Sicherheits­analyse ist Pflicht, bevor wir ein verbindliches Angebot machen.",
       },
     ],
   },
@@ -73,7 +73,7 @@ const categories = [
     items: [
       {
         q: "Sind eure Anlagen DSGVO-konform?",
-        a: "Ja. Wir planen Videoüberwachung grundsätzlich DSGVO-konform — mit korrekter Kamerakegel-Ausrichtung, Beschilderung und Datenflussdokumentation. Beim Betreiber liegt die Verantwortung für die laufende Datenverarbeitung, wir beraten zur Konfiguration und Kennzeichnung.",
+        a: "Ja. Wir planen Videoüberwachung grundsätzlich DSGVO-konform, mit korrekter Kamerakegel-Ausrichtung, Beschilderung und Datenflussdokumentation. Beim Betreiber liegt die Verantwortung für die laufende Datenverarbeitung, wir beraten zur Konfiguration und Kennzeichnung.",
       },
       {
         q: "Was ist im Brandschutz alles enthalten?",
@@ -110,7 +110,7 @@ const breadcrumbJsonLd = {
 };
 
 export const metadata = {
-  title: "FAQ — Häufige Fragen zu Alarmanlagen, AJAX & Sicherheits­technik",
+  title: "FAQ · Häufige Fragen zu Alarmanlagen, AJAX & Sicherheits­technik",
   description:
     "Antworten auf häufige Fragen zu Einbruchschutz, AJAX-Alarmanlagen, Videoüberwachung, Brandschutz, Zutrittskontrolle und Ablauf im Rhein-Main-Gebiet.",
   alternates: { canonical: "/faq" },
@@ -123,7 +123,7 @@ export default function FAQPage() {
         eyebrow="/ FAQ"
         title="Häufige Fragen,"
         accent="ehrliche Antworten."
-        intro="Was kostet eine Alarmanlage? Wie schnell sind wir vor Ort? Wie läuft eine Installation ab? Hier die Antworten auf die Fragen, die uns am häufigsten gestellt werden — strukturiert nach Themen."
+        intro="Was kostet eine Alarmanlage? Wie schnell sind wir vor Ort? Wie läuft eine Installation ab? Hier die Antworten auf die Fragen, die uns am häufigsten gestellt werden, strukturiert nach Themen."
       >
         <nav aria-label="FAQ Kategorien" className="flex flex-wrap gap-2 sm:gap-3">
           {categories.map((c) => (
@@ -181,7 +181,7 @@ export default function FAQPage() {
           <aside className="mt-4 rounded-2xl border border-[#9162a4]/30 bg-surface p-7 md:p-10 text-center">
             <p className="label-mono text-[#9162a4] mb-3">/ Frage offen?</p>
             <h2 className="text-2xl md:text-3xl font-semibold tracking-[-0.02em] mb-4 text-fg">
-              Wir antworten persönlich — meist innerhalb eines Werktages.
+              Wir antworten persönlich, meist innerhalb eines Werktages.
             </h2>
             <p className="text-fg-muted max-w-xl mx-auto mb-7 leading-relaxed">
               Was hier nicht beantwortet ist, klären wir direkt im Gespräch. Kostenlose Vor-Ort-Beratung im gesamten Rhein-Main-Gebiet.

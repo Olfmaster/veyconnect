@@ -3,9 +3,9 @@ import Certifications from "@/components/Certifications";
 import Contact from "@/components/Contact";
 
 export const metadata = {
-  title: "Über uns — Jan Vey & veyconnect",
+  title: "Über uns · Jan Vey & veyconnect",
   description:
-    "Hinter veyconnect steht Jan Vey — Sicherheitstechnik-Fachbetrieb aus Niederdorfelden für das Rhein-Main-Gebiet. Wer wir sind, woran wir glauben und warum Sicherheit für uns Handwerk ist.",
+    "Hinter veyconnect steht Jan Vey, Sicherheitstechnik-Fachbetrieb aus Niederdorfelden für das Rhein-Main-Gebiet. Wer wir sind, woran wir glauben und warum Sicherheit für uns Handwerk ist.",
   alternates: { canonical: "/ueber-uns" },
 };
 
@@ -40,7 +40,7 @@ const personSchema = {
 const werte = [
   {
     title: "Sicherheit ist Handwerk",
-    text: "Kein Baumarkt-Set, kein Online-Konfigurator. Jede Anlage wird vor Ort befundet, geplant und sauber installiert — von Menschen, die wissen, was sie tun.",
+    text: "Kein Baumarkt-Set, kein Online-Konfigurator. Jede Anlage wird vor Ort befundet, geplant und sauber installiert, von Menschen, die wissen, was sie tun.",
   },
   {
     title: "Ehrliche Beratung",
@@ -52,7 +52,7 @@ const werte = [
   },
   {
     title: "Alles aus einer Hand",
-    text: "Beratung, Planung, Installation und Wartung vom selben Team — Elektroarbeiten über unseren zertifizierten Meister-Partner. Kein Verantwortungs-Ping-Pong.",
+    text: "Beratung, Planung, Installation und Wartung vom selben Team. Elektroarbeiten über unseren zertifizierten Meister-Partner. Kein Verantwortungs-Ping-Pong.",
   },
 ];
 
@@ -104,13 +104,13 @@ export default function UeberUnsPage() {
             <div className="mt-7 space-y-5 text-fg-muted leading-relaxed text-base md:text-[1.05rem] max-w-2xl">
               <p>
                 Angefangen hat alles mit einer klassischen
-                Elektriker-Ausbildung — direkt danach der Wechsel in die
+                Elektriker-Ausbildung, direkt danach der Wechsel in die
                 Sicherheitstechnik: Einbruchmelde- und Brandmeldeanlagen. Es
                 folgten mehrere Jahre bei zwei größeren
                 Sicherheitstechnik-Unternehmen, in denen ich mein Handwerk von
                 Grund auf gelernt habe. Was mich schon damals am meisten
                 gepackt hat: Häuser und Gewerbeobjekte wirklich sicher zu
-                machen — und die Reaktion der Kunden zu erleben, wenn sie nach
+                machen, und die Reaktion der Kunden zu erleben, wenn sie nach
                 einem schweren Einbruch endlich wieder ruhig schlafen konnten.
                 Genau dieses Gefühl wollte ich zu meinem Beruf machen.
               </p>
@@ -118,14 +118,14 @@ export default function UeberUnsPage() {
                 2023 habe ich veyconnect gegründet, weil ich Sicherheitstechnik
                 anders anbieten wollte: fair, ehrlich und transparent. Mir war
                 wichtig, nah an den Kunden zu sein und wirklich zu verstehen,
-                was hinter jedem einzelnen Fall steht — statt Anlagen von der
+                was hinter jedem einzelnen Fall steht, statt Anlagen von der
                 Stange zu verkaufen. Ehrlichkeit und Vertrauen sind für mich,
                 privat wie geschäftlich, das A und O. Heute geben wir das als
                 Team weiter: zu dritt, plus unser starker Elektro-Partnerbetrieb
                 für alle Elektroarbeiten.
               </p>
               <p>
-                Ich lebe mein ganzes Leben schon in Niederdorfelden — die Region
+                Ich lebe mein ganzes Leben schon in Niederdorfelden. Die Region
                 ist meine Heimat, und genau deshalb liegt mir daran, dass sich
                 die Menschen hier wirklich sicher fühlen können. Wenn ich nicht
                 gerade Anlagen plane, sitze ich am liebsten auf dem Motorrad.

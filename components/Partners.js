@@ -51,7 +51,7 @@ export default function Partners() {
           </p>
           <div className="md:col-span-9">
             <h2 data-anim className="text-3xl md:text-5xl font-semibold tracking-[-0.03em] max-w-3xl leading-[1.05]">
-              Hersteller, denen wir vertrauen — und die uns vertrauen.
+              Hersteller, denen wir vertrauen. Und die uns vertrauen.
             </h2>
             <p data-anim className="mt-5 max-w-2xl text-fg-muted leading-relaxed">
               Direkter Herstellerzugang, neueste Firmware, Original-Komponenten und
@@ -89,13 +89,13 @@ export default function Partners() {
 
             <div className="md:col-span-7">
               <h3 className="text-2xl md:text-4xl font-semibold tracking-[-0.02em] leading-tight">
-                AJAX Systems — wireless security, perfected.
+                AJAX Systems: wireless security, perfected.
               </h3>
               <p className="mt-4 text-fg-muted leading-relaxed">
                 Als <span className="text-fg font-medium">zertifizierter Premium-Partner</span>{" "}
                 installieren und konfigurieren wir das komplette AJAX-Ökosystem:
                 Funkalarmanlagen, Außensirenen, Bewegungs-, Glasbruch- und
-                Brandmelder, Smart-Home-Steuerung — alles in einer App, alles
+                Brandmelder, Smart-Home-Steuerung: alles in einer App, alles
                 verschlüsselt, alles wartungsarm.
               </p>
               <ul className="mt-6 grid sm:grid-cols-2 gap-x-6 gap-y-2.5 text-sm text-fg-muted">

@@ -4,17 +4,17 @@ import { gsap } from "@/lib/gsap";
 
 const acts = [
   {
-    eyebrow: "/ 01 — Analyse",
-    line1: "Erst hören wir zu —",
+    eyebrow: "/ 01 · Analyse",
+    line1: "Erst hören wir zu,",
     line2: "und planen präzise.",
   },
   {
-    eyebrow: "/ 02 — Umsetzung",
+    eyebrow: "/ 02 · Umsetzung",
     line1: "Saubere Technik,",
     line2: "normgerecht installiert.",
   },
   {
-    eyebrow: "/ 03 — Begleitung",
+    eyebrow: "/ 03 · Begleitung",
     line1: "Service & Wartung,",
     line2: "über Jahre hinweg.",
   },

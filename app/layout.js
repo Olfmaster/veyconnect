@@ -23,7 +23,7 @@ const jetbrains = JetBrains_Mono({
 const SITE_URL = "https://www.veyconnect.de";
 const TITLE = "veyconnect · Einbruchschutz & Sicherheitstechnik im Rhein-Main-Gebiet";
 const DESCRIPTION =
-  "veyconnect — Einbruchschutz mit Alarmanlage und Videoüberwachung, dazu Brandschutz, Zutrittskontrolle und Smart Home. Zertifizierter Premium-Partner von AJAX Systems. Hauptsitz Niederdorfelden, Servicegebiet Rhein-Main.";
+  "veyconnect: Einbruchschutz mit Alarmanlage und Videoüberwachung, dazu Brandschutz, Zutrittskontrolle und Smart Home. Zertifizierter Premium-Partner von AJAX Systems. Hauptsitz Niederdorfelden, Servicegebiet Rhein-Main.";
 
 export const metadata = {
   metadataBase: new URL(SITE_URL),

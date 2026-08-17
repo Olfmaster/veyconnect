@@ -5,9 +5,9 @@ import CtaBand from "@/components/CtaBand";
 import Contact from "@/components/Contact";
 
 export const metadata = {
-  title: "Leistungen — Sicherheit aus einer Hand",
+  title: "Leistungen · Sicherheit aus einer Hand",
   description:
-    "Einbruchschutz, Brandschutz, Zutrittskontrolle, Altbau-Modernisierung und Smart-Home-Integration aus einer Hand — geplant, installiert und gewartet von veyconnect.",
+    "Einbruchschutz, Brandschutz, Zutrittskontrolle, Altbau-Modernisierung und Smart-Home-Integration aus einer Hand. Geplant, installiert und gewartet von veyconnect.",
   alternates: { canonical: "/leistungen" },
 };
 
@@ -34,7 +34,7 @@ export default function LeistungenPage() {
       <Services showHeader={false} />
       <CtaBand
         title="Nicht sicher, welche Leistung Sie brauchen?"
-        text="Sagen Sie uns, was Sie schützen wollen — wir schlagen vor, was wirklich nötig ist. Kostenlose Vor-Ort-Analyse, Rückmeldung innerhalb eines Werktages."
+        text="Sagen Sie uns, was Sie schützen wollen. Wir schlagen vor, was wirklich nötig ist. Kostenlose Vor-Ort-Analyse, Rückmeldung innerhalb eines Werktages."
       />
       <Contact />
     </>

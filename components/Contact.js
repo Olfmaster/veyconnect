@@ -72,7 +72,7 @@ export default function Contact({ as: Heading = "h2" }) {
             Schützen, was Ihnen <span className="text-[#9162a4]">wichtig ist.</span>
           </Heading>
           <p data-anim className="text-fg-muted leading-relaxed max-w-md mb-10">
-            Kostenlose Vor-Ort-Beratung mit Sicherheitsanalyse — eine kurze
+            Kostenlose Vor-Ort-Beratung mit Sicherheitsanalyse. Eine kurze
             Beschreibung Ihres Vorhabens reicht. Wir melden uns innerhalb
             eines Werktages zurück.
           </p>
@@ -111,7 +111,7 @@ export default function Contact({ as: Heading = "h2" }) {
             type="email"
             label="E-Mail"
             autoComplete="email"
-            hint="Telefon oder E-Mail genügt — wie Sie möchten."
+            hint="Telefon oder E-Mail genügt, wie Sie möchten."
           />
 
           <fieldset className="flex flex-col gap-2">

@@ -81,7 +81,7 @@ export default function CookieBanner() {
           wir mit Ihrer Einwilligung{" "}
           <strong className="text-fg">Google Ads Conversion-Tracking</strong>{" "}
           verwenden, um die Wirksamkeit unserer Anzeigen zu messen. Dabei werden
-          Daten an Google übertragen. Sie entscheiden frei — Ihre Auswahl können
+          Daten an Google übertragen. Sie entscheiden frei. Ihre Auswahl können
           Sie jederzeit über „Cookie-Einstellungen“ im Seitenfuß ändern. Mehr
           dazu in unserer{" "}
           <Link

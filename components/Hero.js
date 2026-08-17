@@ -7,21 +7,21 @@ const coreServices = [
     id: "01",
     slug: "smart-home",
     title: "Smarte Sicherheits­integration",
-    desc: "UniFi, KNX, AJAX und Cloud — alles aus einer Hand vernetzt und zentral steuerbar.",
+    desc: "UniFi, KNX, AJAX und Cloud: alles aus einer Hand vernetzt und zentral steuerbar.",
     image: "/smart-home-steuerung.webp",
   },
   {
     id: "02",
     slug: "einbruchschutz",
     title: "Einbruchschutz & Videoüberwachung",
-    desc: "AJAX-Funkalarm, 4K-Kameras von Dahua, HIK Vision, Mobotix — bis Thermal- und Telezoom.",
+    desc: "AJAX-Funkalarm, 4K-Kameras von Dahua, HIK Vision, Mobotix, bis Thermal- und Telezoom.",
     image: "/einbruchschutz-videoueberwachung.webp",
   },
   {
     id: "03",
     slug: "brandschutz",
     title: "Brandschutz & Gefahrenprävention",
-    desc: "Vernetzte Rauchmelder, CO- und Gasmelder, Hausnotrufsysteme — normgerecht & vernetzt.",
+    desc: "Vernetzte Rauchmelder, CO- und Gasmelder, Hausnotrufsysteme, normgerecht & vernetzt.",
     image: "/brandschutz-rauchmelder.webp",
   },
   {
@@ -81,7 +81,7 @@ export default function Hero() {
           style={{ "--vc-delay": "0.1s" }}
         >
           VeyConnect entwickelt moderne Lösungen für Einbruchschutz,
-          Videoüberwachung, Zutrittskontrolle und Smart Home — von der
+          Videoüberwachung, Zutrittskontrolle und Smart Home: von der
           Beratung bis zur Installation bis zur laufenden Betreuung, alles
           aus einer Hand.
         </p>

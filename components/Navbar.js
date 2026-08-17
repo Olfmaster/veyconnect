@@ -89,7 +89,7 @@ export default function Navbar() {
         <Link
           href="/"
           className="flex items-center rounded-sm focus:outline-none focus-visible:ring-2 focus-visible:ring-[#9162a4] focus-visible:ring-offset-2"
-          aria-label="veyconnect — Startseite"
+          aria-label="veyconnect, Startseite"
         >
           <Image
             src="/vey_logo_light.webp"

@@ -1,9 +1,9 @@
 import Contact from "@/components/Contact";
 
 export const metadata = {
-  title: "Kontakt — Kostenlose Sicherheits­beratung",
+  title: "Kontakt · Kostenlose Sicherheits­beratung",
   description:
-    "Kostenlose Vor-Ort-Beratung mit Sicherheits­analyse. Eine kurze Beschreibung Ihres Vorhabens reicht — wir melden uns innerhalb eines Werktages zurück.",
+    "Kostenlose Vor-Ort-Beratung mit Sicherheits­analyse. Eine kurze Beschreibung Ihres Vorhabens reicht. Wir melden uns innerhalb eines Werktages zurück.",
   alternates: { canonical: "/kontakt" },
 };
 

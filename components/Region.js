@@ -55,7 +55,7 @@ export default function Region() {
             Vor Ort im <span className="text-[#9162a4]">Rhein-Main-Gebiet.</span>
           </h2>
           <p data-anim className="mt-6 txt-muted max-w-sm leading-relaxed">
-            Hauptsitz in Niederdorfelden — wir sind in der Regel innerhalb
+            Hauptsitz in Niederdorfelden. Wir sind in der Regel innerhalb
             weniger Tage vor Ort. Auch außerhalb dieser Liste sind wir auf
             Anfrage erreichbar.
           </p>

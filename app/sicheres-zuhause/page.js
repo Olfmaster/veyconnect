@@ -11,7 +11,7 @@ const SITE_URL = "https://www.veyconnect.de";
 export const metadata = {
   title: "Einbruchschutz: Alarmanlage & Videoüberwachung · Rhein-Main",
   description:
-    "Einbruchschutz vom zertifizierten Fachbetrieb: Alarmanlage und Videoüberwachung, geplant, installiert und gewartet aus einer Hand. AJAX-Funkalarmanlage und Kameras, die nachts wirklich etwas erkennen — DSGVO-konform, auch im Altbau nachrüstbar ohne Stemmen. Kostenlose Vor-Ort-Analyse im Rhein-Main-Gebiet.",
+    "Einbruchschutz vom zertifizierten Fachbetrieb: Alarmanlage und Videoüberwachung, geplant, installiert und gewartet aus einer Hand. AJAX-Funkalarmanlage und Kameras, die nachts wirklich etwas erkennen. DSGVO-konform, auch im Altbau nachrüstbar ohne Stemmen. Kostenlose Vor-Ort-Analyse im Rhein-Main-Gebiet.",
   keywords: [
     "Alarmanlage installieren lassen",
     "Alarmanlage Installation",
@@ -43,7 +43,7 @@ export const metadata = {
     siteName: "veyconnect",
     title: "Einbruchschutz: Alarmanlage & Videoüberwachung · Rhein-Main",
     description:
-      "Beratung, Installation und laufender Service für Ihre AJAX-Funkalarmanlage und Videoüberwachung — aus einer Hand vom zertifizierten Fachbetrieb im Rhein-Main-Gebiet.",
+      "Beratung, Installation und laufender Service für Ihre AJAX-Funkalarmanlage und Videoüberwachung, aus einer Hand vom zertifizierten Fachbetrieb im Rhein-Main-Gebiet.",
   },
 };
 
@@ -64,7 +64,7 @@ const heroBadges = [
   "AJAX Systems Premium-Partner",
   "5,0 ★ bei 37+ Google-Bewertungen",
   "Zertifizierter Fachbetrieb",
-  "Auch im Altbau — ohne Stemmen",
+  "Auch im Altbau, ohne Stemmen",
   "Videoüberwachung DSGVO-konform",
   "Installation & Service inklusive",
 ];
@@ -72,7 +72,7 @@ const heroBadges = [
 const pains = [
   {
     title: "Jeder dritte Einbruch passiert tagsüber",
-    text: "Genau dann, wenn Sie bei der Arbeit oder unterwegs sind — und niemand etwas mitbekommt.",
+    text: "Genau dann, wenn Sie bei der Arbeit oder unterwegs sind und niemand etwas mitbekommt.",
   },
   {
     title: "60 Sekunden reichen",
@@ -84,31 +84,31 @@ const pains = [
   },
   {
     title: "Das Sicherheitsgefühl leidet am längsten",
-    text: "Der materielle Schaden ist ersetzbar — das Gefühl, im eigenen Zuhause nicht mehr sicher zu sein, nicht.",
+    text: "Der materielle Schaden ist ersetzbar. Das Gefühl, im eigenen Zuhause nicht mehr sicher zu sein, nicht.",
   },
 ];
 
 const ajaxProducts = [
-  { name: "Hub 2 / Hub Hybrid", text: "Die verschlüsselte Zentrale mit Mobilfunk-Backup — das Herz Ihrer Anlage." },
+  { name: "Hub 2 / Hub Hybrid", text: "Die verschlüsselte Zentrale mit Mobilfunk-Backup, das Herz Ihrer Anlage." },
   { name: "MotionCam", text: "Bewegungsmelder mit Foto-Verifikation: bei Alarm sofort ein Bild aufs Handy." },
-  { name: "DoorProtect", text: "Öffnungsmelder für Türen und Fenster — meldet jeden unbefugten Zutritt." },
-  { name: "CombiProtect", text: "Bewegung und Glasbruch in einem Melder — schützt ganze Räume zuverlässig." },
-  { name: "KeyPad & SpaceControl", text: "Scharfschalten per Code oder Fernbedienung — ohne Fummeln, ohne Umwege." },
-  { name: "StreetSiren", text: "Laute Außensirene mit Blitz — schreckt ab, bevor etwas passiert." },
+  { name: "DoorProtect", text: "Öffnungsmelder für Türen und Fenster, meldet jeden unbefugten Zutritt." },
+  { name: "CombiProtect", text: "Bewegung und Glasbruch in einem Melder, schützt ganze Räume zuverlässig." },
+  { name: "KeyPad & SpaceControl", text: "Scharfschalten per Code oder Fernbedienung, ohne Fummeln, ohne Umwege." },
+  { name: "StreetSiren", text: "Laute Außensirene mit Blitz, schreckt ab, bevor etwas passiert." },
 ];
 
 const videoFeatures = [
   {
     name: "Standort vor Optik",
-    text: "Wir legen für jeden Bereich vorher fest, ob eine Person nur bemerkt oder tatsächlich erkannt werden muss. Daraus ergeben sich Brennweite, Sensor und Montagehöhe — nicht umgekehrt.",
+    text: "Wir legen für jeden Bereich vorher fest, ob eine Person nur bemerkt oder tatsächlich erkannt werden muss. Daraus ergeben sich Brennweite, Sensor und Montagehöhe, nicht umgekehrt.",
   },
   {
     name: "Nachtsicht, die den Namen verdient",
-    text: "Infrarot, lichtstarke Optik oder Wärmebild — passend zu Distanz und Umgebungslicht. Statt grauem Rauschen ein Bild, mit dem Polizei und Versicherung etwas anfangen können.",
+    text: "Infrarot, lichtstarke Optik oder Wärmebild, passend zu Distanz und Umgebungslicht. Statt grauem Rauschen ein Bild, mit dem Polizei und Versicherung etwas anfangen können.",
   },
   {
     name: "KI-Objekterkennung statt Fehlalarm",
-    text: "Die Kamera unterscheidet Mensch, Fahrzeug und Tier. Kein Alarm mehr wegen Katze, Regen oder wehendem Ast — sonst schaut nach zwei Wochen niemand mehr hin.",
+    text: "Die Kamera unterscheidet Mensch, Fahrzeug und Tier. Kein Alarm mehr wegen Katze, Regen oder wehendem Ast. Sonst schaut nach zwei Wochen niemand mehr hin.",
   },
   {
     name: "Ein Alarm, ein Bild, eine App",
@@ -119,7 +119,7 @@ const videoFeatures = [
 const legalPoints = [
   {
     title: "Nachbargrundstück & Gehweg ausgeblendet",
-    text: "Fremde Bereiche werden per Privatzonen-Maskierung geschwärzt — genau der Punkt, an dem die meisten Anlagen vor Gericht scheitern.",
+    text: "Fremde Bereiche werden per Privatzonen-Maskierung geschwärzt, genau der Punkt, an dem die meisten Anlagen vor Gericht scheitern.",
   },
   {
     title: "Kein Ton, klare Löschfristen",
@@ -127,11 +127,11 @@ const legalPoints = [
   },
   {
     title: "Hinweisschilder inklusive",
-    text: "Sie bekommen die passende Beschilderung und den Informationstext nach Art. 13 DSGVO — an der richtigen Stelle montiert.",
+    text: "Sie bekommen die passende Beschilderung und den Informationstext nach Art. 13 DSGVO, an der richtigen Stelle montiert.",
   },
   {
     title: "Unterlagen für Ihre Akte",
-    text: "Kamerastandortplan und Konfigurationsprotokoll als PDF nach der Abnahme — falls jemand nachfragt.",
+    text: "Kamerastandortplan und Konfigurationsprotokoll als PDF nach der Abnahme, falls jemand nachfragt.",
   },
 ];
 
@@ -139,12 +139,12 @@ const installSteps = [
   {
     step: "01",
     title: "Vor-Ort-Beratung",
-    text: "Kostenlose Begehung Ihres Zuhauses — wir analysieren Schwachstellen und planen die passende Alarmanlage.",
+    text: "Kostenlose Begehung Ihres Zuhauses. Wir analysieren Schwachstellen und planen die passende Alarmanlage.",
   },
   {
     step: "02",
     title: "Individuelles Angebot",
-    text: "Transparentes Festpreis-Angebot für Installation, Komponenten und laufenden Service — ohne versteckte Kosten.",
+    text: "Transparentes Festpreis-Angebot für Installation, Komponenten und laufenden Service, ohne versteckte Kosten.",
   },
   {
     step: "03",
@@ -154,7 +154,7 @@ const installSteps = [
   {
     step: "04",
     title: "Einweisung & Service",
-    text: "Persönliche Einweisung in App und Bedienung — danach begleiten wir Sie mit Wartung und Support-Hotline dauerhaft.",
+    text: "Persönliche Einweisung in App und Bedienung. Danach begleiten wir Sie mit Wartung und Support-Hotline dauerhaft.",
   },
 ];
 
@@ -191,8 +191,8 @@ export default function SicheresZuhausePage() {
               und eine{" "}
               <span className="text-fg font-medium">
                 Videoüberwachung, die nachts wirklich etwas erkennt
-              </span>{" "}
-              — geplant, installiert und gewartet vom zertifizierten Fachbetrieb
+              </span>.{" "}
+              Alles geplant, installiert und gewartet vom zertifizierten Fachbetrieb
               im Rhein-Main-Gebiet. DSGVO-konform dokumentiert, in einer App
               gesteuert.
             </p>
@@ -264,7 +264,7 @@ export default function SicheresZuhausePage() {
                 <span className="tc-br" aria-hidden="true" />
                 <Image
                   src="/einbrecher-nacht-terrassentuer.webp"
-                  alt="Vermummte Person versucht nachts, eine Terrassentür aufzuhebeln — das Risiko ohne Einbruchschutz"
+                  alt="Vermummte Person versucht nachts, eine Terrassentür aufzuhebeln, das Risiko ohne Einbruchschutz"
                   fill
                   sizes="(min-width:1024px) 30rem, 92vw"
                   className="object-cover"
@@ -311,7 +311,7 @@ export default function SicheresZuhausePage() {
                 AJAX Systems ist mehrfach ausgezeichnete Funk-Sicherheitstechnik
                 aus Europa. Als zertifizierter Premium-Partner übernehmen wir
                 Planung, Installation und laufenden Service des kompletten
-                Ökosystems — verschlüsselt, wartungsarm und in Minuten
+                Ökosystems: verschlüsselt, wartungsarm und in Minuten
                 scharfgeschaltet.
               </p>
             </div>
@@ -342,7 +342,7 @@ export default function SicheresZuhausePage() {
                 <div className="relative aspect-[3/2] w-full rounded-xl overflow-hidden border border-line/10 bg-ink">
                   <Image
                     src="/ajax-alarmanlage.webp"
-                    alt="AJAX Funk-Alarmanlage — Hub, Tür-, Bewegungsmelder, Fernbedienung und Kamera im Set"
+                    alt="AJAX Funk-Alarmanlage: Hub, Tür-, Bewegungsmelder, Fernbedienung und Kamera im Set"
                     fill
                     sizes="(min-width:1024px) 40rem, 92vw"
                     className="object-contain"
@@ -389,7 +389,7 @@ export default function SicheresZuhausePage() {
               Die meisten Anbieter planen für den Neubau und winken beim
               Bestandsgebäude ab. Genau dort liegt unsere Stärke: Eine
               AJAX-Funkanlage kommt ohne Schlitze, ohne Staub und ohne
-              Kabelkanäle aus — auch im denkmalgeschützten Altbau, in der
+              Kabelkanäle aus, auch im denkmalgeschützten Altbau, in der
               Mietwohnung oder im fertig renovierten Haus.
             </p>
 
@@ -405,7 +405,7 @@ export default function SicheresZuhausePage() {
                 },
                 {
                   title: "Auch zur Miete möglich",
-                  text: "Rückstandsfrei demontierbar — die Anlage zieht bei einem Umzug einfach mit um.",
+                  text: "Rückstandsfrei demontierbar, die Anlage zieht bei einem Umzug einfach mit um.",
                 },
                 {
                   title: "Batterien halten Jahre",
@@ -449,7 +449,7 @@ export default function SicheresZuhausePage() {
                 Die meisten Anlagen liefern genau dann nichts Verwertbares, wenn
                 es darauf ankommt: nachts, auf Distanz, bei schlechtem Licht.
                 Wir planen jeden Kamerastandort nach DORI-Kriterien und arbeiten
-                mit Dahua, HIK Vision und Mobotix — vom kompakten Dome am
+                mit Dahua, HIK Vision und Mobotix, vom kompakten Dome am
                 Eingang bis zur Wärmebildkamera für das Grundstück.
               </p>
             </div>
@@ -509,7 +509,7 @@ export default function SicheresZuhausePage() {
               <p className="mt-5 max-w-2xl text-fg-muted leading-relaxed">
                 Eine falsch ausgerichtete Kamera kann Sie mehr kosten als der
                 Einbruch, vor dem sie schützen soll. Wir planen und dokumentieren
-                so, dass Ihre Aufnahmen im Ernstfall verwertbar sind — und nicht
+                so, dass Ihre Aufnahmen im Ernstfall verwertbar sind und nicht
                 gegen Sie verwendet werden.
               </p>
             </div>

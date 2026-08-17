@@ -5,19 +5,19 @@ import { gsap } from "@/lib/gsap";
 const points = [
   {
     title: "Einbruch & Vandalismus",
-    text: "Jeder dritte Einbruch passiert tagsüber — wenn keiner zu Hause ist. Veraltete Schließtechnik ist in 60 Sekunden überwunden.",
+    text: "Jeder dritte Einbruch passiert tagsüber, wenn keiner zu Hause ist. Veraltete Schließtechnik ist in 60 Sekunden überwunden.",
   },
   {
     title: "Veraltete Schließtechnik",
-    text: "Alte Zylinder und Standardbeschläge sind in 60 Sekunden überwunden. Bestandsbauten brauchen ein modernes Sicherheitskonzept — keinen Baumarkt-Beschlag.",
+    text: "Alte Zylinder und Standardbeschläge sind in 60 Sekunden überwunden. Bestandsbauten brauchen ein modernes Sicherheitskonzept, keinen Baumarkt-Beschlag.",
   },
   {
     title: "Fehlender Brandschutz",
-    text: "Ohne normgerechte, vernetzte Rauchmelder bleibt im Brandfall wertvolle Zeit zur Warnung ungenutzt — Personenschäden drohen, gerade in Bestandsbauten.",
+    text: "Ohne normgerechte, vernetzte Rauchmelder bleibt im Brandfall wertvolle Zeit zur Warnung ungenutzt. Personenschäden drohen, gerade in Bestandsbauten.",
   },
   {
     title: "Fragmentierte Systeme",
-    text: "Alarmanlage hier, Kamera dort, Türsprechanlage vom Drittanbieter — Insellösungen sind teuer in Wartung und schwach in der Wirkung.",
+    text: "Alarmanlage hier, Kamera dort, Türsprechanlage vom Drittanbieter. Insellösungen sind teuer in Wartung und schwach in der Wirkung.",
   },
   {
     title: "Haftungsrisiken im Gewerbe",
@@ -25,7 +25,7 @@ const points = [
   },
   {
     title: "Unsicherheit bei Altbau-Sanierung",
-    text: "Wer alte Substanz modernisiert, braucht ein Sicherheitskonzept — nicht das Standard-Sortiment vom Baumarkt.",
+    text: "Wer alte Substanz modernisiert, braucht ein Sicherheitskonzept, nicht das Standard-Sortiment vom Baumarkt.",
   },
 ];
 
@@ -100,7 +100,7 @@ export default function PainPoints() {
         </div>
 
         <p data-anim className="mt-12 max-w-2xl text-base md:text-lg text-fg-muted leading-relaxed">
-          Wer bei veyconnect kauft, kauft <span className="text-fg font-medium">Risikominimierung</span> —
+          Wer bei veyconnect kauft, kauft <span className="text-fg font-medium">Risikominimierung</span>,
           fachlich geplant von einem Sicherheitstechnik-Fachbetrieb, der ganzheitlich
           denkt: vom Sensor an der Tür bis zur Cloud, mit Elektro-Partner für alles
           dazwischen.

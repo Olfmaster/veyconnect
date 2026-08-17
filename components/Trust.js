@@ -16,7 +16,7 @@ const format = (stat, v) =>
 const usps = [
   {
     title: "Sicherheitstechnik-Fachbetrieb mit Elektro-Partner",
-    text: "Andere verkaufen Alarmanlagen. Wir denken Sicherheit ganzheitlich — vom Sensorkonzept bis zur Cloud-Verschlüsselung. Elektroarbeiten übernimmt unser zertifizierter Partnerbetrieb.",
+    text: "Andere verkaufen Alarmanlagen. Wir denken Sicherheit ganzheitlich, vom Sensorkonzept bis zur Cloud-Verschlüsselung. Elektroarbeiten übernimmt unser zertifizierter Partnerbetrieb.",
   },
   {
     title: "Zertifizierter AJAX-Partner",
@@ -28,7 +28,7 @@ const usps = [
   },
   {
     title: "Spezialisiert auf Altbau & Bestand",
-    text: "Wir sind groß im Bestandsbau — wo Standard-Anbieter passen und am Baumarkt-Set scheitern.",
+    text: "Wir sind groß im Bestandsbau, wo Standard-Anbieter passen und am Baumarkt-Set scheitern.",
   },
 ];
 

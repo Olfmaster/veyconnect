@@ -5,7 +5,7 @@ import Partners from "@/components/Partners";
 import Contact from "@/components/Contact";
 
 export const metadata = {
-  title: "Partner — Premium-Partner AJAX Systems",
+  title: "Partner · Premium-Partner AJAX Systems",
   description:
     "Zertifizierter Premium-Partner von AJAX Systems sowie Gira, Hager, Siedle, Doorbird, Dahua, UniFi, Mobotix und HIK Vision. Direkter Herstellerzugang, Originalkomponenten und Premium-Support.",
   alternates: { canonical: "/partner" },
@@ -67,11 +67,11 @@ export default function PartnerPage() {
 
               <div className="lg:col-span-7">
                 <h2 className="text-3xl md:text-5xl font-semibold tracking-[-0.03em] leading-[1.05]">
-                  AJAX Systems — <span className="text-[#9162a4]">wireless security, perfected.</span>
+                  AJAX Systems: <span className="text-[#9162a4]">wireless security, perfected.</span>
                 </h2>
                 <p className="mt-5 text-fg-muted leading-relaxed">
                   AJAX baut die wahrscheinlich saubersten Funk­alarmanlagen
-                  der Welt — verschlüsselt, batterie­arm, schön gestaltet.
+                  der Welt: verschlüsselt, batterie­arm, schön gestaltet.
                   Als <span className="text-fg font-medium">zertifizierter Premium-Partner</span>{" "}
                   installieren und konfigurieren wir das komplette
                   AJAX-Ökosystem aus einer Hand.

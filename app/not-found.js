@@ -12,7 +12,7 @@ export default function NotFound() {
       eyebrow="/ Fehler 404"
       title="Seite nicht"
       accent="gefunden."
-      intro="Diese Adresse existiert nicht (mehr) — vielleicht wurde sie verschoben oder stammt aus einem älteren Webauftritt. Von hier aus geht es weiter:"
+      intro="Diese Adresse existiert nicht (mehr). Vielleicht wurde sie verschoben oder stammt aus einem älteren Webauftritt. Von hier aus geht es weiter:"
     >
       <div className="flex flex-wrap gap-4">
         <Link href="/" className="btn-tech btn-tech-solid">
