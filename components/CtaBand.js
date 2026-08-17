@@ -19,7 +19,12 @@ export default function CtaBand({
           <h2 className="text-xl md:text-2xl font-semibold tracking-[-0.02em] text-fg">
             {title}
           </h2>
-          <p className="mt-2 text-sm md:text-base text-fg-muted leading-relaxed max-w-xl">
+          {/* Kein `md:text-base`: Das Theme definiert --color-base, wodurch
+              Tailwind `text-base` als TEXTFARBE erzeugt und die eingebaute
+              Schriftgrößen-Utility überschattet. Hinter einem Breakpoint
+              gewinnt sie gegen text-fg-muted und malt den Text in der
+              Hintergrundfarbe. */}
+          <p className="mt-2 text-sm md:text-[1.05rem] text-fg-muted leading-relaxed max-w-xl">
             {text}
           </p>
         </div>
