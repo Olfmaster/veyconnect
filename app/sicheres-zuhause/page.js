@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import Certifications from "@/components/Certifications";
+import TrustBar from "@/components/TrustBar";
 import Trust from "@/components/Trust";
 import GoogleReviews from "@/components/GoogleReviews";
 import Contact from "@/components/Contact";
@@ -8,9 +9,9 @@ import Contact from "@/components/Contact";
 const SITE_URL = "https://www.veyconnect.de";
 
 export const metadata = {
-  title: "Alarmanlage & Videoüberwachung installieren lassen · Rhein-Main",
+  title: "Einbruchschutz: Alarmanlage & Videoüberwachung · Rhein-Main",
   description:
-    "Alarmanlage und Videoüberwachung vom Fachbetrieb: Beratung, fachgerechte Installation und laufender Service aus einer Hand. AJAX-Funkalarmanlage und Kameras, die nachts wirklich etwas erkennen — DSGVO-konform installiert und gewartet von zertifizierten Technikern im Rhein-Main-Gebiet. Jetzt Installationstermin sichern.",
+    "Einbruchschutz vom zertifizierten Fachbetrieb: Alarmanlage und Videoüberwachung, geplant, installiert und gewartet aus einer Hand. AJAX-Funkalarmanlage und Kameras, die nachts wirklich etwas erkennen — DSGVO-konform, auch im Altbau nachrüstbar ohne Stemmen. Kostenlose Vor-Ort-Analyse im Rhein-Main-Gebiet.",
   keywords: [
     "Alarmanlage installieren lassen",
     "Alarmanlage Installation",
@@ -40,7 +41,7 @@ export const metadata = {
     locale: "de_DE",
     url: `${SITE_URL}/sicheres-zuhause`,
     siteName: "veyconnect",
-    title: "Alarmanlage & Videoüberwachung installieren lassen · Rhein-Main",
+    title: "Einbruchschutz: Alarmanlage & Videoüberwachung · Rhein-Main",
     description:
       "Beratung, Installation und laufender Service für Ihre AJAX-Funkalarmanlage und Videoüberwachung — aus einer Hand vom zertifizierten Fachbetrieb im Rhein-Main-Gebiet.",
   },
@@ -61,8 +62,9 @@ const serviceSchema = {
 
 const heroBadges = [
   "AJAX Systems Premium-Partner",
-  "5,0 ★ bei Google",
+  "5,0 ★ bei 37+ Google-Bewertungen",
   "Zertifizierter Fachbetrieb",
+  "Auch im Altbau — ohne Stemmen",
   "Videoüberwachung DSGVO-konform",
   "Installation & Service inklusive",
 ];
@@ -173,13 +175,13 @@ export default function SicheresZuhausePage() {
           <div>
             <p className="label-mono inline-flex items-center gap-2 text-[#9162a4] mb-6 px-3 py-1.5 border border-[#9162a4]/30 rounded-full bg-[#9162a4]/5">
               <span aria-hidden="true" className="inline-block w-1.5 h-1.5 rounded-full bg-[#9162a4] animate-pulse" />
-              Alarmanlage & Videoüberwachung
+              Einbruchschutz · Alarmanlage & Videoüberwachung
             </p>
 
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-semibold tracking-[-0.03em] leading-[1.02]">
-              Alarmanlage vom Fachbetrieb.
+              Einbruchschutz vom Fachbetrieb.
               <span className="block text-[#9162a4] mt-2">
-                Installation & Service aus einer Hand.
+                Alarmanlage & Videoüberwachung aus einer Hand.
               </span>
             </h1>
 
@@ -200,10 +202,18 @@ export default function SicheresZuhausePage() {
                 <span>Kostenlose Installationsberatung</span>
                 <span aria-hidden="true">→</span>
               </Link>
-              <a href="tel:+4917624596941" className="btn-tech">
+              <a
+                href="tel:+4917624596941"
+                data-track-location="lp-hero"
+                className="btn-tech"
+              >
                 <span>Jetzt anrufen</span>
               </a>
             </div>
+
+            <p className="mt-4 text-sm text-fg-faint">
+              Kostenlose Vor-Ort-Analyse · Rückmeldung innerhalb eines Werktages
+            </p>
 
             <ul className="mt-9 flex flex-wrap gap-2.5">
               {heroBadges.map((b) => (
@@ -232,15 +242,17 @@ export default function SicheresZuhausePage() {
         </div>
       </section>
 
+      <TrustBar />
+
       {/* Pain points */}
       <section className="relative bg-base text-fg py-24 md:py-32 px-6 md:px-10 overflow-hidden border-b border-line/5">
         <div aria-hidden="true" className="absolute inset-0 tech-grid opacity-60" />
         <div className="relative max-w-6xl mx-auto">
           <div className="grid md:grid-cols-12 gap-8 mb-14">
-            <p className="md:col-span-3 label-mono text-[#9162a4]">/ Warum jetzt</p>
+            <p className="md:col-span-3 label-mono text-[#9162a4]">/ Warum Einbruchschutz</p>
             <h2 className="md:col-span-9 text-3xl md:text-5xl font-semibold tracking-[-0.03em] max-w-3xl leading-[1.05]">
-              Ein mulmiges Gefühl ist{" "}
-              <span className="text-[#9162a4]">ein Warnsignal.</span>
+              Einbruchschutz beginnt,{" "}
+              <span className="text-[#9162a4]">bevor etwas passiert.</span>
             </h2>
           </div>
 
@@ -345,6 +357,79 @@ export default function SicheresZuhausePage() {
               <span>Passendes AJAX-Paket anfragen</span>
               <span aria-hidden="true">→</span>
             </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Altbau — das Unterscheidungsmerkmal, auf das auch die Anzeigen einzahlen */}
+      <section className="relative bg-base text-fg py-24 md:py-32 px-6 md:px-10 overflow-hidden border-b border-line/5">
+        <div aria-hidden="true" className="absolute inset-0 tech-grid opacity-60" />
+        <div className="relative max-w-6xl mx-auto grid md:grid-cols-12 gap-10 md:gap-12 items-center">
+          <div className="md:col-span-5">
+            <div className="tech-corners relative aspect-[4/3] rounded-2xl overflow-hidden border border-line/10 bg-ink">
+              <span className="tc-tl" aria-hidden="true" />
+              <span className="tc-br" aria-hidden="true" />
+              <Image
+                src="/altbau-sicherheitsnachruestung.webp"
+                alt="Nachträglich installierter Funk-Öffnungsmelder an einem Altbaufenster, ohne Eingriff in das Mauerwerk"
+                fill
+                sizes="(min-width:768px) 40vw, 92vw"
+                className="object-cover"
+              />
+            </div>
+          </div>
+
+          <div className="md:col-span-7">
+            <p className="label-mono text-[#9162a4] mb-5">/ Altbau &amp; Bestand</p>
+            <h2 className="text-3xl md:text-5xl font-semibold tracking-[-0.03em] max-w-3xl leading-[1.05]">
+              Nachrüsten, ohne{" "}
+              <span className="text-[#9162a4]">Wände aufzustemmen.</span>
+            </h2>
+            <p className="mt-7 text-fg-muted leading-relaxed max-w-2xl text-base md:text-[1.05rem]">
+              Die meisten Anbieter planen für den Neubau und winken beim
+              Bestandsgebäude ab. Genau dort liegt unsere Stärke: Eine
+              AJAX-Funkanlage kommt ohne Schlitze, ohne Staub und ohne
+              Kabelkanäle aus — auch im denkmalgeschützten Altbau, in der
+              Mietwohnung oder im fertig renovierten Haus.
+            </p>
+
+            <ul className="mt-8 grid sm:grid-cols-2 gap-4">
+              {[
+                {
+                  title: "Keine Bauarbeiten",
+                  text: "Funkkomponenten werden verschraubt oder geklebt. Kein Stemmen, kein Verputzen, kein Malern danach.",
+                },
+                {
+                  title: "Meist an einem Tag fertig",
+                  text: "Die Montage einer typischen Anlage im Einfamilienhaus dauert selten länger als einen Arbeitstag.",
+                },
+                {
+                  title: "Auch zur Miete möglich",
+                  text: "Rückstandsfrei demontierbar — die Anlage zieht bei einem Umzug einfach mit um.",
+                },
+                {
+                  title: "Batterien halten Jahre",
+                  text: "Bis zu sieben Jahre Laufzeit je Melder, mit rechtzeitiger Warnung in der App.",
+                },
+              ].map((item) => (
+                <li
+                  key={item.title}
+                  className="border border-line/10 bg-surface rounded-2xl p-5"
+                >
+                  <p className="font-semibold text-fg text-sm">{item.title}</p>
+                  <p className="mt-1.5 text-sm text-fg-muted leading-relaxed">
+                    {item.text}
+                  </p>
+                </li>
+              ))}
+            </ul>
+
+            <div className="mt-9">
+              <Link href="#kontakt" className="btn-tech btn-tech-solid">
+                <span>Altbau-Beratung anfragen</span>
+                <span aria-hidden="true">→</span>
+              </Link>
+            </div>
           </div>
         </div>
       </section>

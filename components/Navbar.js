@@ -120,7 +120,20 @@ export default function Navbar() {
               {link.label}
             </Link>
           ))}
-          <Link href="/kontakt" className="btn-tech btn-tech-sm ml-2">
+          <a
+            href="tel:+4917624596941"
+            data-track-location="header"
+            className="ml-2 inline-flex items-center gap-2 text-fg-muted hover:text-fg hover:bg-line/5 transition-colors rounded-full focus:outline-none focus-visible:ring-2 focus-visible:ring-[#9162a4] focus-visible:ring-offset-2 px-4 py-2 whitespace-nowrap"
+          >
+            <svg viewBox="0 0 24 24" fill="none" className="w-4 h-4" aria-hidden="true">
+              <path
+                d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.24c1.1.37 2.3.57 3.6.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.3.2 2.5.57 3.6a1 1 0 0 1-.25 1l-2.2 2.2Z"
+                fill="currentColor"
+              />
+            </svg>
+            0176 24596941
+          </a>
+          <Link href="/kontakt" className="btn-tech btn-tech-sm ml-1">
             <span>Beratung</span>
             <span aria-hidden="true">→</span>
           </Link>

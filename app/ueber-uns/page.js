@@ -11,15 +11,29 @@ export const metadata = {
 
 const SITE_URL = "https://www.veyconnect.de";
 
-// TODO: Eckdaten zu Jan Vey ergänzen, sobald geliefert.
 const personSchema = {
   "@context": "https://schema.org",
   "@type": "Person",
   "@id": `${SITE_URL}/ueber-uns#janvey`,
   name: "Jan Vey",
-  jobTitle: "Inhaber & Gründer", // [Platzhalter: korrekte Bezeichnung prüfen]
+  jobTitle: "Inhaber & Gründer",
   worksFor: { "@id": `${SITE_URL}/#business` },
   url: `${SITE_URL}/ueber-uns`,
+  homeLocation: {
+    "@type": "Place",
+    address: {
+      "@type": "PostalAddress",
+      addressLocality: "Niederdorfelden",
+      addressRegion: "Hessen",
+      addressCountry: "DE",
+    },
+  },
+  knowsAbout: [
+    "Einbruchmeldeanlagen",
+    "Brandmeldeanlagen",
+    "Videoüberwachung",
+    "Zutrittskontrolle",
+  ],
 };
 
 // Werte / Haltung — Texte sind Entwürfe, gern anpassen.
@@ -63,52 +77,67 @@ export default function UeberUnsPage() {
         <div className="relative max-w-6xl mx-auto grid md:grid-cols-12 gap-10 md:gap-12 items-start">
           <div className="md:col-span-5">
             <div className="relative aspect-[4/5] rounded-2xl overflow-hidden border border-line/10 bg-surface">
-              {/* [Platzhalter] Foto: public/jan-vey.webp ablegen, oben `import Image from "next/image"` ergänzen und folgende Zeile aktivieren: */}
-              {/* <Image src="/jan-vey.webp" alt="Jan Vey, Gründer von veyconnect" fill sizes="(min-width:768px) 40vw, 92vw" className="object-cover" /> */}
-              <div className="absolute inset-0 flex items-center justify-center text-center p-8">
-                <span className="label-mono text-fg-faint">
-                  [ Platzhalter: Foto von Jan Vey ]
+              {/* Sobald das Porträt vorliegt: public/jan-vey.webp ablegen, oben
+                  `import Image from "next/image"` ergänzen und den Block unten
+                  durch diese Zeile ersetzen:
+                  <Image src="/jan-vey.webp" alt="Jan Vey, Gründer von veyconnect" fill sizes="(min-width:768px) 40vw, 92vw" className="object-cover" /> */}
+              <div aria-hidden="true" className="absolute inset-0 tech-grid opacity-60" />
+              <div className="absolute inset-0 flex flex-col items-center justify-center gap-4">
+                <span className="w-24 h-24 rounded-full border border-[#9162a4]/30 bg-[#9162a4]/10 flex items-center justify-center text-3xl font-semibold tracking-[-0.02em] text-[#9162a4]">
+                  JV
                 </span>
+                <span className="label-mono text-fg-faint">Niederdorfelden</span>
               </div>
             </div>
             <p className="mt-4 label-mono text-fg-faint">
-              Jan Vey · Gründer{/* [Platzhalter: Funktion/Titel] */}
+              Jan Vey · Inhaber &amp; Gründer
             </p>
           </div>
 
           <div className="md:col-span-7">
             <p className="label-mono text-[#9162a4] mb-5">/ Die Person</p>
             <h2 className="text-3xl md:text-4xl font-semibold tracking-[-0.03em] leading-[1.05] max-w-2xl">
-              Vom <span className="text-[#9162a4]">[Werdegang]</span> zum
+              Vom <span className="text-[#9162a4]">Elektrohandwerk</span> zum
               Sicherheitstechnik-Fachbetrieb.
             </h2>
 
             <div className="mt-7 space-y-5 text-fg-muted leading-relaxed text-base md:text-[1.05rem] max-w-2xl">
               <p>
-                {/* [Platzhalter] Wer ist Jan Vey? Werdegang, Ausbildung,
-                    Stationen, Qualifikationen. 2–3 Sätze. */}
-                [Platzhalter: Jan Veys Werdegang — z. B. Ausbildung,
-                berufliche Stationen, wie es zur Spezialisierung auf
-                Sicherheitstechnik kam.]
+                Angefangen hat alles mit einer klassischen
+                Elektriker-Ausbildung — direkt danach der Wechsel in die
+                Sicherheitstechnik: Einbruchmelde- und Brandmeldeanlagen. Es
+                folgten mehrere Jahre bei zwei größeren
+                Sicherheitstechnik-Unternehmen, in denen ich mein Handwerk von
+                Grund auf gelernt habe. Was mich schon damals am meisten
+                gepackt hat: Häuser und Gewerbeobjekte wirklich sicher zu
+                machen — und die Reaktion der Kunden zu erleben, wenn sie nach
+                einem schweren Einbruch endlich wieder ruhig schlafen konnten.
+                Genau dieses Gefühl wollte ich zu meinem Beruf machen.
               </p>
               <p>
-                {/* [Platzhalter] Motivation / Gründungsgeschichte: Warum
-                    veyconnect? Was treibt ihn an? */}
-                [Platzhalter: Warum hat Jan veyconnect gegründet? Was ist
-                ihm bei der Arbeit mit Kundinnen und Kunden wichtig?]
+                2023 habe ich veyconnect gegründet, weil ich Sicherheitstechnik
+                anders anbieten wollte: fair, ehrlich und transparent. Mir war
+                wichtig, nah an den Kunden zu sein und wirklich zu verstehen,
+                was hinter jedem einzelnen Fall steht — statt Anlagen von der
+                Stange zu verkaufen. Ehrlichkeit und Vertrauen sind für mich,
+                privat wie geschäftlich, das A und O. Heute geben wir das als
+                Team weiter: zu dritt, plus unser starker Elektro-Partnerbetrieb
+                für alle Elektroarbeiten.
               </p>
               <p>
-                {/* [Platzhalter] Persönliche Note / Bezug zur Region. */}
-                [Platzhalter: Persönlicher Bezug zum Rhein-Main-Gebiet,
-                Hobbys oder ein Satz, der ihn nahbar macht.]
+                Ich lebe mein ganzes Leben schon in Niederdorfelden — die Region
+                ist meine Heimat, und genau deshalb liegt mir daran, dass sich
+                die Menschen hier wirklich sicher fühlen können. Wenn ich nicht
+                gerade Anlagen plane, sitze ich am liebsten auf dem Motorrad.
               </p>
             </div>
 
             <ul className="mt-8 flex flex-wrap gap-2.5">
               {[
                 "Zertifizierter AJAX Premium-Partner",
-                "[Platzhalter: Qualifikation/Zertifikat]",
+                "Einbruch- & Brandmeldetechnik",
                 "Seit 2023 selbstständig",
+                "Dreiköpfiges Team",
               ].map((badge) => (
                 <li
                   key={badge}

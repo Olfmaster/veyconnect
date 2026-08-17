@@ -4,9 +4,14 @@ import { gsap } from "@/lib/gsap";
 
 const stats = [
   { value: 2023, label: "Gegründet", sub: "regional verwurzelt im Rhein-Main" },
-  { value: 5.0, decimals: 1, label: "Google-Bewertung", sub: "über 30 Rezensionen" },
+  { value: 5.0, decimals: 1, label: "Google-Bewertung", sub: "über 37 Rezensionen" },
   { value: 24, suffix: "/7", label: "Erreichbarkeit", sub: "im Notfall" },
 ];
+
+// Der Endwert wird direkt im Markup gerendert, damit die Zahl auch ohne bzw.
+// vor JavaScript dasteht. Die Count-up-Animation ist reines Enhancement.
+const format = (stat, v) =>
+  stat.decimals ? v.toFixed(stat.decimals).replace(".", ",") : Math.round(v).toString();
 
 const usps = [
   {
@@ -58,21 +63,24 @@ export default function Trust() {
         const el = numRefs.current[i];
         if (!el) return;
         const start = stat.value > 100 ? stat.value - 100 : 0;
-        el.textContent = stat.decimals
-          ? start.toFixed(stat.decimals).replace(".", ",")
-          : Math.round(start).toString();
-        const obj = { v: start };
-        gsap.to(obj, {
-          v: stat.value,
-          duration: 1.8,
-          ease: "power2.out",
-          scrollTrigger: { trigger: el, start: "top 85%" },
-          onUpdate: () => {
-            el.textContent = stat.decimals
-              ? obj.v.toFixed(stat.decimals).replace(".", ",")
-              : Math.round(obj.v).toString();
-          },
-        });
+        const obj = { v: stat.value };
+        // immediateRender: false — der Startwert darf erst beim Auslösen des
+        // ScrollTriggers ins DOM, sonst bliebe die Zahl auf dem Startwert
+        // stehen, falls der Trigger nie feuert.
+        gsap.fromTo(
+          obj,
+          { v: start },
+          {
+            v: stat.value,
+            duration: 1.8,
+            ease: "power2.out",
+            immediateRender: false,
+            scrollTrigger: { trigger: el, start: "top 85%" },
+            onUpdate: () => {
+              el.textContent = format(stat, obj.v);
+            },
+          }
+        );
       });
     }, sectionRef);
     return () => ctx.revert();
@@ -104,7 +112,9 @@ export default function Trust() {
               className="bg-surface p-8 md:p-10 flex flex-col gap-2"
             >
               <p className="text-5xl md:text-6xl font-semibold tracking-[-0.03em] tabular-nums text-fg">
-                <span ref={(el) => (numRefs.current[i] = el)} />
+                <span ref={(el) => (numRefs.current[i] = el)}>
+                  {format(stat, stat.value)}
+                </span>
                 {stat.suffix && <span className="text-[#9162a4]">{stat.suffix}</span>}
               </p>
               <p className="text-sm font-medium text-fg mt-2">{stat.label}</p>

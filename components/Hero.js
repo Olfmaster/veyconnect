@@ -60,7 +60,7 @@ export default function Hero() {
         <h1 className="text-[2.25rem] sm:text-5xl md:text-7xl lg:text-[5.5rem] font-semibold tracking-[-0.03em] leading-[0.98] sm:leading-[0.95] max-w-5xl">
           <span className="block overflow-hidden pb-[0.12em]">
             <span className="vc-line-up block" style={{ "--vc-delay": "0.08s" }}>
-              Intelligente Sicherheits&shy;systeme
+              Einbruchschutz &amp; Sicherheits&shy;technik
             </span>
           </span>
           <span className="block overflow-hidden pb-[0.12em]">

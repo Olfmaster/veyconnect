@@ -74,10 +74,10 @@ export default function PainPoints() {
       <div className="relative max-w-6xl mx-auto">
         <div className="grid md:grid-cols-12 gap-8 mb-14">
           <p data-anim className="md:col-span-3 label-mono text-[#9162a4]">
-            / Risiken
+            / Einbruchschutz &amp; Risiken
           </p>
           <h2 data-anim className="md:col-span-9 text-3xl md:text-5xl font-semibold tracking-[-0.03em] max-w-3xl leading-[1.05]">
-            Wer Sicherheit aufschiebt, <span className="text-[#9162a4]">zahlt später doppelt.</span>
+            Wer Einbruchschutz aufschiebt, <span className="text-[#9162a4]">zahlt später doppelt.</span>
           </h2>
         </div>
 

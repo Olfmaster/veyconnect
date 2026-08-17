@@ -4,6 +4,7 @@ import { useActionState } from "react";
 import { useFormStatus } from "react-dom";
 import { gsap } from "@/lib/gsap";
 import { sendContactMessage } from "@/lib/contact-action";
+import { track } from "@/lib/track";
 
 const initialState = { status: "idle", message: "" };
 
@@ -23,14 +24,17 @@ export default function Contact({ as: Heading = "h2" }) {
   const sectionRef = useRef(null);
   const [state, formAction] = useActionState(sendContactMessage, initialState);
 
-  // Conversion-Event für Google Ads (via GTM). Feuert nur bei Erfolg; ist GTM
-  // mangels Einwilligung nicht geladen, bleibt der Push wirkungslos.
+  // Conversion-Event für Google Ads (via GTM). Feuert nur bei Erfolg.
+  //
+  // Der Event-Name MUSS `lead_form_submit` bleiben: Im GTM-Container
+  // GTM-KWJ242W3 hängt der Trigger „Lead- Formular abgesendet" exakt an diesem
+  // Namen, und daran wiederum das Ads-Conversion-Tag. Umbenennen killt die
+  // Conversion-Messung.
   useEffect(() => {
     if (state.status === "success") {
-      window.dataLayer = window.dataLayer || [];
-      window.dataLayer.push({ event: "lead_form_submit" });
+      track("lead_form_submit", { objektart: state.objektart ?? "unbekannt" });
     }
-  }, [state.status]);
+  }, [state.status, state.objektart]);
 
   useEffect(() => {
     const ctx = gsap.context(() => {
@@ -76,13 +80,13 @@ export default function Contact({ as: Heading = "h2" }) {
           <ul data-anim className="space-y-4 text-sm">
             <li className="flex items-start gap-3">
               <span className="text-fg-faint inline-block w-20 label-mono pt-1">E-Mail</span>
-              <a href="mailto:info@veyconnect.de" className="font-medium text-fg hover:text-[#9162a4] transition-colors">
+              <a href="mailto:info@veyconnect.de" data-track-location="kontaktblock" className="font-medium text-fg hover:text-[#9162a4] transition-colors">
                 info@veyconnect.de
               </a>
             </li>
             <li className="flex items-start gap-3">
               <span className="text-fg-faint inline-block w-20 label-mono pt-1">Telefon</span>
-              <a href="tel:+4917624596941" className="font-medium text-fg hover:text-[#9162a4] transition-colors">
+              <a href="tel:+4917624596941" data-track-location="kontaktblock" className="font-medium text-fg hover:text-[#9162a4] transition-colors">
                 +49 176 24596941
               </a>
             </li>
@@ -100,9 +104,40 @@ export default function Contact({ as: Heading = "h2" }) {
         >
           <div className="grid sm:grid-cols-2 gap-7">
             <Field name="name" label="Name" required autoComplete="name" />
-            <Field name="email" type="email" label="E-Mail" required autoComplete="email" />
+            <Field name="phone" label="Telefon" type="tel" autoComplete="tel" />
           </div>
-          <Field name="phone" label="Telefon (optional)" type="tel" autoComplete="tel" />
+          <Field
+            name="email"
+            type="email"
+            label="E-Mail"
+            autoComplete="email"
+            hint="Telefon oder E-Mail genügt — wie Sie möchten."
+          />
+
+          <fieldset className="flex flex-col gap-2">
+            <legend className="label-mono text-fg-muted mb-2">Objektart</legend>
+            <div className="flex gap-3">
+              {[
+                { value: "privat", label: "Privat" },
+                { value: "gewerbe", label: "Gewerbe" },
+              ].map((opt, i) => (
+                <label
+                  key={opt.value}
+                  className="flex-1 flex items-center justify-center gap-2 cursor-pointer bg-base border border-line/10 rounded-lg px-4 py-3 text-sm text-fg-muted transition-colors hover:border-[#9162a4]/40 has-[:checked]:border-[#9162a4] has-[:checked]:text-fg has-[:checked]:bg-[#9162a4]/10"
+                >
+                  <input
+                    type="radio"
+                    name="objektart"
+                    value={opt.value}
+                    defaultChecked={i === 0}
+                    className="accent-[#9162a4]"
+                  />
+                  {opt.label}
+                </label>
+              ))}
+            </div>
+          </fieldset>
+
           <Field name="message" label="Worum geht es?" required textarea />
 
           {state.status === "error" && (
@@ -141,7 +176,7 @@ export default function Contact({ as: Heading = "h2" }) {
   );
 }
 
-function Field({ name, label, type = "text", required, autoComplete, textarea }) {
+function Field({ name, label, type = "text", required, autoComplete, textarea, hint }) {
   const id = `contact-${name}`;
   const inputBase =
     "w-full bg-base border border-line/10 rounded-lg px-4 py-3 text-base text-fg placeholder:text-fg-faint focus:outline-none focus:border-[#9162a4] focus:ring-1 focus:ring-[#9162a4]/40 transition-colors";
@@ -150,6 +185,7 @@ function Field({ name, label, type = "text", required, autoComplete, textarea })
       <label htmlFor={id} className="label-mono text-fg-muted">
         {label}
       </label>
+      {hint && <p className="text-xs text-fg-faint -mt-1">{hint}</p>}
       {textarea ? (
         <textarea
           id={id}

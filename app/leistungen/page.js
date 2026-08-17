@@ -1,6 +1,7 @@
 ﻿import Link from "next/link";
 import PageHero from "@/components/PageHero";
 import Services from "@/components/Services";
+import CtaBand from "@/components/CtaBand";
 import Contact from "@/components/Contact";
 
 export const metadata = {
@@ -31,6 +32,10 @@ export default function LeistungenPage() {
       </PageHero>
 
       <Services showHeader={false} />
+      <CtaBand
+        title="Nicht sicher, welche Leistung Sie brauchen?"
+        text="Sagen Sie uns, was Sie schützen wollen — wir schlagen vor, was wirklich nötig ist. Kostenlose Vor-Ort-Analyse, Rückmeldung innerhalb eines Werktages."
+      />
       <Contact />
     </>
   );

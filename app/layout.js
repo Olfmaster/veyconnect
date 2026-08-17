@@ -5,6 +5,8 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import CookieBanner from "@/components/CookieBanner";
 import GoogleTagManager from "@/components/GoogleTagManager";
+import InteractionTracking from "@/components/InteractionTracking";
+import MobileCallBar from "@/components/MobileCallBar";
 
 const interTight = Inter_Tight({
   variable: "--font-sans",
@@ -19,9 +21,9 @@ const jetbrains = JetBrains_Mono({
 });
 
 const SITE_URL = "https://www.veyconnect.de";
-const TITLE = "veyconnect · Intelligente Sicherheitssysteme im Rhein-Main-Gebiet";
+const TITLE = "veyconnect · Einbruchschutz & Sicherheitstechnik im Rhein-Main-Gebiet";
 const DESCRIPTION =
-  "veyconnect — Einbruchschutz, Brandschutz, Zutrittskontrolle und smarte Sicherheit. Zertifizierter Partner von AJAX Systems. Hauptsitz Niederdorfelden, Servicegebiet Rhein-Main.";
+  "veyconnect — Einbruchschutz mit Alarmanlage und Videoüberwachung, dazu Brandschutz, Zutrittskontrolle und Smart Home. Zertifizierter Premium-Partner von AJAX Systems. Hauptsitz Niederdorfelden, Servicegebiet Rhein-Main.";
 
 export const metadata = {
   metadataBase: new URL(SITE_URL),
@@ -154,6 +156,10 @@ export default function RootLayout({ children }) {
         <Navbar />
         <main id="main">{children}</main>
         <Footer />
+        {/* pb auf Mobil: schafft Platz für die fixierte Anrufleiste */}
+        <div aria-hidden="true" className="md:hidden h-20" />
+        <MobileCallBar />
+        <InteractionTracking />
         <CookieBanner />
         <script
           type="application/ld+json"
