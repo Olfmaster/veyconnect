@@ -350,6 +350,12 @@ body {
   border-color: rgba(133, 88, 158, 0.55);
   background: rgba(133, 88, 158, 0.1);
   transform: translateY(-3px);
+  /* Der Hover-Hintergrund ist nur eine 10-%-Tönung. Im hellen Theme bleibt er
+     damit hell — weiße Schrift wäre dort praktisch unlesbar. Deshalb hier ein
+     dunkleres Lila und Weiß erst im dunklen Theme (siehe unten). */
+  color: #6f4685;
+}
+[data-theme="dark"] .btn-tech:hover {
   color: #fff;
 }
 .btn-tech:hover::before { opacity: 1; }
