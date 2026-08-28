@@ -402,3 +402,13 @@ body {
 .btn-tech-sm:hover {
   transform: translateY(-2px);
 }
+
+/* Chatbot-Widget (orain.ai): Der Host-Container wird per JS an <body> gehängt,
+   liegt fix unten rechts und trägt nur Inline-Styles (Shadow DOM, keine Klasse).
+   Auf Mobil würde die Sprechblase sonst auf der fixierten Anrufleiste liegen,
+   deshalb wird sie dort über die Leiste geschoben. */
+@media (max-width: 767px) {
+  body > div[style*="999999"] {
+    bottom: calc(92px + env(safe-area-inset-bottom)) !important;
+  }
+}

@@ -160,6 +160,15 @@ export default function RootLayout({ children }) {
         <div aria-hidden="true" className="md:hidden h-20" />
         <MobileCallBar />
         <InteractionTracking />
+        {/* Chatbot-Widget (orain.ai). next/script reicht die data-Attribute an das
+            erzeugte <script>-Tag durch, das Widget liest seine Konfiguration dort aus. */}
+        <Script
+          src="https://api.orain.ai/api/chatbot-widget.js"
+          data-chatbot-id="97"
+          data-script-key="893ef4ad-2e72-4ff7-abd9-77236bc7963a"
+          data-primary-color="#9162a4"
+          strategy="lazyOnload"
+        />
         <CookieBanner />
         <script
           type="application/ld+json"
